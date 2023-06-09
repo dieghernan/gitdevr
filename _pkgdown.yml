@@ -1,0 +1,5 @@
+template:
+  package: gitdevr
+
+development:
+  mode: auto
