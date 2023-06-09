@@ -84,8 +84,9 @@
     },
     "SystemRequirements": null
   },
-  "fileSize": "51.211KB",
+  "fileSize": "51.488KB",
   "readme": "https://github.com/dieghernan/gitdevr/blob/main/README.md",
+  "contIntegration": "https://github.com/dieghernan/gitdevr/actions/workflows/check-simple.yaml",
   "developmentStatus": "https://lifecycle.r-lib.org/articles/stages.html#experimental",
   "keywords": ["pkgdown", "pkgdown-template", "r", "r-package"]
 }
