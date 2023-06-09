@@ -1,10 +1,9 @@
 # gitdevr <img src="man/figures/logo.png" align="right" height="139"/>
 
 <!-- badges: start -->
-
 [![Lifecycle:
 experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
-
+[![.github/workflows/check-simple.yaml](https://github.com/dieghernan/gitdevr/actions/workflows/check-simple.yaml/badge.svg)](https://github.com/dieghernan/gitdevr/actions/workflows/check-simple.yaml)
 <!-- badges: end -->
 
 ## Overview
@@ -12,6 +11,8 @@ experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](h
 **gitdevr** provides a custom [pkgdown](https://pkgdown.r-lib.org) template
 based on the [GitDev skin](https://dieghernan.github.io/chulapa/skins/gitdev)
 provided with my Jekyll theme [chulapa](https://dieghernan.github.io/chulapa/).
+
+See a preview of the template in <https://dieghernan.github.io/gitdevr/>
 
 ## Installation
 
