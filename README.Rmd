@@ -1,5 +1,17 @@
+---
+output: github_document
+---
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
 
 # gitdevr <img src="man/figures/logo.png" align="right" height="139"/>
 
@@ -13,10 +25,9 @@ experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](h
 
 ## Overview
 
-**gitdevr** provides a custom [pkgdown](https://pkgdown.r-lib.org)
-template based on the [GitDev
-skin](https://dieghernan.github.io/chulapa/skins/gitdev) provided with
-my Jekyll theme [chulapa](https://dieghernan.github.io/chulapa/).
+**gitdevr** provides a custom [pkgdown](https://pkgdown.r-lib.org) template
+based on the [GitDev skin](https://dieghernan.github.io/chulapa/skins/gitdev)
+provided with my Jekyll theme [chulapa](https://dieghernan.github.io/chulapa/).
 
 See a preview of the template in <https://dieghernan.github.io/gitdevr/>
 
@@ -24,14 +35,14 @@ See a preview of the template in <https://dieghernan.github.io/gitdevr/>
 
 You can install the developing version of **gitdevr** with:
 
-``` r
+```{r, eval=FALSE}
 devtools::install_github("dieghernan/gitdevr")
 ```
 
 Alternatively, you can install **gitdevr** using the
 [r-universe](https://dieghernan.r-universe.dev/gitdevr):
 
-``` r
+```{r, eval=FALSE}
 # Install gitdevr in R:
 install.packages("gitdevr", repos = c(
   "https://dieghernan.r-universe.dev",
@@ -41,25 +52,26 @@ install.packages("gitdevr", repos = c(
 
 ## Usage
 
-After the successful installation, if you already have your **pkgdown**
-setup ready, you only need to specify the `template` parameter as
-follow. Then, as before, you can build your site using
-`pkgdown::build_site()`.
+After the successful installation, if you already have your **pkgdown** setup
+ready, you only need to specify the `template` parameter as follow. Then, as
+before, you can build your site using `pkgdown::build_site()`.
 
-``` yml
+```yml
 template:
   package: gitdevr
 ```
 
-> Keep in mind that you should NOT use `default_assets: false` when you
-> change the default template. **gitdevr** relies on some of the
-> **pkgdown** assets and templates.
+> Keep in mind that you should NOT use `default_assets: false` when you change
+> the default template. **gitdevr** relies on some of the **pkgdown** assets and
+> templates.
 
 It is recommended to add the following line to your `DESCRIPTION`:
 
-    Config/Needs/website: dieghernan/gitdevr
+```         
+Config/Needs/website: dieghernan/gitdevr
+```
 
 By doing so, when using [r-lib
 actions](https://github.com/r-lib/actions/tree/v2-branch/setup-r-dependencies)
-for deploying your site, the github action would install the package for
-you automatically.
+for deploying your site, the github action would install the package for you
+automatically.

@@ -15,3 +15,5 @@
 ^_pkgdown\.yaml$
 ^_pkgdown\.yml$
 ^docs$
+^README\.Rmd$
+^vignettes/precompute\.Rmd\.orig$
