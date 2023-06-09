@@ -14,7 +14,7 @@
     "name": "R",
     "url": "https://r-project.org"
   },
-  "runtimePlatform": "R version 4.3.0 (2023-04-21 ucrt)",
+  "runtimePlatform": "R version 4.3.0 (2023-04-21)",
   "author": [
     {
       "@type": "Person",
@@ -84,6 +84,8 @@
     },
     "SystemRequirements": null
   },
-  "fileSize": "51.329KB",
-  "developmentStatus": "https://lifecycle.r-lib.org/articles/stages.html#experimental"
+  "fileSize": "51.211KB",
+  "readme": "https://github.com/dieghernan/gitdevr/blob/main/README.md",
+  "developmentStatus": "https://lifecycle.r-lib.org/articles/stages.html#experimental",
+  "keywords": ["pkgdown", "pkgdown-template", "r", "r-package"]
 }
