@@ -59,6 +59,7 @@
     <a class="dropdown-item" href="articles/bullets.html">Bullets</a>
     <a class="dropdown-item" href="articles/code.html">Code</a>
     <a class="dropdown-item" href="articles/headings.html">Headings</a>
+    <a class="dropdown-item" href="articles/precompute.html">Example of a precomputed vignette</a>
   </div>
 </li>
       </ul>
@@ -87,6 +88,7 @@
 </div>
 <!-- badges: start -->
 
+<!-- badges: end -->
 <div class="section level2">
 <h2 id="overview">Overview<a class="anchor" aria-label="anchor" href="#overview"></a>
 </h2>
@@ -99,16 +101,13 @@
 <p>You can install the developing version of <strong>gitdevr</strong> with:</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu">devtools</span><span class="fu">::</span><span class="fu"><a href="https://remotes.r-lib.org/reference/install_github.html" class="external-link">install_github</a></span><span class="op">(</span><span class="st">"dieghernan/gitdevr"</span><span class="op">)</span></span></code></pre></div>
-<p>Alternatively, you can install <strong>gitdevr</strong> using the <a href="https://dieghernan.r-universe.dev/pkgdev" class="external-link">r-universe</a>:</p>
+<p>Alternatively, you can install <strong>gitdevr</strong> using the <a href="https://dieghernan.r-universe.dev/gitdevr" class="external-link">r-universe</a>:</p>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="co"># Enable this universe</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/base/options.html" class="external-link">options</a></span><span class="op">(</span>repos <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span></span>
-<span>  dieghernan <span class="op">=</span> <span class="st">"https://dieghernan.r-universe.dev"</span>,</span>
-<span>  CRAN <span class="op">=</span> <span class="st">"https://cloud.r-project.org"</span></span>
-<span><span class="op">)</span><span class="op">)</span></span>
-<span></span>
-<span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html" class="external-link">install.packages</a></span><span class="op">(</span><span class="st">"gitdevr"</span><span class="op">)</span></span></code></pre></div>
+<code class="sourceCode R"><span><span class="co"># Install gitdevr in R:</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html" class="external-link">install.packages</a></span><span class="op">(</span><span class="st">"gitdevr"</span>, repos <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span></span>
+<span>  <span class="st">"https://dieghernan.r-universe.dev"</span>,</span>
+<span>  <span class="st">"https://cloud.r-project.org"</span></span>
+<span><span class="op">)</span><span class="op">)</span></span></code></pre></div>
 </div>
 <div class="section level2">
 <h2 id="usage">Usage<a class="anchor" aria-label="anchor" href="#usage"></a>
@@ -120,7 +119,7 @@
 <p>Keep in mind that you should NOT use <code>default_assets: false</code> when you change the default template. <strong>gitdevr</strong> relies on some of the <strong>pkgdown</strong> assets and templates.</p>
 </blockquote>
 <p>It is recommended to add the following line to your <code>DESCRIPTION</code>:</p>
-<pre><code><span><span class="va">Config</span><span class="op">/</span><span class="va">Needs</span><span class="op">/</span><span class="va">website</span><span class="op">:</span> <span class="va">dieghernan</span><span class="op">/</span><span class="va">gitdevr</span></span></code></pre>
+<div class="sourceCode" id="cb4"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>Config<span class="sc">/</span>Needs<span class="sc">/</span>website<span class="sc">:</span> dieghernan<span class="sc">/</span>gitdevr</span></code></pre></div>
 <p>By doing so, when using <a href="https://github.com/r-lib/actions/tree/v2-branch/setup-r-dependencies" class="external-link">r-lib actions</a> for deploying your site, the github action would install the package for you automatically.</p>
 </div>
 </div>
