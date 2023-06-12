@@ -22,3 +22,6 @@ template:
     headings-font-weight: 800
     text-muted: "#6A788A"
     link-decoration: "none"
+figures:
+  dpi: 300
+  fig.retina: 2
