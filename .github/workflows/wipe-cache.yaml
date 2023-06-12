@@ -4,7 +4,7 @@ on:
 
 jobs:
   cache-clear:
-    runs-on: ubuntu-latest
+    runs-on: macOS-latest
 
     steps:
       - uses: easimon/wipe-cache@main
