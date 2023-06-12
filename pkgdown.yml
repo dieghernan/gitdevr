@@ -7,5 +7,8 @@ articles:
   code: code.html
   headings: headings.html
   precompute: precompute.html
-last_built: 2023-06-09T11:31Z
+last_built: 2023-06-12T08:25Z
+urls:
+  reference: https://dieghernan.github.io/gitdevr/reference
+  article: https://dieghernan.github.io/gitdevr/articles
 
