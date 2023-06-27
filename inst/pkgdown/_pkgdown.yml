@@ -4,7 +4,6 @@ navbar:
 
 template:
   bootstrap: 5
-  theme: haddock
   opengraph:
     twitter:
       creator: '@dhernangomez'
