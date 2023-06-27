@@ -15,9 +15,12 @@ Imports:
     pkgdown (>= 2.0.0)
 Suggests: 
     knitr,
-    rmarkdown
+    rmarkdown,
+    pkgdev
 VignetteBuilder: 
     knitr
+Remotes:
+    dieghernan/pkgdev
 Config/Needs/website: dieghernan/gitdevr, ggplot2
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
