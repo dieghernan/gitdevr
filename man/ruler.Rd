@@ -15,3 +15,6 @@ Measure the width of the console
 \examples{
 ruler()
 }
+\seealso{
+\code{\link[base:cat]{base::cat()}}, \code{\link[=test]{test()}}
+}

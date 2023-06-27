@@ -2,6 +2,8 @@
 #'
 #' @param width Width of rule
 #' @export
+#' @seealso [base::cat()], [test()]
+#'
 #' @examples
 #' ruler()
 ruler <- function(width = getOption("width")) {

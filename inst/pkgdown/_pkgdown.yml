@@ -1,7 +1,7 @@
 navbar:
   bg: dark
   type: dark
-  
+
 template:
   bootstrap: 5
   theme: haddock
@@ -27,12 +27,11 @@ template:
     headings-font-weight: 800
     text-muted: "#6A788A"
     link-decoration: "none"
- 
+
 figures:
   dpi: 300
   fig.retina: 2
- 
+
 authors:
   Diego Hernangómez:
     href: https://dieghernan.github.io/
- 
