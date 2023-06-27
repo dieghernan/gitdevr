@@ -14,7 +14,7 @@
     "name": "R",
     "url": "https://r-project.org"
   },
-  "runtimePlatform": "R version 4.3.0 (2023-04-21 ucrt)",
+  "runtimePlatform": "R version 4.3.1 (2023-06-16)",
   "author": [
     {
       "@type": "Person",
@@ -57,6 +57,12 @@
     },
     {
       "@type": "SoftwareApplication",
+      "identifier": "pkgdev",
+      "name": "pkgdev",
+      "sameAs": "https://github.com/dieghernan/pkgdev"
+    },
+    {
+      "@type": "SoftwareApplication",
       "identifier": "rmarkdown",
       "name": "rmarkdown",
       "provider": {
@@ -84,7 +90,7 @@
     },
     "SystemRequirements": null
   },
-  "fileSize": "79.036KB",
+  "fileSize": "78.992KB",
   "readme": "https://github.com/dieghernan/gitdevr/blob/main/README.md",
   "contIntegration": "https://github.com/dieghernan/gitdevr/actions/workflows/check-simple.yaml",
   "developmentStatus": "https://lifecycle.r-lib.org/articles/stages.html#experimental",

@@ -61,6 +61,17 @@ references:
     orcid: https://orcid.org/0000-0003-0645-5666
   year: '2023'
 - type: software
+  title: pkgdev
+  abstract: 'pkgdev: Helpers to Develop a Package using GitHub Actions'
+  notes: Suggests
+  url: https://dieghernan.github.io/pkgdev/
+  authors:
+  - family-names: Hernangómez
+    given-names: Diego
+    email: diego.hernangomezherrero@gmail.com
+    orcid: https://orcid.org/0000-0001-8457-4658
+  year: '2023'
+- type: software
   title: rmarkdown
   abstract: 'rmarkdown: Dynamic Documents for R'
   notes: Suggests

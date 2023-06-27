@@ -15,8 +15,8 @@ Imports:
     pkgdown (>= 2.0.0)
 Suggests: 
     knitr,
-    rmarkdown,
-    pkgdev
+    pkgdev,
+    rmarkdown
 VignetteBuilder: 
     knitr
 Remotes:
