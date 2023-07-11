@@ -17,3 +17,4 @@
 ^docs$
 ^README\.Rmd$
 ^vignettes/precompute\.Rmd\.orig$
+^\.lintr$

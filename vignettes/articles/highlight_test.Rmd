@@ -162,5 +162,4 @@ plot(bbox,
   lwd = 1.5,
   add = T
 )
-
 ```
