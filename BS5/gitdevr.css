@@ -101,6 +101,9 @@ blockquote {
 	border-left: solid #0969da !important;
 	font-size: 115%;
 }
+.pkg {
+  font-weight: bold;
+}
 
 code a:any-link {
   text-decoration: underline;
