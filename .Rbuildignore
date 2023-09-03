@@ -18,3 +18,5 @@
 ^README\.Rmd$
 ^vignettes/precompute\.Rmd\.orig$
 ^\.lintr$
+^CODE_OF_CONDUCT\.md$
+^CONTRIBUTING\.md$
