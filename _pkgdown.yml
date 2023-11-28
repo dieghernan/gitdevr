@@ -18,10 +18,11 @@ navbar:
       - text: "tidyterra"
         href: https://dieghernan.github.io/tidyterra/
       - text: "igoR"
-        href: https://dieghernan.github.io/igoR/  
+        href: https://dieghernan.github.io/igoR/
       - text: "nominatimlite"
         href: https://dieghernan.github.io/nominatimlite/
       - text: "rasterpic"
         href: https://dieghernan.github.io/rasterpic/
       - text: "pkgdev"
         href: https://dieghernan.github.io/pkgdev/
+
