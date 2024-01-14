@@ -25,4 +25,5 @@ navbar:
         href: https://dieghernan.github.io/rasterpic/
       - text: "pkgdev"
         href: https://dieghernan.github.io/pkgdev/
-
+      - text: "arcgeocoder"
+        href: https://dieghernan.github.io/arcgeocoder/
