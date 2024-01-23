@@ -17,6 +17,8 @@ navbar:
       menu:
       - text: "tidyterra"
         href: https://dieghernan.github.io/tidyterra/
+      - text: "arcgeocoder"
+        href: https://dieghernan.github.io/arcgeocoder/
       - text: "igoR"
         href: https://dieghernan.github.io/igoR/
       - text: "nominatimlite"
@@ -25,5 +27,5 @@ navbar:
         href: https://dieghernan.github.io/rasterpic/
       - text: "pkgdev"
         href: https://dieghernan.github.io/pkgdev/
-      - text: "arcgeocoder"
-        href: https://dieghernan.github.io/arcgeocoder/
+      - text: "resmush"
+        href: https://dieghernan.github.io/resmush/
