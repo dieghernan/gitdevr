@@ -109,11 +109,15 @@ footer .pkgdown-footer-left {
    }
 }
 /* ---Misc--- */
+img {
+	aspect-ratio: 16 / 9 auto;
+}
 img.logo {
 	display:none;
 }
 .template-home img.logo {
 	display:inline;
+	aspect-ratio: 13 / 15 auto;
 }
 blockquote {
 	border-left: solid #0969da !important;
