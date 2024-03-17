@@ -14,7 +14,7 @@
     "name": "R",
     "url": "https://r-project.org"
   },
-  "runtimePlatform": "R version 4.3.2 (2023-10-31)",
+  "runtimePlatform": "R version 4.3.3 (2024-02-29 ucrt)",
   "author": [
     {
       "@type": "Person",
@@ -90,7 +90,7 @@
     },
     "SystemRequirements": null
   },
-  "fileSize": "70.069KB",
+  "fileSize": "70.759KB",
   "readme": "https://github.com/dieghernan/gitdevr/blob/main/README.md",
   "contIntegration": "https://github.com/dieghernan/gitdevr/actions/workflows/check-simple.yaml",
   "developmentStatus": "https://lifecycle.r-lib.org/articles/stages.html#experimental",
