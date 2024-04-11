@@ -1,14 +1,14 @@
 pandoc: 3.1.11
-pkgdown: 2.0.7
+pkgdown: 2.0.8
 pkgdown_sha: ~
 articles:
-  ggplot2-example: ggplot2-example.html
-  highlight_test: highlight_test.html
   bullets: bullets.html
   code: code.html
+  ggplot2-example: ggplot2-example.html
   headings: headings.html
+  highlight_test: highlight_test.html
   precompute: precompute.html
-last_built: 2024-04-04T15:59Z
+last_built: 2024-04-11T11:19Z
 urls:
   reference: https://dieghernan.github.io/gitdevr/reference
   article: https://dieghernan.github.io/gitdevr/articles
