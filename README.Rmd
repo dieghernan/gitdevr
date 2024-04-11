@@ -58,6 +58,7 @@ before, you can build your site using `pkgdown::build_site()`.
 
 ```yml
 template:
+  bootstrap: 5
   package: gitdevr
 ```
 

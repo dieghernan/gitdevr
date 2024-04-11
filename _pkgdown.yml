@@ -2,6 +2,7 @@ url: 'https://dieghernan.github.io/gitdevr'
 
 
 template:
+  bootstrap: 5
   package: gitdevr
 
 development:
