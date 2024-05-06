@@ -48,6 +48,7 @@ follow. Then, as before, you can build your site using
 
 ``` yml
 template:
+  bootstrap: 5
   package: gitdevr
 ```
 
