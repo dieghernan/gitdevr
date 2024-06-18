@@ -20,7 +20,7 @@ Suggests:
 VignetteBuilder: 
     knitr
 Remotes:
-    dieghernan/pkgdev
+    dieghernan/pkgdev, r-lib/pkgdown
 Config/Needs/website: dieghernan/gitdevr, ggplot2
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)

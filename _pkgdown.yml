@@ -6,7 +6,7 @@ template:
   package: gitdevr
 
 development:
-  mode: auto
+  mode: development
 
 navbar:
   structure:
