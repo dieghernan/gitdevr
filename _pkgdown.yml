@@ -6,28 +6,28 @@ template:
   package: gitdevr
 
 development:
-  mode: development
+  mode: devel
 
-navbar:
-  structure:
-    left:  [intro, reference, articles, news]
-    right: [packages, search, github]
-  components:
-    packages:
-      text: "Packages"
-      menu:
-      - text: "tidyterra"
-        href: https://dieghernan.github.io/tidyterra/
-      - text: "arcgeocoder"
-        href: https://dieghernan.github.io/arcgeocoder/
-      - text: "igoR"
-        href: https://dieghernan.github.io/igoR/
-      - text: "nominatimlite"
-        href: https://dieghernan.github.io/nominatimlite/
-      - text: "rasterpic"
-        href: https://dieghernan.github.io/rasterpic/
-      - text: "pkgdev"
-        href: https://dieghernan.github.io/pkgdev/
-      - text: "resmush"
-        href: https://dieghernan.github.io/resmush/
+# navbar:
+#   structure:
+#     left:  [intro, reference, articles, news]
+#     right: [packages, search, github]
+#   components:
+#     packages:
+#       text: "Packages"
+#       menu:
+#       - text: "tidyterra"
+#         href: https://dieghernan.github.io/tidyterra/
+#       - text: "arcgeocoder"
+#         href: https://dieghernan.github.io/arcgeocoder/
+#       - text: "igoR"
+#         href: https://dieghernan.github.io/igoR/
+#       - text: "nominatimlite"
+#         href: https://dieghernan.github.io/nominatimlite/
+#       - text: "rasterpic"
+#         href: https://dieghernan.github.io/rasterpic/
+#       - text: "pkgdev"
+#         href: https://dieghernan.github.io/pkgdev/
+#       - text: "resmush"
+#         href: https://dieghernan.github.io/resmush/
 
