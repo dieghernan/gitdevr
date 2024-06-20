@@ -1,6 +1,6 @@
 pandoc: 3.1.11
 pkgdown: 2.0.9.9000
-pkgdown_sha: 076d915caef1c47b4a2ba8774625f8ad880ef76a
+pkgdown_sha: aed6c2d3a13913cbe2cc7c39a4472d2d349dcdd5
 articles:
   bullets: bullets.html
   code: code.html
@@ -8,7 +8,7 @@ articles:
   headings: headings.html
   articles/highlight_test: highlight_test.html
   precompute: precompute.html
-last_built: 2024-06-18T16:35Z
+last_built: 2024-06-20T21:16Z
 urls:
   reference: https://dieghernan.github.io/gitdevr/reference
   article: https://dieghernan.github.io/gitdevr/articles
