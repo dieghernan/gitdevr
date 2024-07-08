@@ -22,3 +22,6 @@
 ^CONTRIBUTING\.md$
 ^Rplots\.pdf$
 ^codecov\.yml$
+^gitdevr\.Rcheck$
+^gitdevr.*\.tar\.gz$
+^gitdevr.*\.tgz$
