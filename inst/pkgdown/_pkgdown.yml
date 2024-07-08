@@ -27,6 +27,7 @@ template:
     code_font: ["Roboto Mono", "monospace"]
     headings-font-weight: 800
     link-decoration: "none"
+    input-bg: "#212529"
 
 figures:
   dpi: 300
