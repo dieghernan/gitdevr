@@ -52,6 +52,7 @@ references:
     given-names: Salim
     orcid: https://orcid.org/0000-0002-5329-5987
   year: '2024'
+  doi: 10.32614/CRAN.package.pkgdown
   version: '>= 2.0.0'
 - type: software
   title: knitr
@@ -65,6 +66,7 @@ references:
     email: xie@yihui.name
     orcid: https://orcid.org/0000-0003-0645-5666
   year: '2024'
+  doi: 10.32614/CRAN.package.knitr
 - type: software
   title: pkgdev
   abstract: 'pkgdev: Helpers to Develop a Package using GitHub Actions'
@@ -119,4 +121,5 @@ references:
     email: rich@posit.co
     orcid: https://orcid.org/0000-0003-3925-190X
   year: '2024'
+  doi: 10.32614/CRAN.package.rmarkdown
 
