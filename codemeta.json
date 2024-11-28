@@ -90,9 +90,9 @@
     },
     "SystemRequirements": null
   },
-  "fileSize": "70.397KB",
+  "keywords": ["pkgdown", "pkgdown-template", "r", "r-package"],
+  "fileSize": "70.46KB",
   "readme": "https://github.com/dieghernan/gitdevr/blob/main/README.md",
   "contIntegration": "https://github.com/dieghernan/gitdevr/actions/workflows/check-simple.yaml",
-  "developmentStatus": "https://lifecycle.r-lib.org/articles/stages.html#experimental",
-  "keywords": ["pkgdown", "pkgdown-template", "r", "r-package"]
+  "developmentStatus": "https://lifecycle.r-lib.org/articles/stages.html#experimental"
 }
