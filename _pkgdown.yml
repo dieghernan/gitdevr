@@ -11,7 +11,7 @@ development:
 navbar:
   structure:
     left:  [intro, reference, articles, news]
-    right: [search, packages, github, donate]
+    right: [search, packages, twitter, github, donate]
   components:
     packages:
       text: "Packages"
