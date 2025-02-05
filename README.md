@@ -80,7 +80,7 @@ specification. Contributions of any kind are welcome!
 <tr>
 <td align="center">
 <a href="https://github.com/dieghernan">
-<img src="https://avatars.githubusercontent.com/u/25656809?v=4" width="100px;" alt=""/>
+<img src="https://avatars.githubusercontent.com/u/25656809?v=4" width="100px;" class="ctb_avatar" alt=""/>
 </a><br>
 <a href="https://github.com/dieghernan/gitdevr/commits?author=dieghernan">dieghernan</a>
 </td>
