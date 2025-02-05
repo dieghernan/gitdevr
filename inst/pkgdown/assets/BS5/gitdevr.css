@@ -188,6 +188,7 @@ a>code {
 .ctb_avatar {
     border: 1px solid;
     border-radius: 50%;
+    border-color: var(--bs-dark) !important;
 }
 
 /* --- Code --- */
