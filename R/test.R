@@ -72,6 +72,4 @@
 
 #' @param x A value
 #' @return Nothing
-test <- function(x = 1) {
-
-}
+test <- function(x = 1) {}
