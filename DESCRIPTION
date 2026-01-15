@@ -11,6 +11,8 @@ License: MIT + file LICENSE
 URL: https://dieghernan.github.io/gitdevr/,
     https://github.com/dieghernan/gitdevr
 BugReports: https://github.com/dieghernan/gitdevr/issues
+Depends: 
+    R (>= 4.1.0)
 Imports: 
     pkgdown (>= 2.0.0)
 Suggests: 
