@@ -25,3 +25,6 @@
 ^gitdevr\.Rcheck$
 ^gitdevr.*\.tar\.gz$
 ^gitdevr.*\.tgz$
+^jarl\.toml$
+^[.]?air[.]toml$
+^\.vscode$

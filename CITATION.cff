@@ -30,6 +30,17 @@ keywords:
 - r-package
 references:
 - type: software
+  title: 'R: A Language and Environment for Statistical Computing'
+  notes: Depends
+  url: https://www.R-project.org/
+  authors:
+  - name: R Core Team
+  institution:
+    name: R Foundation for Statistical Computing
+    address: Vienna, Austria
+  year: '2026'
+  version: '>= 4.1.0'
+- type: software
   title: pkgdown
   abstract: 'pkgdown: Make Static HTML Documentation for a Package'
   notes: Imports
@@ -51,7 +62,7 @@ references:
   - family-names: Brüggemann
     given-names: Salim
     orcid: https://orcid.org/0000-0002-5329-5987
-  year: '2025'
+  year: '2026'
   doi: 10.32614/CRAN.package.pkgdown
   version: '>= 2.0.0'
 - type: software
@@ -65,7 +76,7 @@ references:
     given-names: Yihui
     email: xie@yihui.name
     orcid: https://orcid.org/0000-0003-0645-5666
-  year: '2025'
+  year: '2026'
   doi: 10.32614/CRAN.package.knitr
 - type: software
   title: pkgdev
@@ -77,7 +88,7 @@ references:
     given-names: Diego
     email: diego.hernangomezherrero@gmail.com
     orcid: https://orcid.org/0000-0001-8457-4658
-  year: '2025'
+  year: '2026'
 - type: software
   title: rmarkdown
   abstract: 'rmarkdown: Dynamic Documents for R'
@@ -120,6 +131,6 @@ references:
     given-names: Richard
     email: rich@posit.co
     orcid: https://orcid.org/0000-0003-3925-190X
-  year: '2025'
+  year: '2026'
   doi: 10.32614/CRAN.package.rmarkdown
 

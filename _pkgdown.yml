@@ -1,6 +1,5 @@
 url: 'https://dieghernan.github.io/gitdevr'
 
-
 template:
   bootstrap: 5
   package: gitdevr
@@ -38,4 +37,3 @@ navbar:
       icon: fa-hand-holding-dollar
       href: https://ko-fi.com/dieghernan
       aria-label: Buy me a coffee
-
