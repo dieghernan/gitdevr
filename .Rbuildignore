@@ -28,3 +28,5 @@
 ^jarl\.toml$
 ^[.]?air[.]toml$
 ^\.vscode$
+/.quarto/
+[.]quarto_ipynb$

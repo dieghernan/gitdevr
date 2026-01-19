@@ -27,3 +27,5 @@ docs/
 .DS_Store
 .quarto
 Rplots.pdf
+/.quarto/
+**/*.quarto_ipynb
