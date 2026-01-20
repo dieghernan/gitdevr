@@ -22,9 +22,9 @@ template:
     body-color: "#24292f"
     navbar-bg-dark: "#22272e"
     navbar-dark-color: "#fff"
-    heading_font: [ "Inter Tight", "Roboto" ]
-    base_font: [ "Inter", "Roboto" ]
-    code_font: [ "Fira Code", "monospace" ]
+    heading_font: ["Inter Tight", "Roboto"]
+    base_font: ["Inter", "Roboto"]
+    code_font: ["Fira Code", "monospace"]
     headings-font-weight: 800
     link-decoration: "none"
 
