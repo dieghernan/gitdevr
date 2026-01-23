@@ -30,3 +30,4 @@
 ^\.vscode$
 /.quarto/
 [.]quarto_ipynb$
+^data-raw$
