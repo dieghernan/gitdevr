@@ -37,6 +37,7 @@ template:
           source: google
         - family: Inter Tight
           source: google
+          weight: [400, 700, 800]
         - family: Fira Code
           source: google
         - family: Roboto
