@@ -9,24 +9,43 @@ template:
       creator: '@dhernangomez'
       card: summary_large_image
   bslib:
-    primary: "#22272e"
-    secondary: "#6A788A"
-    input-placeholder-color: "#6A788A"
-    link-color: "#0969da"
-    success: "#2A874B"
-    warning: "#C15807"
-    danger: "#cf222e"
-    info: "#8250df"
-    black: "#0d1117"
-    body-bg: "#fff"
-    body-color: "#24292f"
-    navbar-bg-dark: "#22272e"
-    navbar-dark-color: "#fff"
-    heading_font: ["Inter Tight", "Roboto"]
-    base_font: ["Inter", "Roboto"]
-    code_font: ["Fira Code", "monospace"]
-    headings-font-weight: 800
-    link-decoration: "none"
+    brand:
+      color:
+        palette:
+          black: "#0d1117"
+          gray: "#6A788A"
+          green: "#2A874B"
+          orange: "#C15807"
+          purple: "#8250df"
+          red: "#cf222e"
+        primary: "#22272e"
+        secondary: gray
+        success: green
+        warning: orange
+        danger: red
+        info: purple
+
+      typography:
+        fonts:
+        - family: Inter
+          source: google
+        - family: Inter Tight
+          source: google
+          weight: [800]
+        - family: Fira Code
+          source: google
+        base: Inter
+        headings:
+          family: Inter Tight
+          weight: 800
+        monospace: Fira Code
+
+      defaults:
+        bootstrap:
+          defaults:
+            link-decoration: none
+            navbar-light-bg: "#22272e"
+            navbar-light-color: "#fff"
 
 figures:
   dpi: 300
@@ -35,3 +54,13 @@ figures:
 authors:
   Diego Hernangómez:
     href: https://dieghernan.github.io/
+
+footer:
+  structure:
+    left:
+    - developed_by
+    right: built_with_gitdevr
+  components:
+    built_with_gitdevr: >
+      Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> using the
+      <a href="https://dieghernan.github.io/gitdevr/">gitdevr</a> template.

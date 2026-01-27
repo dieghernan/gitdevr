@@ -3,6 +3,8 @@ url: 'https://dieghernan.github.io/gitdevr'
 template:
   bootstrap: 5
   package: gitdevr
+  light-switch: true
+  theme-dark: breezedark
 
 development:
   mode: auto
@@ -10,7 +12,7 @@ development:
 navbar:
   structure:
     left: [intro, reference, articles, news]
-    right: [search, packages, twitter, github, donate]
+    right: [search, packages, twitter, github, donate, lightswitch]
   components:
     packages:
       text: "Packages"

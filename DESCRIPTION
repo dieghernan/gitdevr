@@ -1,7 +1,7 @@
 Package: gitdevr
 Title: My 'pkgdown' Template
 Version: 0.0.0.9000
-Authors@R: 
+Authors@R:
     person("Diego", "Hernangómez", , "diego.hernangomezherrero@gmail.com", role = c("aut", "cre", "cph"),
            comment = c(ORCID = "0000-0001-8457-4658"))
 Description: A 'pkgdown' template for my packages. Template based on skin
@@ -11,15 +11,16 @@ License: MIT + file LICENSE
 URL: https://dieghernan.github.io/gitdevr/,
     https://github.com/dieghernan/gitdevr
 BugReports: https://github.com/dieghernan/gitdevr/issues
-Depends: 
+Depends:
     R (>= 4.1.0)
-Imports: 
+Imports:
+    brand.yml,
     pkgdown (>= 2.0.0)
-Suggests: 
+Suggests:
     knitr,
     pkgdev,
     rmarkdown
-VignetteBuilder: 
+VignetteBuilder:
     knitr
 Remotes:
     dieghernan/pkgdev

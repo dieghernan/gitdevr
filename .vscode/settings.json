@@ -16,12 +16,12 @@
   "better-yaml.directives": false,
   "better-yaml.flowCollectionPadding": false,
   "better-yaml.lineWidth": 80,
-  "yaml.completion": true,
-  "yaml.format.printWidth": 80,
-  "yaml.validate": true,
-  "positron.r.useNativePipe": true,
   "cSpell.words": [
     "pkgdown",
     "seealso"
-  ]
+  ],
+  "positron.r.useNativePipe": true,
+  "yaml.completion": true,
+  "yaml.format.printWidth": 80,
+  "yaml.validate": true
 }
