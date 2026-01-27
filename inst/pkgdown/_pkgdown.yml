@@ -13,21 +13,23 @@ template:
     brand:
       color:
         palette:
-          black: "#0d1117"
-          gray: "#6A788A"
+          dark: "#24292f"
+          black: "#22272e"
+          white: "#ffffff"
+          gray: "#6c757d"
+          light: "#f8f9fa"
           blue: "#0969da"
-          green: "#2A874B"
-          orange: "#C15807"
+          green: "#2a874b"
+          orange: "#c15807"
           purple: "#8250df"
           red: "#cf222e"
-          white: "#ffffff"
-        primary: blue
+        primary: black
         secondary: gray
         success: green
         warning: orange
         danger: red
         info: purple
-        foreground: "#24292f"
+        foreground: dark
         background: white
       typography:
         fonts:
@@ -35,21 +37,25 @@ template:
           source: google
         - family: Inter Tight
           source: google
-          weight: [800]
+          weight: [400, 800]
         - family: Fira Code
+          source: google
+        - family: Roboto
           source: google
         base: Inter
         headings:
           family: Inter Tight
           weight: 800
         monospace: Fira Code
+        link:
+          color: blue
+          decoration: "none"
       defaults:
         bootstrap:
           defaults:
-            link-decoration: none
             navbar-light-bg: "#22272e"
-            navbar-light-color: "#fff"
-            input-placeholder-color: "#6A788A"
+            navbar-light-color: "#ffffff"
+            input-placeholder-color: "#6a788a"
 
 figures:
   dpi: 300
