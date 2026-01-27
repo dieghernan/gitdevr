@@ -38,3 +38,4 @@ defaults:
       link-decoration: none
       navbar-light-bg: "#22272e"
       navbar-light-color: "#fff"
+      input-placeholder-color: "#6A788A"
