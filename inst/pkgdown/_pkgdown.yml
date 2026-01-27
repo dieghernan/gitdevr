@@ -4,6 +4,7 @@ navbar:
 
 template:
   bootstrap: 5
+  light-switch: true
   opengraph:
     twitter:
       creator: '@dhernangomez'
@@ -24,7 +25,6 @@ template:
         warning: orange
         danger: red
         info: purple
-
       typography:
         fonts:
         - family: Inter
@@ -39,7 +39,6 @@ template:
           family: Inter Tight
           weight: 800
         monospace: Fira Code
-
       defaults:
         bootstrap:
           defaults:
