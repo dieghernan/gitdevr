@@ -15,11 +15,12 @@ template:
         palette:
           black: "#0d1117"
           gray: "#6A788A"
+          blue: "#0d6efd"
           green: "#2A874B"
           orange: "#C15807"
           purple: "#8250df"
           red: "#cf222e"
-        primary: "#22272e"
+        primary: blue
         secondary: gray
         success: green
         warning: orange
