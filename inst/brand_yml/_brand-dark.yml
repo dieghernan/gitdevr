@@ -1,12 +1,4 @@
-meta:
-  name: gitdevr
-  description: >
-    A pkgdown template for my packages. Template based on skin GitDev of my
-    Jekyll template chulapa <https://dieghernan.github.io/chulapa/skins/gitdev>.
-  links:
-    home: https://dieghernan.github.io/gitdevr
-    github: https://github.com/dieghernan/gitdevr
-    twitter: https://x.com/dhernangomez
+# Not fully tested yet
 
 logo:
   images:
@@ -18,23 +10,23 @@ logo:
 color:
   palette:
     dark: "#24292f"
-    black: "#22272e"
+    black: "#383d43"
     white: "#ffffff"
     gray: "#6c757d"
     light: "#f8f9fa"
-    blue: "#0969da"
-    green: "#2a874b"
-    orange: "#c15807"
-    purple: "#8250df"
-    red: "#cf222e"
+    blue: "#2b8ffd"
+    green: "#2da44e"
+    orange: "#d4a72c"
+    purple: "#9686be"
+    red: "#d86f75"
   primary: black
   secondary: gray
   success: green
   warning: orange
   danger: red
   info: purple
-  foreground: dark
-  background: white
+  foreground: white
+  background: dark
 
 typography:
   fonts:
@@ -58,6 +50,6 @@ typography:
 defaults:
   bootstrap:
     defaults:
-      navbar-light-bg: "#22272e"
-      navbar-light-color: "#ffffff"
-      input-placeholder-color: "#6a788a"
+      navbar-bg: "#24292f"
+      navbar-color: "#ffffff"
+      input-placeholder-color: "#8b949e"
