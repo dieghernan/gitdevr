@@ -29,7 +29,6 @@ template:
         info: purple
         foreground: "#24292f"
         background: white
-        link: red
       typography:
         fonts:
         - family: Inter
