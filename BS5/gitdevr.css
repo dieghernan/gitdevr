@@ -44,7 +44,7 @@ main img {
 }
 
 #navbar .dropdown-menu .dropdown-item {
-	color: #fff !important;
+	color: #fff;
 	font-weight: 800;
 }
 
@@ -53,12 +53,25 @@ main img {
 	color: #6a788a !important;
 }
 
-#navbar .dropdown-menu .dropdown-item:hover,
-#navbar .dropdown-menu .dropdown-item:focus {
-	color: #6a788a !important;
-	background-color: #f8f9fa;
+#navbar .nav-link {
+	color: var(--brand-white);
 }
 
+#navbar .dropdown-menu .dropdown-item:hover,
+#navbar .dropdown-menu .dropdown-item:focus,
+#navbar .dropdown-menu .dropdown-item.active:hover,
+#navbar .dropdown-menu .dropdown-item.active:focus {
+	color: #6a788a;
+	background-color: #f8f9fa;
+	opacity: 1;
+}
+
+#navbar .nav-item.active .nav-link,
+#navbar .dropdown-menu .dropdown-item.active,
+#navbar .dropdown-menu .dropdown-item.active .fa {
+	color: #d3d4d5;
+	opacity: 1;
+}
 .navbar-toggler {
 	border: none;
 }
@@ -209,7 +222,7 @@ code {
 
 	code {
 		color: #e75ca2;
-		background-color: RGBA(var(--bs-emphasis-color-rgb), 0.04);
+		background-color: rgba(var(--bs-emphasis-color-rgb), 0.04);
 	}
 }
 
@@ -228,7 +241,7 @@ code {
 
 /* --- Highlighter based in gitdevr --- */
 pre {
-	background-color: RGBA(var(--bs-emphasis-color-rgb), 0.04);
+	background-color: rgba(var(--bs-emphasis-color-rgb), 0.04);
 	color: var(--bs-primary);
 }
 
@@ -397,7 +410,7 @@ pre code span.wa
 
 [data-bs-theme="dark"] {
 	pre {
-		background-color: RGBA(var(--bs-emphasis-color-rgb), 0.04);
+		background-color: rgba(var(--bs-emphasis-color-rgb), 0.04);
 		color: var(--bs-light-text-emphasis);
 	}
 
