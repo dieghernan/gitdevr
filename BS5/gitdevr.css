@@ -88,6 +88,11 @@ footer {
 	font-weight: 700;
 }
 
+/* Dark mode footer */
+[data-bs-theme="dark"] footer {
+	background-color: #22272e !important;
+}
+
 footer a {
 	color: #58a6ff;
 	text-decoration: none;
