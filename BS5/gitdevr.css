@@ -167,12 +167,12 @@ img.logo {
 	display: inline;
 }
 
-/* Hack to reduce brightness of plots in dark mode */
+/* Hack to reduce color in dark mode */
 [data-bs-theme="dark"] img.r-plt,
 [data-bs-theme="dark"] pre .r-plt.img img,
 [data-bs-theme="dark"] .cell-output-display img,
 [data-bs-theme="dark"] .html-widget {
-	filter: brightness(66%) !important;
+	filter: grayscale(33%) !important;
 }
 
 blockquote {
