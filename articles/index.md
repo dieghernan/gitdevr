@@ -11,3 +11,5 @@
   highlighter](https://dieghernan.github.io/gitdevr/articles/highlight_test.md):
 - [Example of a precomputed
   vignette](https://dieghernan.github.io/gitdevr/articles/precompute.md):
+- [reactable
+  example](https://dieghernan.github.io/gitdevr/articles/reactable.md):
