@@ -44,8 +44,8 @@ articles:
   desc: >
     These articles are used to test various <a
     href="https://CRAN.R-project.org/package=pkgdown"
-    class="external-link"><span class="pkg">pkgdown</span> features that can not
-    easily be tested automatically.
+    class="external-link"><span class="pkg">pkgdown</span></a> features that can
+    not easily be tested automatically.
   contents:
   - starts_with("test")
 
