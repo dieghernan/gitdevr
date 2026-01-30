@@ -592,7 +592,9 @@ pre code span.wa
 /* Dark reactable */
 
 [data-bs-theme="dark"] {
-
+	.reactable.html-widget {
+		filter: none !important;
+	}
 	.Reactable a {
 		color: #2b8ffd;
 	}
