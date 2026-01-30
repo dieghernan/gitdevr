@@ -21,10 +21,12 @@ Suggests:
     pkgdev,
     rmarkdown
 VignetteBuilder:
-    knitr
+    knitr,
+    quarto
 Remotes:
     dieghernan/pkgdev
-Config/Needs/website: dieghernan/gitdevr, ggplot2, rmarkdown, reactable
+Config/Needs/website: dieghernan/gitdevr, ggplot2, rmarkdown, reactable,
+    usethis, servr, diffviewer
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.3

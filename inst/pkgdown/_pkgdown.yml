@@ -23,6 +23,14 @@ template:
           orange: "#c15807"
           purple: "#8250df"
           red: "#cf222e"
+          code: "#e83e8c"
+          dk-black: "#373e47"
+          dk-blue:  "#2b8ffd"
+          dk-green: "#2da44e"
+          dk-orange: "#d4a72c"
+          dk-red: "#d86f75"
+          dk-purple: "#9686be"
+          dk-code: "#e75ca2"
         primary: black
         secondary: gray
         success: green
@@ -55,7 +63,22 @@ template:
           defaults:
             navbar-light-bg: "#22272e"
             navbar-light-color: "#ffffff"
+            navbar-light-toggler-border-color: "#22272e"
+            navbar-light-brand-color: "#ffffff"
+            navbar-light-brand-hover-color: "#ffffff"
+            navbar-light-hover-color: "#6a788a"
+            navbar-light-active-color: "#d3d4d5"
+            navbar-dark-bg: "#24292f"
+            navbar-dark-brand-color: "#ffffff"
+            navbar-dark-brand-hover-color: "#ffffff"
+            navbar-dark-toggler-border-color: "#24292f"
+            navbar-dark-hover-color: "#8b949e"
+            navbar-dark-active-color: "#d3d4d5"
             input-placeholder-color: "#6a788a"
+            link-decoration: none
+            pkgdown-footer-color: "#24292f"
+            pkgdown-footer-bg: "#8b949e"
+
 
 figures:
   dpi: 300
@@ -74,3 +97,4 @@ footer:
     built_with_gitdevr: >
       Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> using the
       <a href="https://dieghernan.github.io/gitdevr/">gitdevr</a> template.
+

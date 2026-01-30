@@ -73,3 +73,4 @@ jobs:
       with:
         sarif_file: lintr-results.sarif
         wait-for-processing: true
+
