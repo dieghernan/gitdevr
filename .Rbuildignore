@@ -31,3 +31,8 @@
 /.quarto/
 [.]quarto_ipynb$
 ^data-raw$
+^vignettes/articles/\.quarto$
+^vignettes/articles/*_files$
+^vignettes/\.quarto$
+^vignettes/*_files$
+^vignettes/test-precompute\.Rmd\.orig$

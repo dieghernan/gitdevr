@@ -38,3 +38,15 @@ navbar:
       href: https://ko-fi.com/dieghernan
       aria-label: Buy me a coffee
 
+articles:
+- title: Testing
+  navbar: Tests
+  desc: >
+    These articles are used to test various <a
+    href="https://CRAN.R-project.org/package=pkgdown"
+    class="external-link"><span class="pkg">pkgdown</span> features that can not
+    easily be tested automatically.
+  contents:
+  - starts_with("test")
+
+  - starts_with("articles/test")

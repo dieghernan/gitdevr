@@ -1,7 +1,7 @@
 ---
 title: quarto features
 knitr:
-  opts_chunk: 
+  opts_chunk:
     collapse: true
     comment: '#>'
 bibliography: jss.bib
@@ -9,11 +9,11 @@ bibliography: jss.bib
 
 ## Citations
 
-* Citation: @JSSv059i10
+-   Citation: @JSSv059i10
 
 ## Code annotations
 
-```r
+``` r
 library(tidyverse)
 library(palmerpenguins)
 penguins |>                                      # <1>
@@ -22,8 +22,9 @@ penguins |>                                      # <1>
     bill_area  = bill_depth_mm * bill_length_mm  # <2>
   )                                              # <2>
 ```
-1. Take `penguins`, and then,
-2. add new columns for the bill ratio and bill area.
+
+1.  Take `penguins`, and then,
+2.  add new columns for the bill ratio and bill area.
 
 ## Diagrams
 
@@ -49,6 +50,6 @@ diffviewer::visual_diff(path1, path2)
 
 ## Keyboard
 
-* Keyboard shortcut: {{< kbd Shift-Ctrl-P >}}
+-   Keyboard shortcut: {{< kbd Shift-Ctrl-P >}}
 
 ## References

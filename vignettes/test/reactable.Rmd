@@ -23,6 +23,7 @@ reactable(
   onClick = "select",
   rowStyle = list(cursor = "pointer"),
   filterable = TRUE,
+  highlight = TRUE,
   searchable = TRUE,
   showPageSizeOptions = TRUE,
   striped = TRUE,
