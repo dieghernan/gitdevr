@@ -19,6 +19,7 @@ Imports:
 Suggests:
     knitr,
     pkgdev,
+    quarto,
     rmarkdown
 VignetteBuilder:
     knitr,
