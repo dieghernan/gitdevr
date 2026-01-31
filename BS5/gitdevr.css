@@ -100,6 +100,7 @@ main img {
 /* ---Navbar tweaks--- */
 
 .navbar-brand,
+#navbar,
 .navbar .dropdown-item {
 	font-family: "Inter Tight", Roboto;
 	font-weight: 800;
@@ -137,8 +138,8 @@ main img {
 }
 
 .algolia-autocomplete .aa-dropdown-menu {
-	color: var(--bs-navbar-color);
-	background-color: var(--brand-black);
+	color: var(--bs-body-color);
+	background-color: var(--bs-body-bg);
 }
 
 /* ---Nav pills--- */
