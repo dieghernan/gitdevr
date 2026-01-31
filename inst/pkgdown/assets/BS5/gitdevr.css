@@ -114,6 +114,7 @@ main img {
 
 .algolia-autocomplete .aa-dropdown-menu {
 	color: var(--bs-navbar-color);
+	background-color: var(--brand-black);
 }
 
 /* ---Footer--- */
@@ -429,11 +430,6 @@ pre code span.wa
 
 /* --- Dark Mode --- */
 [data-bs-theme="dark"] {
-	a.external-link:not(:has(*)),
-	a.uri:not(:has(*)) {
-		color: #2b8ffd;
-	}
-
 	.nav-item.active .nav-link {
 		background: transparent;
 	}
