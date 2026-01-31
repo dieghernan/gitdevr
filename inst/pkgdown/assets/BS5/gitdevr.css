@@ -140,11 +140,14 @@ main img {
 
 /* --- Search ---*/
 .algolia-autocomplete .aa-dropdown-menu {
-	color: var(--bs-navbar-color);
-	background-color: var(--brand-black);
+	color: var(--bs-body-color);
+	background-color: var(--bs-body-bg);
 }
+
 mark,
 .mark {
+	font-family: "Inter Tight", Roboto;
+	font-weight: 800;
 	color: var(--bs-body-color);
 	background: linear-gradient(
 		-100deg,
