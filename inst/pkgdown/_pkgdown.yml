@@ -92,8 +92,6 @@ template:
             navbar-dark-hover-color: "#6a788a"
             navbar-dark-active-color: "#d3d4d5"
             input-placeholder-color: "#6a788a"
-            nav-link-color: "#6c757d"
-            nav-link-font-weight: 800
             link-decoration: none
             pkgdown-footer-bg: "#0d1117"
             pkgdown-footer-color: "#8b949e"
@@ -106,6 +104,8 @@ template:
             nav-pills-link-active-bg: "#24292f"
             nav-pills-link-active-color: "#ffffff"
             nav-link-hover-color: "#6a788a"
+            nav-link-color: "#6c757d"
+            nav-link-font-weight: 800
 
 figures:
   dpi: 300

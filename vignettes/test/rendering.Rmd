@@ -49,7 +49,7 @@ Second paragraph
 
 <details>
 <summary>Some R code</summary>
-  
+
 ```{r}
 1 + 2
 ```
@@ -66,6 +66,13 @@ Second paragraph
 $$f(x) = \dfrac{1}{\sqrt{2\pi\sigma^2}} e^{-\frac{(x-\mu^2)}{2\sigma^2}}$$
 
 Inline equations: $y=x^2$
+
+## Search
+
+<mark>This text should be</mark> marked as highlighted by search.
+
+<div class="mark">This text too.</div>
+
 
 ## Code
 
@@ -121,7 +128,8 @@ cat(cli::col_blue("This is blue\n"), "\n")
 message(cli::col_green("This is green"))
 
 warning(cli::style_bold("This is bold"))
-```
+`
+``
 Some text
 
 ```{r}
@@ -207,4 +215,4 @@ Guten tag.
 
 This word should be broken across multiple lines on mobile, rather than making the page scroll horizontally:
 
-Ccccccccccccaaaaaaaaaaaaaaatttttttttttttttttssssssssssssssss 
+Ccccccccccccaaaaaaaaaaaaaaatttttttttttttttttssssssssssssssss
