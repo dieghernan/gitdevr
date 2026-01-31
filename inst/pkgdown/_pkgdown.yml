@@ -69,6 +69,7 @@ template:
             navbar-light-hover-color: "#6a788a"
             navbar-light-active-color: "#d3d4d5"
             navbar-dark-bg: "#24292f"
+            navbar-dark-color: "#ffffff"
             navbar-dark-brand-color: "#ffffff"
             navbar-dark-brand-hover-color: "#ffffff"
             navbar-dark-toggler-border-color: "#24292f"

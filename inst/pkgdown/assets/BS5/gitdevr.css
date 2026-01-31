@@ -5,6 +5,17 @@
 	--bs-body-bg: #24292f;
 	--bs-body-bg-rgb: 36, 41, 47;
 	--bs-body-color: #fff;
+	--bs-primary: #383d43;
+	--bs-secondary: #6c757d;
+	--bs-success: #2da44e;
+	--bs-info: #9686be;
+	--bs-warning: #d4a72c;
+	--bs-danger: #d86f75;
+	--bs-light: #f8f9fa;
+	--bs-dark: #343a40;
+	--bs-link: #2b8ffd;
+	--bs-link-hover: #025cc0;
+
 	--bs-body-color-rgb: 255, 255, 255;
 	--bs-primary-color: #383d43;
 	--bs-primary-color-rgb: 56.1, 60.6, 66.9;
@@ -37,10 +48,13 @@
 	--brand-code: #e75ca2;
 }
 
-.navbar-dark,
-:where([data-bs-theme="dark"]) .navbar,
-.navbar[data-bs-theme="dark"] {
-	--bs-navbar-color: var(--bs-white);
+.dropdown-menu {
+	--bs-dropdown-bg: var(--brand-black);
+	--bs-dropdown-link-color: var(--bs-navbar-color);
+	--bs-dropdown-link-hover-color: #6a788a;
+	--bs-dropdown-link-hover-bg: var(--bs-dropdown-bg);
+	--bs-dropdown-header-color: var(--bs-dropdown-link-hover-color);
+	--bs-dropdown-divider-bg: rgba(var(--bs-secondary-rgb), 0.5);
 }
 
 /* ---Images and captions figure spacing--- */
@@ -51,7 +65,7 @@ main img {
 
 .caption,
 .figure {
-	color: var(--bs-secondary-color);
+	color: var(--bs-secondary);
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 0.5rem;
@@ -61,44 +75,32 @@ main img {
 
 /* ---Navbar tweaks--- */
 
-.navbar {
+.navbar-brand,
+#navbar,
+.navbar .dropdown-item {
 	font-family: "Inter Tight", Roboto;
 	font-weight: 800;
 }
 
 .navbar .text-muted {
-	color: #c6ced8 !important;
+	color: var(--bs-gray) !important;
 }
 
-#navbar .dropdown-menu {
-	background-color: var(--brand-black);
-}
-
-#navbar .dropdown-menu .dropdown-item {
-	color: #fff;
-	font-weight: 800;
-}
-
+/* Hovers */
 #navbar .nav-link:hover,
 #navbar .nav-link:focus {
 	color: #6a788a !important;
 }
 
-#navbar .nav-link {
-	color: var(--brand-white);
-}
-
-#navbar .dropdown-menu .dropdown-item:hover,
-#navbar .dropdown-menu .dropdown-item:focus,
 #navbar .dropdown-menu .dropdown-item.active:hover,
 #navbar .dropdown-menu .dropdown-item.active:focus {
 	color: #6a788a;
-	background-color: #f8f9fa;
 }
 
+/* Actives */
 #navbar .nav-item.active .nav-link,
 #navbar .dropdown-menu .dropdown-item.active {
-	color: #d3d4d5;
+	color: var(--bs-gray-200);
 }
 
 #navbar .dropdown-menu .dropdown-item .fa {
@@ -111,13 +113,7 @@ main img {
 }
 
 .algolia-autocomplete .aa-dropdown-menu {
-	color: #22272e;
-}
-
-[data-bs-theme="dark"] {
-	.algolia-autocomplete .aa-dropdown-menu {
-		color: rgba(255, 255, 255, 0.55);
-	}
+	color: var(--bs-navbar-color);
 }
 
 /* ---Footer--- */
