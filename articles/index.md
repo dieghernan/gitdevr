@@ -1,5 +1,17 @@
 # Articles
 
+### Precomputed
+
+- [Example of a precomputed
+  vignette](https://dieghernan.github.io/gitdevr/articles/precompute.md):
+
+### Menu
+
+Testing a menu bar in the navbar
+
+- [Bullets](https://dieghernan.github.io/gitdevr/articles/menu/bullets.md):
+- [Code](https://dieghernan.github.io/gitdevr/articles/menu/code.md):
+
 ### Testing
 
 These articles are used to test various
@@ -26,13 +38,6 @@ not easily be tested automatically.
 
 - [A short
   page](https://dieghernan.github.io/gitdevr/articles/test/short.md):
-
-- [Bullets](https://dieghernan.github.io/gitdevr/articles/test-bullets.md):
-
-- [Code](https://dieghernan.github.io/gitdevr/articles/test-code.md):
-
-- [Example of a precomputed
-  vignette](https://dieghernan.github.io/gitdevr/articles/test-precompute.md):
 
 - [quarto
   vignettes](https://dieghernan.github.io/gitdevr/articles/test-quarto.md):

@@ -2,19 +2,19 @@ pandoc: 3.1.11
 pkgdown: 2.2.0
 pkgdown_sha: ~
 articles:
+  menu/bullets: menu/bullets.html
+  menu/code: menu/code.html
   test/ggplot2: test/ggplot2.html
   test/highlight: test/highlight.html
   test/long-toc: test/long-toc.html
+  precompute: precompute.html
   test/quarto-features: test/quarto-features.html
   test/reactable: test/reactable.html
   test/rendering: test/rendering.html
   test/short: test/short.html
-  test-bullets: test-bullets.html
-  test-code: test-code.html
-  test-precompute: test-precompute.html
   test-quarto: test-quarto.html
   test/widgets: test/widgets.html
-last_built: 2026-01-30T20:48Z
+last_built: 2026-01-31T07:17Z
 urls:
   reference: https://dieghernan.github.io/gitdevr/reference
   article: https://dieghernan.github.io/gitdevr/articles
