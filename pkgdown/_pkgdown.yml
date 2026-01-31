@@ -39,8 +39,16 @@ navbar:
       aria-label: Buy me a coffee
 
 articles:
+- title: Precomputed
+  navbar: Precomputed
+  contents:
+  - precompute
+- title: Menu
+  navbar: Menu bar
+  desc: Testing a menu bar in the navbar
+  contents:
+  - starts_with("menu")
 - title: Testing
-  navbar: Tests
   desc: >
     These articles are used to test various <a
     href="https://CRAN.R-project.org/package=pkgdown"
@@ -48,5 +56,4 @@ articles:
     not easily be tested automatically.
   contents:
   - starts_with("test")
-
   - starts_with("articles/test")

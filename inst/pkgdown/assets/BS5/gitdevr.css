@@ -1,5 +1,48 @@
 /*!  Compressed with sass R library https: //rstudio.github.io/sass/*/
 
+[data-bs-theme="dark"] {
+	color-scheme: dark;
+	--bs-body-bg: #24292f;
+	--bs-body-bg-rgb: 36, 41, 47;
+	--bs-body-color: #fff;
+	--bs-body-color-rgb: 255, 255, 255;
+	--bs-primary-color: #383d43;
+	--bs-primary-color-rgb: 56.1, 60.6, 66.9;
+	--bs-secondary-color: #6c757d;
+	--bs-secondary-color-rgb: 108, 117, 125;
+	--bs-success-color: #2da44e;
+	--bs-success-color-rgb: 45, 164, 78;
+	--bs-info-color: #9686be;
+	--bs-info-color-rgb: 150, 134, 190;
+	--bs-warning-color: #d4a72c;
+	--bs-warning-color-rgb: 212, 167, 44;
+	--bs-danger-color: #d86f75;
+	--bs-danger-color-rgb: 216, 111, 117;
+	--bs-light-color: #f8f9fa;
+	--bs-light-color-rgb: 248, 249, 250;
+	--bs-dark-color: #343a40;
+	--bs-dark-color-rgb: 52, 58, 64;
+	--bs-link-color: #2b8ffd;
+	--bs-link-color-rgb: 43, 143, 253;
+	--bs-link-hover-color: #025cc0;
+	--bs-link-hover-color-rgb: 2, 92, 192;
+
+	/* Branding */
+	--brand-black: #24292f;
+	--brand-blue: #2b8ffd;
+	--brand-green: #2da44e;
+	--brand-orange: #d4a72c;
+	--brand-red: #d86f75;
+	--brand-purple: #9686be;
+	--brand-code: #e75ca2;
+}
+
+.navbar-dark,
+:where([data-bs-theme="dark"]) .navbar,
+.navbar[data-bs-theme="dark"] {
+	--bs-navbar-color: var(--bs-white);
+}
+
 /* ---Images and captions figure spacing--- */
 main img {
 	margin-left: auto;
@@ -8,7 +51,7 @@ main img {
 
 .caption,
 .figure {
-	color: #6a788a;
+	color: var(--bs-secondary-color);
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 0.5rem;
@@ -17,34 +60,18 @@ main img {
 }
 
 /* ---Navbar tweaks--- */
-[data-bs-theme="dark"] .navbar {
-	background-color: var(--bs-body-bg) !important;
-}
 
 .navbar {
 	font-family: "Inter Tight", Roboto;
-}
-
-.navbar-brand {
 	font-weight: 800;
-	color: #fff;
 }
 
 .navbar .text-muted {
 	color: #c6ced8 !important;
 }
 
-.navbar-brand:hover,
-.navbar-brand:focus {
-	color: #fff;
-}
-
-#navbar {
-	font-weight: 800;
-}
-
 #navbar .dropdown-menu {
-	background-color: #22272e !important;
+	background-color: var(--brand-black);
 }
 
 #navbar .dropdown-menu .dropdown-item {
@@ -179,23 +206,6 @@ footer .pkgdown-footer-left {
 }
 
 /* ---Misc--- */
-/* Hack to change root variables in dark mode GitDev Dark */
-
-[data-bs-theme="dark"] {
-	color-scheme: dark;
-	--bs-body-bg: #24292f;
-	--bs-body-color: #fff;
-	--bs-primary-color: rgb(56.1, 60.6, 66.9);
-	--bs-secondary-color: #6c757d;
-	--bs-success-color: #2da44e;
-	--bs-info-color: #9686be;
-	--bs-warning-color: #d4a72c;
-	--bs-danger-color: #d86f75;
-	--bs-light-color: #f8f9fa;
-	--bs-dark-color: #343a40;
-	--bs-link-color: #2b8ffd;
-	--bs-link-hover-color: #025cc0;
-}
 
 img.logo {
 	display: none;

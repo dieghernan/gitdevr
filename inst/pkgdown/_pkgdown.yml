@@ -25,7 +25,7 @@ template:
           red: "#cf222e"
           code: "#e83e8c"
           dk-black: "#373e47"
-          dk-blue:  "#2b8ffd"
+          dk-blue: "#2b8ffd"
           dk-green: "#2da44e"
           dk-orange: "#d4a72c"
           dk-red: "#d86f75"
@@ -76,9 +76,8 @@ template:
             navbar-dark-active-color: "#d3d4d5"
             input-placeholder-color: "#6a788a"
             link-decoration: none
-            pkgdown-footer-color: "#24292f"
-            pkgdown-footer-bg: "#8b949e"
-
+            pkgdown-footer-bg: "#24292f"
+            pkgdown-footer-color: "#8b949e"
 
 figures:
   dpi: 300
@@ -97,4 +96,3 @@ footer:
     built_with_gitdevr: >
       Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> using the
       <a href="https://dieghernan.github.io/gitdevr/">gitdevr</a> template.
-
