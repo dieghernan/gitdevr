@@ -152,6 +152,7 @@ mark,
 		RGBA(var(--bs-link-color-rgb), 0.7) 95%,
 		RGBA(var(--bs-link-color-rgb), 0.1)
 	);
+	color: var(--bs-body-color);
 }
 
 /* ---Nav pills--- */
@@ -286,6 +287,7 @@ code a:any-link {
 
 a > code {
 	text-decoration: underline;
+	color: var(--bs-code-color);
 }
 
 code {
