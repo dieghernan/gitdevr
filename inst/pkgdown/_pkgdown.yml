@@ -67,6 +67,7 @@ template:
               "'Inter Tight', Roboto, system-ui, -apple-system, 'Helvetica
               Neue', Arial"
             code_font: "'Fira Code', 'Courier New', monospace"
+            code-color: "#e83e8c"
             navbar-light-bg: "#22272e"
             navbar-light-color: "#ffffff"
             navbar-light-toggler-border-color: "#22272e"
