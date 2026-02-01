@@ -73,7 +73,6 @@
 }
 
 .dropdown-menu {
-	--bs-dropdown-bg: var(--brand-black);
 	--bs-dropdown-link-active-bg: var(--bs-dropdown-bg);
 	--bs-dropdown-link-color: var(--bs-navbar-color);
 	--bs-dropdown-link-hover-color: #6a788a;
