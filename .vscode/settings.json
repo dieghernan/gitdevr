@@ -16,10 +16,6 @@
   "better-yaml.directives": false,
   "better-yaml.flowCollectionPadding": false,
   "better-yaml.lineWidth": 80,
-  "cSpell.words": [
-    "pkgdown",
-    "seealso"
-  ],
   "files.eol": "\n",
   "positron.r.useNativePipe": true,
   "yaml.completion": true,
