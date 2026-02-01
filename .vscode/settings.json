@@ -20,6 +20,7 @@
     "pkgdown",
     "seealso"
   ],
+  "files.eol": "\n",
   "positron.r.useNativePipe": true,
   "yaml.completion": true,
   "yaml.format.printWidth": 80,
