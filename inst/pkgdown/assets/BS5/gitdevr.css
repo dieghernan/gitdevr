@@ -281,18 +281,15 @@ blockquote {
 /* ---Code--- */
 code a:any-link {
 	text-decoration: underline;
-	text-decoration-color: var(--brand-code);
 	background-color: transparent !important;
 }
 
 a > code {
 	text-decoration: underline;
-	color: var(--brand-code);
 }
 
 code {
 	font-size: 87.5%;
-	color: var(--brand-code);
 	word-wrap: break-word;
 	background-color: var(--body-bg) !important;
 }

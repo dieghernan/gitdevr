@@ -68,6 +68,7 @@ template:
               Neue', Arial"
             code_font: "'Fira Code', 'Courier New', monospace"
             code-color: "#e83e8c"
+            code-color-dark: "#e75ca2"
             navbar-light-bg: "#22272e"
             navbar-light-color: "#ffffff"
             navbar-light-toggler-border-color: "#22272e"
