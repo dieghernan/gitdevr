@@ -254,9 +254,13 @@ img.logo {
 	display: inline;
 }
 
+/* Render author and date consistenly between Rmd and quarto files */
 .author,
 .date {
 	color: var(--bs-secondary);
+	font-size: var(--bs-body-font-size);
+	font-weight: var(--bs-body-font-weight);
+	margin-bottom: 0.5rem;
 }
 
 /* Hack to reduce color in dark mode */
