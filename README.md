@@ -25,7 +25,7 @@ See a preview of the template in <https://dieghernan.github.io/gitdevr/>
 You can install the developing version of **gitdevr** with:
 
 ``` r
-devtools::install_github("dieghernan/gitdevr")
+pak::pak("dieghernan/gitdevr")
 ```
 
 Alternatively, you can install **gitdevr** using the
