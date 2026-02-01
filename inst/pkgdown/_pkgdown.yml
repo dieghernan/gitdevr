@@ -97,10 +97,10 @@ template:
             link-decoration: none
             pkgdown-footer-bg: "#0d1117"
             pkgdown-footer-color: "#8b949e"
-            dropdown-bg: "22272e"
+            dropdown-bg: "#22272e"
             dropdown-border-color: "#6c757d80"
             dropdown-divider-bg: "#6c757d80"
-            dropdown-dark-bg: "24292f"
+            dropdown-dark-bg: "#24292f"
             dropdown-dark-border-color: "#6c757d80"
             dropdown-dark-divider-bg: "#6c757d80"
             nav-pills-link-active-bg: "#24292f"
