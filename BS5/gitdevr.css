@@ -254,6 +254,11 @@ img.logo {
 	display: inline;
 }
 
+.author,
+.date {
+	color: var(--bs-secondary);
+}
+
 /* Hack to reduce color in dark mode */
 [data-bs-theme="dark"] img.r-plt,
 [data-bs-theme="dark"] pre .r-plt.img img {
