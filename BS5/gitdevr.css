@@ -249,6 +249,12 @@ img.logo {
 	display: none;
 }
 
+@media (max-width: 575.98px) {
+	.btn-copy-ex {
+		right: 5px;
+	}
+}
+
 .template-home img.logo {
 	display: inline;
 }

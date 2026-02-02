@@ -76,8 +76,10 @@ you automatically.
 
 Testing a menu bar in the navbar
 
-- [Bullets](https://dieghernan.github.io/gitdevr/articles/menu/bullets.md):
-- [Code](https://dieghernan.github.io/gitdevr/articles/menu/code.md):
+- [ggplot2
+  example](https://dieghernan.github.io/gitdevr/articles/menu/ggplot2.md):
+- [Testing syntax
+  highlighter](https://dieghernan.github.io/gitdevr/articles/menu/highlight.md):
 
 ### Testing
 
@@ -85,11 +87,9 @@ These articles are used to test various
 [pkgdown](https://CRAN.R-project.org/package=pkgdown) features that can
 not easily be tested automatically.
 
-- [ggplot2
-  example](https://dieghernan.github.io/gitdevr/articles/test/ggplot2.md):
+- [Bullets](https://dieghernan.github.io/gitdevr/articles/test/bullets.md):
 
-- [Testing syntax
-  highlighter](https://dieghernan.github.io/gitdevr/articles/test/highlight.md):
+- [Code](https://dieghernan.github.io/gitdevr/articles/test/code.md):
 
 - [Long
   TOC](https://dieghernan.github.io/gitdevr/articles/test/long-toc.md):
