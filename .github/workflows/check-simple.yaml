@@ -15,7 +15,7 @@ on:
     types: [trigger-check-workflow]
   workflow_dispatch:
   workflow_run:
-    workflows: update-docs
+    workflows: [update-docs]
     types: completed
     branches: [main, master]
 
@@ -31,6 +31,7 @@ concurrency:
 jobs:
   R-CMD-check:
     runs-on: ${{ matrix.config.os }}
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
     name: ${{ matrix.config.os }} (${{ matrix.config.r }})
     strategy:
       fail-fast: false

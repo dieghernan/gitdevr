@@ -2,7 +2,7 @@
 
 <!-- README.md is generated from README.qmd. Please edit that file -->
 
-# gitdevr <a href="https://dieghernan.github.io/gitdevr"><img src="man/figures/logo.png" alt="gitdevr website" align="right" height="139"/></a>
+# gitdevr <a href="https://dieghernan.github.io/gitdevr/"><img src="man/figures/logo.png" alt="gitdevr website" align="right" height="139"/></a>
 
 <!-- badges: start -->
 
