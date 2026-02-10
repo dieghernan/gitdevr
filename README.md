@@ -1,7 +1,8 @@
 
-<!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# gitdevr <img src="man/figures/logo.png" align="right" height="139"/>
+<!-- README.md is generated from README.qmd. Please edit that file -->
+
+# gitdevr <a href="https://dieghernan.github.io/gitdevr"><img src="man/figures/logo.png" alt="gitdevr website" align="right" height="139"/></a>
 
 <!-- badges: start -->
 
@@ -33,10 +34,13 @@ Alternatively, you can install **gitdevr** using the
 
 ``` r
 # Install gitdevr in R:
-install.packages("gitdevr", repos = c(
-  "https://dieghernan.r-universe.dev",
-  "https://cloud.r-project.org"
-))
+install.packages(
+  "gitdevr",
+  repos = c(
+    "https://dieghernan.r-universe.dev",
+    "https://cloud.r-project.org"
+  )
+)
 ```
 
 ## Usage

@@ -11,7 +11,7 @@ concurrency:
 
 jobs:
   update-docs:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     env:
       GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
     steps:
@@ -25,6 +25,7 @@ jobs:
 
     - uses: r-lib/actions/setup-r-dependencies@v2
       with:
+        install-quarto: true
         extra-packages: |
           local::.
           any::rcmdcheck
@@ -61,8 +62,9 @@ jobs:
 
     - name: Update docs
       run: |
+        source("data-raw/compress_css.R")
 
-        pkgdev::update_docs(opt_dir = c("man/figures", "img", "vignettes"))
+        pkgdev::update_docs()
 
       shell: Rscript {0}
 
@@ -75,10 +77,3 @@ jobs:
         git push origin || echo "No changes to commit"
 
     - uses: r-lib/actions/check-r-package@v2
-
-    - name: Deploy package
-      run: |
-        git config --local user.name "github-actions[bot]"
-        git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
-        Rscript -e 'pkgdown::deploy_to_branch(new_process = TRUE, run_dont_run = TRUE, lazy = TRUE)'
-

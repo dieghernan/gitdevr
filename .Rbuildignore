@@ -36,3 +36,8 @@
 ^vignettes/\.quarto$
 ^vignettes/*_files$
 ^vignettes/test-precompute\.Rmd\.orig$
+^vignettes/precompute-quarto\.qmd\.orig$
+^README\.qmd$
+^inst/README\.qmd$
+^README_files$
+^README\.html$

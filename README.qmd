@@ -1,19 +1,17 @@
 ---
-output: github_document
+format: gfm
+default-image-extension: ''
+knitr:
+  opts_chunk:
+    collapse: true
+    comment: '#>'
+    fig.path: "man/figures/README-"
+    out.width: "100%"
 ---
 
-<!-- README.md is generated from README.Rmd. Please edit that file -->
+<!-- README.md is generated from README.qmd. Please edit that file -->
 
-```{r, include = FALSE}
-knitr::opts_chunk$set(
-  collapse = TRUE,
-  comment = "#>",
-  fig.path = "man/figures/README-",
-  out.width = "100%"
-)
-```
-
-# gitdevr <img src="man/figures/logo.png" align="right" height="139"/>
+# gitdevr <a href="https://dieghernan.github.io/gitdevr"><img src="man/figures/logo.png" alt="gitdevr website" align="right" height="139"/></a>
 
 <!-- badges: start -->
 
@@ -35,19 +33,25 @@ See a preview of the template in <https://dieghernan.github.io/gitdevr/>
 
 You can install the developing version of **gitdevr** with:
 
-```{r, eval=FALSE}
+```{r}
+#| eval: false
 pak::pak("dieghernan/gitdevr")
 ```
 
 Alternatively, you can install **gitdevr** using the
 [r-universe](https://dieghernan.r-universe.dev/gitdevr):
 
-```{r, eval=FALSE}
+```{r}
+#| eval: false
+
 # Install gitdevr in R:
-install.packages("gitdevr", repos = c(
-  "https://dieghernan.r-universe.dev",
-  "https://cloud.r-project.org"
-))
+install.packages(
+  "gitdevr",
+  repos = c(
+    "https://dieghernan.r-universe.dev",
+    "https://cloud.r-project.org"
+  )
+)
 ```
 
 ## Usage

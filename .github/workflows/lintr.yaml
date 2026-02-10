@@ -16,6 +16,10 @@ on:
     - main
     - master
   workflow_dispatch:
+  workflow_run:
+    workflows: update-docs
+    types: completed
+    branches: [main, master]
   pull_request:
     # The branches below must be a subset of the branches above
     branches:
@@ -73,4 +77,3 @@ jobs:
       with:
         sarif_file: lintr-results.sarif
         wait-for-processing: true
-

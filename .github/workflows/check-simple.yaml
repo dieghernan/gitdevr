@@ -14,7 +14,10 @@ on:
   repository_dispatch:
     types: [trigger-check-workflow]
   workflow_dispatch:
-
+  workflow_run:
+    workflows: update-docs
+    types: completed
+    branches: [main, master]
 
 name: R-CMD-check
 permissions:
@@ -55,4 +58,3 @@ jobs:
         needs: check
 
     - uses: r-lib/actions/check-r-package@v2
-
