@@ -22,10 +22,13 @@ Alternatively, you can install **gitdevr** using the
 
 ``` r
 # Install gitdevr in R:
-install.packages("gitdevr", repos = c(
-  "https://dieghernan.r-universe.dev",
-  "https://cloud.r-project.org"
-))
+install.packages(
+  "gitdevr",
+  repos = c(
+    "https://dieghernan.r-universe.dev",
+    "https://cloud.r-project.org"
+  )
+)
 ```
 
 ## Usage

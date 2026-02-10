@@ -2,6 +2,7 @@
 
 ### Precomputed
 
+- [test-precompute-quarto](https://dieghernan.github.io/gitdevr/articles/precompute-quarto.md):
 - [Example of a precomputed
   vignette](https://dieghernan.github.io/gitdevr/articles/precompute.md):
 
