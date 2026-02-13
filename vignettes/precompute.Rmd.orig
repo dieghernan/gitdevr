@@ -1,8 +1,8 @@
 ---
-title: "Example of a precomputed vignette"
+title: "Example of a precomputed vignette - Rmd"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{Example of a precomputed vignette}
+  %\VignetteIndexEntry{Example of a precomputed vignette - Rmd}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
