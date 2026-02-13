@@ -1,4 +1,4 @@
-# Example of a precomputed vignette
+# Example of a precomputed vignette - Rmd
 
 This is an example of a precomputed vignette:
 
