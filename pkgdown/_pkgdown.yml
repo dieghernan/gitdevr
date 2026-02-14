@@ -29,6 +29,10 @@ navbar:
         href: https://dieghernan.github.io/pkgdev/
       - text: "resmush"
         href: https://dieghernan.github.io/resmush/
+      - text: "geobounds"
+        href: https://dieghernan.github.io/geobounds/
+      - text: "rstudiothemes"
+        href: https://dieghernan.github.io/rstudiothemes/
     twitter:
       icon: fa-brands fa-x-twitter
       href: https://x.com/dhernangomez
