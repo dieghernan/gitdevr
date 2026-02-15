@@ -41,3 +41,6 @@
 ^inst/README\.qmd$
 ^README_files$
 ^README\.html$
+^\.quarto$
+^\./vignettes/precompute-quarto\.qmd\.orig$
+^\./vignettes/precompute\.Rmd\.orig$
