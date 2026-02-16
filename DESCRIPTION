@@ -23,8 +23,8 @@ Suggests:
 VignetteBuilder:
     knitr,
     quarto
-Config/Needs/website: ggplot2, reactable,
-    usethis, servr, diffviewer, rticles
+Config/Needs/website: ggplot2, reactable, usethis, servr, diffviewer,
+    rticles
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.3
