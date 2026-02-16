@@ -8,7 +8,7 @@
 
 [![Lifecycle:
 experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
-[![.github/workflows/check-simple.yaml](https://github.com/dieghernan/gitdevr/actions/workflows/check-simple.yaml/badge.svg)](https://github.com/dieghernan/gitdevr/actions/workflows/check-simple.yaml)
+[![.github/workflows/check-simple.yml](https://github.com/dieghernan/gitdevr/actions/workflows/check-simple.yml/badge.svg)](https://github.com/dieghernan/gitdevr/actions/workflows/check-simple.yml)
 
 <!-- badges: end -->
 

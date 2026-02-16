@@ -29,9 +29,7 @@ jobs:
         extra-packages: |
           local::.
           any::rcmdcheck
-          any::pkgdown
           dieghernan/pkgdev
-        needs: website
 
     - name: Install optipng
       run: |
