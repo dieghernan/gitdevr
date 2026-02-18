@@ -38,7 +38,7 @@ setup ready, you only need to specify the `template` parameter as
 follow. Then, as before, you can build your site using
 [`pkgdown::build_site()`](https://pkgdown.r-lib.org/reference/build_site.html).
 
-``` yml
+``` .yaml
 template:
   bootstrap: 5
   package: gitdevr
