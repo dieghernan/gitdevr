@@ -8,7 +8,7 @@
 
 [![Lifecycle:
 experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
-[![.github/workflows/check-simple.yml](https://github.com/dieghernan/gitdevr/actions/workflows/check-simple.yml/badge.svg)](https://github.com/dieghernan/gitdevr/actions/workflows/check-simple.yml)
+[![.github/workflows/check-simple.yaml](https://github.com/dieghernan/gitdevr/actions/workflows/check-simple.yaml/badge.svg)](https://github.com/dieghernan/gitdevr/actions/workflows/check-simple.yaml)
 
 <!-- badges: end -->
 
@@ -50,7 +50,7 @@ setup ready, you only need to specify the `template` parameter as
 follow. Then, as before, you can build your site using
 `pkgdown::build_site()`.
 
-``` yml
+```.yaml
 template:
   bootstrap: 5
   package: gitdevr
