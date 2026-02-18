@@ -50,7 +50,7 @@ setup ready, you only need to specify the `template` parameter as
 follow. Then, as before, you can build your site using
 `pkgdown::build_site()`.
 
-```.yaml
+``` .yaml
 template:
   bootstrap: 5
   package: gitdevr
