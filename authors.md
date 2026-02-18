@@ -2,7 +2,8 @@
 
 ## Authors
 
-- **Diego Hernangómez**. Author, maintainer, copyright holder.
+- **[Diego Hernangómez](https://dieghernan.github.io/)**. Author,
+  maintainer, copyright holder.
   [](https://orcid.org/0000-0001-8457-4658)
 
 ## Citation
