@@ -36,37 +36,51 @@ plt.show()
 
 ## Callout Blocks
 
-> **Note**
+> **None**
 >
-> Note that there are five types of callouts, including: `note`,
-> `warning`, `important`, `tip`, and `caution`.
-
-> **Tip with Title**
+> Note
 >
-> This is an example of a callout with a title.
+> Note that there are five types of callouts, including: `note`, `tip`,
+> `warning`, `caution`, and `important`.
 
-> **Expand To Learn About Collapse**
+> **None**
 >
-> This is an example of a ‘folded’ caution callout that can be expanded
-> by the user. You can use `collapse="true"` to collapse it by default
-> or `collapse="false"` to make a collapsible callout that is expanded
-> by default.
+> Warning
+>
+> Callouts provide a simple way to attract attention, for example, to
+> this warning.
 
-> **Pay Attention**
+> **None**
+>
+> Important
+>
+> The callout heading is provided by the callout type, with the expected
+> heading (i.e., Note, Warning, Important, Tip, or Caution).
+
+> **None**
+>
+> TipTip With Title
+>
+> This is an example of a callout with a title. Providing a callout
+> heading is optional.
+
+Simple
+
+> **None**
+>
+> NotePay Attention
 >
 > Using callouts is an effective way to highlight content that your
 > reader give special consideration or attention.
 
-> **Pay Attention**
+No icon
+
+> **None**
+>
+> NotePay Attention
 >
 > Using callouts is an effective way to highlight content that your
 > reader give special consideration or attention.
-
-> **Tip 1: Cross-Referencing a Tip**
->
-> Add an ID starting with `#tip-` to reference a tip.
-
-See [Tip 1](#tip-example)…
 
 ## Diagrams
 
