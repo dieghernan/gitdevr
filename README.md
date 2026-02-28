@@ -50,11 +50,21 @@ setup ready, you only need to specify the `template` parameter as
 follow. Then, as before, you can build your site using
 `pkgdown::build_site()`.
 
+<div class="code-with-filename">
+
+<div class="code-with-filename-file">
+
+<pre><strong>.pkgdown.yaml</strong></pre>
+
 ``` .yaml
 template:
   bootstrap: 5
   package: gitdevr
 ```
+
+</div>
+
+</div>
 
 > Keep in mind that you should NOT use `default_assets: false` when you
 > change the default template. **gitdevr** relies on some of the
@@ -62,7 +72,17 @@ template:
 
 It is recommended to add the following line to your `DESCRIPTION`:
 
+<div class="code-with-filename">
+
+<div class="code-with-filename-file">
+
+<pre><strong>DESCRIPTION</strong></pre>
+
     Config/Needs/website: dieghernan/gitdevr
+
+</div>
+
+</div>
 
 By doing so, when using [r-lib
 actions](https://github.com/r-lib/actions/tree/v2-branch/setup-r-dependencies)
