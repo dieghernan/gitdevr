@@ -40,7 +40,7 @@ follow. Then, as before, you can build your site using
 
     .pkgdown.yaml
 
-``` .yaml
+``` yaml
 template:
   bootstrap: 5
   package: gitdevr
