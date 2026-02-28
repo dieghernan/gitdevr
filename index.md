@@ -46,9 +46,11 @@ template:
   package: gitdevr
 ```
 
-> Keep in mind that you should NOT use `default_assets: false` when you
-> change the default template. **gitdevr** relies on some of the
-> **pkgdown** assets and templates.
+Important
+
+Keep in mind that you should NOT use `default_assets: false` when you
+change the default template. **gitdevr** relies on some of the
+**pkgdown** assets and templates.
 
 It is recommended to add the following line to your `DESCRIPTION`:
 
