@@ -65,7 +65,8 @@ before, you can build your site using `pkgdown::build_site()`.
 ```{=html}
 <pre><strong>.pkgdown.yaml</strong></pre>
 ```
-```.yaml
+
+``` yaml
 template:
   bootstrap: 5
   package: gitdevr
@@ -84,6 +85,7 @@ It is recommended to add the following line to your `DESCRIPTION`:
 ```{=html}
 <pre><strong>DESCRIPTION</strong></pre>
 ```
+
 ```
 Config/Needs/website: dieghernan/gitdevr
 ```
