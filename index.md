@@ -1,6 +1,6 @@
 
 
-<!-- README.md is generated from README.qmd. Please edit that file -->
+<!-- index.md is generated from index.qmd. Please edit that file -->
 
 # gitdevr <a href="https://dieghernan.github.io/gitdevr/"><img src="man/figures/logo.png" alt="gitdevr website" align="right" height="139"/></a>
 
@@ -50,23 +50,49 @@ setup ready, you only need to specify the `template` parameter as
 follow. Then, as before, you can build your site using
 `pkgdown::build_site()`.
 
+<div class="code-with-filename">
+
+<div class="code-with-filename-file">
+
+<pre><strong>.pkgdown.yaml</strong></pre>
+
 ``` yaml
 template:
   bootstrap: 5
   package: gitdevr
 ```
 
-<div class=".callout-important">
+</div>
+
+</div>
+
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container"><i class="callout-icon"></i></div>
+<div class="callout-title-container flex-fill">Important</div>
+</div>
+<div class="callout-body-container callout-body">
 
 Keep in mind that you should NOT use `default_assets: false` when you
 change the default template. **gitdevr** relies on some of the
 **pkgdown** assets and templates.
 
 </div>
+</div>
 
 It is recommended to add the following line to your `DESCRIPTION`:
 
+<div class="code-with-filename">
+
+<div class="code-with-filename-file">
+
+<pre><strong>DESCRIPTION</strong></pre>
+
     Config/Needs/website: dieghernan/gitdevr
+
+</div>
+
+</div>
 
 By doing so, when using [r-lib
 actions](https://github.com/r-lib/actions/tree/v2-branch/setup-r-dependencies)
