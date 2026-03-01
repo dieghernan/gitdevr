@@ -79,24 +79,6 @@ Light
 
 Dark
 
-Link
-
-Primary
-
-Secondary
-
-Success
-
-Danger
-
-Warning
-
-Info
-
-Light
-
-Dark
-
 ## Code
 
 ### Line width
