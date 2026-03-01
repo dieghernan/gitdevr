@@ -12,7 +12,6 @@ knitr::opts_chunk$set(
 
 Test how `pkgdown` highlights **R** code:
 
-
 ```{r}
 #| eval: false
 library("knitr")

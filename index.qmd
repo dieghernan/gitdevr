@@ -83,8 +83,8 @@ template:
 <div class="callout-body-container callout-body">
 ```
 
-Keep in mind that you should NOT use `default_assets: false` when you change
-the default template. **gitdevr** relies on some of the **pkgdown** assets and
+Keep in mind that you should NOT use `default_assets: false` when you change the
+default template. **gitdevr** relies on some of the **pkgdown** assets and
 templates.
 
 ```{=html}
