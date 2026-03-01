@@ -61,6 +61,26 @@ This text should be marked as highlighted by search.
 
 This text too.
 
+## Buttons
+
+Primary
+
+Secondary
+
+Success
+
+Danger
+
+Warning
+
+Info
+
+Light
+
+Dark
+
+Link
+
 ## Code
 
 ### Line width
