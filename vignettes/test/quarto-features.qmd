@@ -180,4 +180,145 @@ diffviewer::visual_diff(path1, path2)
 
 -   Keyboard shortcut: {{< kbd Shift-Ctrl-P >}}
 
+## Lists
+
+*   item 2
+
+    Continued (indent 4 spaces)
+
+
+
+1. ordered list
+2. item 2
+
+   ```python
+   print("Hello, World!")
+   ```
+
+   A.  sub-sub-item 1
+
+
+- [ ] Task 1
+- [x] Task 2
+
+(@)  A list whose numbering
+
+continues after
+
+(@)  an interruption
+
+
+::: {}
+1. A list
+:::
+
+::: {}
+1. Followed by another list
+:::
+
+
+term
+: definition
+
+
+## Footnotes
+
+Here is a footnote reference,[^1] and another.[^longnote]
+
+[^1]: Here is the footnote.
+
+[^longnote]: Here's one with multiple blocks.
+
+    Subsequent paragraphs are indented to show that they
+belong to the previous footnote.
+
+        { some.code }
+
+    The whole paragraph can be indented, or just the first
+    line.  In this way, multi-paragraph footnotes work like
+    multi-paragraph list items.
+
+This paragraph won't be part of the note, because it
+isn't indented.
+
+
+Here is an inline note.^[Inlines notes are easier to write,
+since you don't have to pick an identifier and move down to
+type the note.]
+
+
+## Equations
+
+inline math: $E = mc^{2}$
+
+display math:
+
+$$E = mc^{2}$$
+
+
+## Other blocks
+
+| Line Block
+|   Spaces and newlines
+|   are preserved
+
+[This text is smallcaps]{.smallcaps}
+
+[This text is underlined]{.underline}
+
+[This text is highlighted]{.mark}
+
+endash: --
+
+emdash: ---
+
+
+## Shortcodes
+
+{{< meta title >}}
+
+{{< placeholder 400 200 >}}
+
+{{< lipsum 1 >}}
+
+### A section
+
+Here we define a plot.
+
+```{python}
+#| echo: false
+#| label: a-cell
+import matplotlib.pyplot as plt
+plt.plot([1,2,3])
+```
+
+### Another section
+
+Here we use the plot:
+
+
+### Note the following plot
+
+{{< contents a-cell >}}
+
+
+```{python}
+#| label: a-cell
+print("some code")
+```
+
+The output of the code cell is {{< contents a-cell >}}. Etc.
+
+## Video
+
+::: {#fig-cern}
+
+{{< video https://www.youtube.com/embed/wo9vZccmqwc >}}
+
+The video "CERN: The Journey of Discovery"
+
+:::
+
+In @fig-cern...
+
 ## References
