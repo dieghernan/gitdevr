@@ -28,6 +28,7 @@ color:
     purple: "#8250df"
     red: "#cf222e"
     code: "#e83e8c"
+    dk-dark: "#343a40"
     dk-black: "#373e47"
     dk-blue: "#2b8ffd"
     dk-green: "#2da44e"
@@ -41,6 +42,8 @@ color:
   warning: orange
   danger: red
   info: purple
+  dark: dk-dark
+  light: light
   foreground: dark
   background: white
 
