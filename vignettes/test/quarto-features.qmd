@@ -1,5 +1,6 @@
 ---
 title: quarto features
+subtitle: Using this for shortcodes
 output: html
 knitr:
   opts_chunk:
@@ -182,70 +183,57 @@ diffviewer::visual_diff(path1, path2)
 
 ## Lists
 
-*   item 2
+-   item 2
 
     Continued (indent 4 spaces)
 
+Another example
 
+1.  ordered list
 
-1. ordered list
-2. item 2
+2.  item 2
 
-   ```python
-   print("Hello, World!")
-   ```
+    ``` python
+    print("Hello, World!")
+    ```
 
-   A.  sub-sub-item 1
+    A.  sub-sub-item 1
 
+A task list
 
-- [ ] Task 1
-- [x] Task 2
+-   [ ] Task 1
+-   [x] Task 2
 
-(@)  A list whose numbering
-
-continues after
-
-(@)  an interruption
-
-
-::: {}
-1. A list
-:::
-
-::: {}
-1. Followed by another list
-:::
-
+A definition
 
 term
-: definition
 
+:   definition
 
 ## Footnotes
 
-Here is a footnote reference,[^1] and another.[^longnote]
+Here is a footnote reference,[^1] and another.[^2]
 
 [^1]: Here is the footnote.
 
-[^longnote]: Here's one with multiple blocks.
+[^2]: Here's one with multiple blocks.
 
-    Subsequent paragraphs are indented to show that they
-belong to the previous footnote.
+    Subsequent paragraphs are indented to show that they belong to the previous
+    footnote.
 
-        { some.code }
+    ```         
+    { some.code }
+    ```
 
-    The whole paragraph can be indented, or just the first
-    line.  In this way, multi-paragraph footnotes work like
-    multi-paragraph list items.
+    The whole paragraph can be indented, or just the first line. In this way,
+    multi-paragraph footnotes work like multi-paragraph list items.
 
-This paragraph won't be part of the note, because it
-isn't indented.
+This paragraph won't be part of the note, because it isn't indented.
 
+Here is an inline note.[^3]
 
-Here is an inline note.^[Inlines notes are easier to write,
-since you don't have to pick an identifier and move down to
-type the note.]
-
+[^3]: Inlines notes are easier to write, since you don't have to pick an
+    identifier and move down to type the note.
 
 ## Equations
 
@@ -254,7 +242,6 @@ inline math: $E = mc^{2}$
 display math:
 
 $$E = mc^{2}$$
-
 
 ## Other blocks
 
@@ -272,10 +259,9 @@ endash: --
 
 emdash: ---
 
-
 ## Shortcodes
 
-{{< meta title >}}
+The subtitle of this document is as follows: {{< meta subtitle >}}
 
 {{< placeholder 400 200 >}}
 
@@ -285,38 +271,31 @@ emdash: ---
 
 Here we define a plot.
 
-```{python}
+::: {#a-plot}
+```{r}
 #| echo: false
 #| label: a-cell
-import matplotlib.pyplot as plt
-plt.plot([1,2,3])
+
+plot(c(1,2,3))
 ```
+:::
 
-### Another section
+#### Note the following plot
 
-Here we use the plot:
+{{< contents a-plot >}}
 
+### Another example
 
-### Note the following plot
+We will define some values here. [`{r} "some code"`]{#a-span}
 
-{{< contents a-cell >}}
-
-
-```{python}
-#| label: a-cell
-print("some code")
-```
-
-The output of the code cell is {{< contents a-cell >}}. Etc.
+The output of that inline code cell is {{< contents a-span >}}. Etc.
 
 ## Video
 
 ::: {#fig-cern}
-
 {{< video https://www.youtube.com/embed/wo9vZccmqwc >}}
 
 The video "CERN: The Journey of Discovery"
-
 :::
 
 In @fig-cern...
