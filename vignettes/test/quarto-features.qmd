@@ -276,7 +276,7 @@ Here we define a plot.
 #| echo: false
 #| label: a-cell
 
-plot(c(1,2,3))
+plot(c(1, 2, 3))
 ```
 :::
 
