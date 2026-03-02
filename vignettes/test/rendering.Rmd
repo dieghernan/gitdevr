@@ -61,7 +61,7 @@ Second paragraph
 ## Tables
 
 | col 1 | col 2 | col 3 | col 4 |
-|:------------------------|:------------------|:-----------------:|:-----------------:|
+|:----------------------|:------------------|:-----------------:|:-----------------:|
 | Brightness | Total brightness, total reflectance, spectral intensity | $$y = x^2$$ | test |
 
 ## Math
@@ -78,19 +78,57 @@ Inline equations: $y=x^2$
 This text too.
 :::
 
-
 ## Buttons
 
-<div class="d-grid gap-2 col-6 mx-auto">
-<button type="button" class="btn btn-primary btn-lg">Primary</button>
-<button type="button" class="btn btn-secondary btn-lg">Secondary</button>
-<button type="button" class="btn btn-success btn-lg">Success</button>
-<button type="button" class="btn btn-danger btn-lg">Danger</button>
-<button type="button" class="btn btn-warning btn-lg">Warning</button>
-<button type="button" class="btn btn-info btn-lg">Info</button>
-<button type="button" class="btn btn-light btn-lg">Light</button>
-<button type="button" class="btn btn-dark btn-lg">Dark</button>
-</div>
+::: {.d-grid .gap-2 .col-6 .mx-auto}
+<button type="button" class="btn btn-primary btn-lg">
+
+Primary
+
+</button>
+
+<button type="button" class="btn btn-secondary btn-lg">
+
+Secondary
+
+</button>
+
+<button type="button" class="btn btn-success btn-lg">
+
+Success
+
+</button>
+
+<button type="button" class="btn btn-danger btn-lg">
+
+Danger
+
+</button>
+
+<button type="button" class="btn btn-warning btn-lg">
+
+Warning
+
+</button>
+
+<button type="button" class="btn btn-info btn-lg">
+
+Info
+
+</button>
+
+<button type="button" class="btn btn-light btn-lg">
+
+Light
+
+</button>
+
+<button type="button" class="btn btn-dark btn-lg">
+
+Dark
+
+</button>
+:::
 
 ## Code
 
@@ -107,19 +145,19 @@ cat(rep("xy", 100), sep = "")
 
 Valid R code in `\preformatted{}`:
 
-```
+```         
 mean(a + 1)
 ```
 
 R code in `R` block:
 
-```R
+``` r
 mean(a + 1)
 ```
 
 R code in `r` block:
 
-```r
+``` r
 mean(a + 1)
 ```
 
@@ -133,7 +171,7 @@ yaml: [a, 1]
 
 Non-R code in `\preformatted{}`
 
-```
+```         
 yaml: [a, b, c]
 ```
 
@@ -218,12 +256,28 @@ Some more text
 
 > Single-line quote about something miscellaneous.
 
+<figure>
+
+<blockquote class="blockquote">
+
+<p>A Boostrap 5 blockquote with footer.</p>
+
+</blockquote>
+
+<figcaption class="blockquote-footer">
+
+Someone famous in <cite title="Source Title">Source Title</cite>
+
+</figcaption>
+
+</figure>
+
 | Flush
 |  1 space indent
 |   2 space indent
 |    3 space indent
 
-## This section is unnumbered {-}
+## This section is unnumbered {.unnumbered}
 
 There should however be no bug here!
 
