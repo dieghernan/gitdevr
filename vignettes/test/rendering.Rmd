@@ -61,7 +61,7 @@ Second paragraph
 ## Tables
 
 | col 1 | col 2 | col 3 | col 4 |
-|:----------------------|:------------------|:-----------------:|:-----------------:|
+|:---|:---|:--:|:--:|
 | Brightness | Total brightness, total reflectance, spectral intensity | $$y = x^2$$ | test |
 
 ## Math
@@ -81,53 +81,16 @@ This text too.
 ## Buttons
 
 ::: {.d-grid .gap-2 .col-6 .mx-auto}
-<button type="button" class="btn btn-primary btn-lg">
-
-Primary
-
-</button>
-
-<button type="button" class="btn btn-secondary btn-lg">
-
-Secondary
-
-</button>
-
-<button type="button" class="btn btn-success btn-lg">
-
-Success
-
-</button>
-
-<button type="button" class="btn btn-danger btn-lg">
-
-Danger
-
-</button>
-
-<button type="button" class="btn btn-warning btn-lg">
-
-Warning
-
-</button>
-
-<button type="button" class="btn btn-info btn-lg">
-
-Info
-
-</button>
-
-<button type="button" class="btn btn-light btn-lg">
-
-Light
-
-</button>
-
-<button type="button" class="btn btn-dark btn-lg">
-
-Dark
-
-</button>
+```{=html}
+<button type="button" class="btn btn-primary btn-lg">Primary</button>
+<button type="button" class="btn btn-secondary btn-lg">Secondary</button>
+<button type="button" class="btn btn-success btn-lg">Success</button>
+<button type="button" class="btn btn-danger btn-lg">Danger</button>
+<button type="button" class="btn btn-warning btn-lg">Warning</button>
+<button type="button" class="btn btn-info btn-lg">Info</button>
+<button type="button" class="btn btn-light btn-lg">Light</button>
+<button type="button" class="btn btn-dark btn-lg">Dark</button>
+```
 :::
 
 ## Code
@@ -258,17 +221,12 @@ Some more text
 
 <figure>
 
-<blockquote class="blockquote">
+> A Boostrap 5 blockquote with footer.
 
-<p>A Boostrap 5 blockquote with footer.</p>
-
-</blockquote>
-
-<figcaption class="blockquote-footer">
-
-Someone famous in <cite title="Source Title">Source Title</cite>
-
+```{=html}
+<figcaption class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite>
 </figcaption>
+```
 
 </figure>
 
