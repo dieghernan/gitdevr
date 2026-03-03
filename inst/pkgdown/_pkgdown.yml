@@ -5,6 +5,7 @@ navbar:
 template:
   bootstrap: 5
   light-switch: true
+  math-rendering: katex
   opengraph:
     twitter:
       creator: '@dhernangomez'
