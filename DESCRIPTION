@@ -21,11 +21,10 @@ Suggests:
     quarto,
     rmarkdown
 VignetteBuilder:
-    knitr,
     quarto
 Config/Needs/website: ggplot2, reactable, usethis, servr, diffviewer,
     rticles
-Config/roxygen2/version: 7.3.3.9000
+Config/roxygen2/markdown: TRUE
+Config/roxygen2/version: 8.0.0
 Encoding: UTF-8
-Roxygen: list(markdown = TRUE)
 X-schema.org-keywords: pkgdown, pkgdown-template, r, r-package
