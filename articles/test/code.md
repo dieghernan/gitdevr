@@ -5,6 +5,7 @@ Some filler text.
 Some filler text.
 
 ``` r
+
 library(gitdevr)
 ruler()
 #> ----+----1----+----2----+----3----+----4----+----5----+----6----+----7----+----8
@@ -14,6 +15,7 @@ ruler()
 Some random code
 
 ``` r
+
 render_rmarkdown <- function(pkg, input, output, ..., copy_images = TRUE, quiet = TRUE) {
   input_path <- path_abs(input, pkg$src_path)
   output_path <- path_abs(output, pkg$dst_path)
