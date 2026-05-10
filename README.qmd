@@ -74,7 +74,7 @@ templates.
 
 It is recommended to add the following line to your `DESCRIPTION`:
 
-```
+```         
 Config/Needs/website: dieghernan/gitdevr
 ```
 
