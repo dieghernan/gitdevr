@@ -5,14 +5,11 @@
 \name{gitdevr-package}
 \alias{gitdevr}
 \alias{gitdevr-package}
-\title{gitdevr: My \CRANpkg{pkgdown} template}
+\title{gitdevr: My 'pkgdown' template}
 \description{
-\if{html}{\figure{logo.png}{options: style='float: right' alt='logo'
-width='120'}}
+\if{html}{\figure{logo.png}{options: style='float: right' alt='logo' width='120'}}
 
-A \CRANpkg{pkgdown} template for my packages. This template is based on the
-'GitDev' skin of my Jekyll template 'chulapa'
-\url{https://dieghernan.github.io/chulapa/skins/gitdev}.
+A 'pkgdown' template for my packages. This template is based on the 'GitDev' skin of my Jekyll template 'chulapa' \url{https://dieghernan.github.io/chulapa/skins/gitdev}.
 }
 \seealso{
 Useful links:
