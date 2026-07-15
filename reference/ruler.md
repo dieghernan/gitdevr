@@ -1,6 +1,6 @@
-# Measure the width of the console
+# Print a console ruler
 
-Measure the width of the console
+Print a console ruler
 
 ## Usage
 
@@ -12,11 +12,17 @@ ruler(width = getOption("width"))
 
 - width:
 
-  Width of rule
+  Width of the ruler.
+
+## Value
+
+`NULL`, invisibly.
 
 ## See also
 
-[`base::cat()`](https://rdrr.io/r/base/cat.html),
+[`base::cat()`](https://rdrr.io/r/base/cat.html).
+
+Console helpers:
 [`test()`](https://dieghernan.github.io/gitdevr/reference/test.md)
 
 ## Examples

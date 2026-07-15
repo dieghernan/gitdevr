@@ -1,8 +1,8 @@
-# gitdevr: My 'pkgdown' Template
+# gitdevr: My [pkgdown](https://CRAN.R-project.org/package=pkgdown) template
 
-A 'pkgdown' template for my packages. Template based on skin 'GitDev' of
-my Jekyll template 'chulapa'
-<https://dieghernan.github.io/chulapa/skins/gitdev>.
+A [pkgdown](https://CRAN.R-project.org/package=pkgdown) template for my
+packages. This template is based on the 'GitDev' skin of my Jekyll
+template 'chulapa' <https://dieghernan.github.io/chulapa/skins/gitdev>.
 
 ## See also
 

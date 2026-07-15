@@ -1,14 +1,14 @@
 # ggplot2 example
 
-Example on a **ggplot2** image
+Example of a **ggplot2** image.
 
 ``` r
 
 library(ggplot2)
 
-# counts (or sums of weights)
+# Count rows or sums of weights.
 g <- ggplot(mpg, aes(class))
-# Number of cars in each class:
+# Number of cars in each class.
 g + geom_bar()
 ```
 

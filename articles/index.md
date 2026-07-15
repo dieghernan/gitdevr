@@ -1,51 +1,52 @@
 # Articles
 
-### Precomputed
+### Precomputed articles
 
-- [Example of a precomputed vignette -
-  qmd](https://dieghernan.github.io/gitdevr/articles/precompute-quarto.md):
-- [Example of a precomputed vignette -
-  Rmd](https://dieghernan.github.io/gitdevr/articles/precompute.md):
+Articles used to check precomputed R Markdown and Quarto output.
 
-### Menu
+- [Precomputed R Markdown
+  vignette](https://dieghernan.github.io/gitdevr/articles/precompute.md):
+- [Precomputed Quarto
+  vignette](https://dieghernan.github.io/gitdevr/articles/precompute-quarto.md):
 
-Testing a menu bar in the navbar
+### Menu examples
+
+Articles used to test dropdown menus in the article navbar.
 
 - [ggplot2
   example](https://dieghernan.github.io/gitdevr/articles/menu/ggplot2.md):
 - [Testing syntax
   highlighter](https://dieghernan.github.io/gitdevr/articles/menu/highlight.md):
 
-### Testing
+### Feature tests
 
-These articles are used to test various
-[pkgdown](https://CRAN.R-project.org/package=pkgdown) features that can
-not easily be tested automatically.
+These articles are used to test **pkgdown** features that cannot easily
+be tested automatically.
+
+- [Quarto
+  vignettes](https://dieghernan.github.io/gitdevr/articles/test-quarto.md):
+
+  Learn how **pkgdown** works with Quarto vignettes, including currently
+  supported features and known limitations.
 
 - [Bullets](https://dieghernan.github.io/gitdevr/articles/test/bullets.md):
 
 - [Code](https://dieghernan.github.io/gitdevr/articles/test/code.md):
 
-- [Long
-  TOC](https://dieghernan.github.io/gitdevr/articles/test/long-toc.md):
+- [Long table of
+  contents](https://dieghernan.github.io/gitdevr/articles/test/long-toc.md):
 
-- [quarto
+- [Quarto
   features](https://dieghernan.github.io/gitdevr/articles/test/quarto-features.md):
 
-- [reactable
+- [Reactable
   example](https://dieghernan.github.io/gitdevr/articles/test/reactable.md):
 
 - [Output
-  Rendering](https://dieghernan.github.io/gitdevr/articles/test/rendering.md):
+  rendering](https://dieghernan.github.io/gitdevr/articles/test/rendering.md):
 
 - [A short
   page](https://dieghernan.github.io/gitdevr/articles/test/short.md):
-
-- [quarto
-  vignettes](https://dieghernan.github.io/gitdevr/articles/test-quarto.md):
-
-  Learn how quarto vignettes work with pkgdown, including currently
-  supported features and known limitations.
 
 - [HTML
   widgets](https://dieghernan.github.io/gitdevr/articles/test/widgets.md):

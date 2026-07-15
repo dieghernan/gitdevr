@@ -1,6 +1,6 @@
-# Test function
+# Test console output rendering
 
-Test function
+Test console output rendering
 
 ## Usage
 
@@ -12,11 +12,11 @@ test(x = 1)
 
 - x:
 
-  A value
+  A value.
 
 ## Value
 
-Nothing
+`NULL`.
 
 ## Heading 1
 
@@ -87,3 +87,8 @@ vitae justo eget. Massa placerat duis ultricies lacus sed turpis. Etiam
 sit amet nisl purus in mollis nunc sed id. Porta non pulvinar neque
 laoreet suspendisse interdum consectetur. Risus at ultrices mi tempus
 imperdiet nulla malesuada pellentesque.
+
+## See also
+
+Console helpers:
+[`ruler()`](https://dieghernan.github.io/gitdevr/reference/ruler.md)

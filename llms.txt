@@ -2,16 +2,17 @@
 
 ## Overview
 
-**gitdevr** provides a custom [pkgdown](https://pkgdown.r-lib.org)
+**gitdevr** provides a custom [**pkgdown**](https://pkgdown.r-lib.org)
 template based on the [GitDev
 skin](https://dieghernan.github.io/chulapa/skins/gitdev) provided with
 my Jekyll theme [chulapa](https://dieghernan.github.io/chulapa/).
 
-See a preview of the template in <https://dieghernan.github.io/gitdevr/>
+See a preview of the template at
+<https://dieghernan.github.io/gitdevr/>.
 
 ## Installation
 
-You can install the developing version of **gitdevr** with:
+You can install the development version of **gitdevr** with:
 
 ``` r
 
@@ -35,9 +36,8 @@ install.packages(
 
 ## Usage
 
-After the successful installation, if you already have your **pkgdown**
-setup ready, you only need to specify the `template` parameter as
-follow. Then, as before, you can build your site using
+After installation, if your **pkgdown** setup is ready, specify the
+`template` parameter as follows. Then, as before, build your site with
 [`pkgdown::build_site()`](https://pkgdown.r-lib.org/reference/build_site.html).
 
     .pkgdown.yaml
@@ -50,7 +50,7 @@ template:
 
 Important
 
-Keep in mind that you should NOT use `default_assets: false` when you
+Keep in mind that you should not use `default_assets: false` when you
 change the default template. **gitdevr** relies on some of the
 **pkgdown** assets and templates.
 
@@ -62,68 +62,70 @@ It is recommended to add the following line to your `DESCRIPTION`:
 Config/Needs/website: dieghernan/gitdevr
 ```
 
-By doing so, when using [r-lib
+When you use [r-lib
 actions](https://github.com/r-lib/actions/tree/v2-branch/setup-r-dependencies)
-for deploying your site, the github action would install the package for
-you automatically.
+to deploy your site, GitHub Actions installs the package automatically.
 
 # Package index
 
-## All functions
+## Console helpers
+
+Small helpers for checking console output rendering in the template.
 
 - [`ruler()`](https://dieghernan.github.io/gitdevr/reference/ruler.md) :
-  Measure the width of the console
+  Print a console ruler
 - [`test()`](https://dieghernan.github.io/gitdevr/reference/test.md) :
-  Test function
+  Test console output rendering
 
 # Articles
 
-### Precomputed
+### Precomputed articles
 
-- [Example of a precomputed vignette -
-  qmd](https://dieghernan.github.io/gitdevr/articles/precompute-quarto.md):
-- [Example of a precomputed vignette -
-  Rmd](https://dieghernan.github.io/gitdevr/articles/precompute.md):
+Articles used to check precomputed R Markdown and Quarto output.
 
-### Menu
+- [Precomputed R Markdown
+  vignette](https://dieghernan.github.io/gitdevr/articles/precompute.md):
+- [Precomputed Quarto
+  vignette](https://dieghernan.github.io/gitdevr/articles/precompute-quarto.md):
 
-Testing a menu bar in the navbar
+### Menu examples
+
+Articles used to test dropdown menus in the article navbar.
 
 - [ggplot2
   example](https://dieghernan.github.io/gitdevr/articles/menu/ggplot2.md):
 - [Testing syntax
   highlighter](https://dieghernan.github.io/gitdevr/articles/menu/highlight.md):
 
-### Testing
+### Feature tests
 
-These articles are used to test various
-[pkgdown](https://CRAN.R-project.org/package=pkgdown) features that can
-not easily be tested automatically.
+These articles are used to test **pkgdown** features that cannot easily
+be tested automatically.
+
+- [Quarto
+  vignettes](https://dieghernan.github.io/gitdevr/articles/test-quarto.md):
+
+  Learn how **pkgdown** works with Quarto vignettes, including currently
+  supported features and known limitations.
 
 - [Bullets](https://dieghernan.github.io/gitdevr/articles/test/bullets.md):
 
 - [Code](https://dieghernan.github.io/gitdevr/articles/test/code.md):
 
-- [Long
-  TOC](https://dieghernan.github.io/gitdevr/articles/test/long-toc.md):
+- [Long table of
+  contents](https://dieghernan.github.io/gitdevr/articles/test/long-toc.md):
 
-- [quarto
+- [Quarto
   features](https://dieghernan.github.io/gitdevr/articles/test/quarto-features.md):
 
-- [reactable
+- [Reactable
   example](https://dieghernan.github.io/gitdevr/articles/test/reactable.md):
 
 - [Output
-  Rendering](https://dieghernan.github.io/gitdevr/articles/test/rendering.md):
+  rendering](https://dieghernan.github.io/gitdevr/articles/test/rendering.md):
 
 - [A short
   page](https://dieghernan.github.io/gitdevr/articles/test/short.md):
-
-- [quarto
-  vignettes](https://dieghernan.github.io/gitdevr/articles/test-quarto.md):
-
-  Learn how quarto vignettes work with pkgdown, including currently
-  supported features and known limitations.
 
 - [HTML
   widgets](https://dieghernan.github.io/gitdevr/articles/test/widgets.md):

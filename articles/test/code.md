@@ -1,8 +1,8 @@
 # Code
 
-Some filler text.
+This article checks how code blocks render in the template.
 
-Some filler text.
+It includes a short helper call and a longer code example.
 
 ``` r
 
@@ -12,7 +12,7 @@ ruler()
 #> 12345678901234567890123456789012345678901234567890123456789012345678901234567890
 ```
 
-Some random code
+The following code block is used as a long syntax highlighting fixture.
 
 ``` r
 
@@ -71,17 +71,17 @@ render_rmarkdown <- function(pkg, input, output, ..., copy_images = TRUE, quiet 
     cat_line("Writing ", dst_path(output))
   }
 
-  # Copy over images needed by the document
+  # Copy images needed by the document.
   if (copy_images) {
     ext <- rmarkdown::find_external_resources(input_path)
 
-    # copy web + explicit files beneath vignettes/
+    # Copy web resources and explicit files beneath vignettes/.
     is_child <- path_has_parent(ext$path, ".")
     ext_path <- ext$path[(ext$web | ext$explicit) & is_child]
 
     src <- path(path_dir(input_path), ext_path)
     dst <- path(path_dir(output_path), ext_path)
-    # Make sure destination paths exist before copying files there
+    # Make sure destination paths exist before copying files there.
     dir_create(unique(path_dir(dst)))
     file_copy(src, dst, overwrite = TRUE)
   }

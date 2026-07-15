@@ -2,16 +2,17 @@
 
 ## Overview
 
-**gitdevr** provides a custom [pkgdown](https://pkgdown.r-lib.org)
+**gitdevr** provides a custom [**pkgdown**](https://pkgdown.r-lib.org)
 template based on the [GitDev
 skin](https://dieghernan.github.io/chulapa/skins/gitdev) provided with
 my Jekyll theme [chulapa](https://dieghernan.github.io/chulapa/).
 
-See a preview of the template in <https://dieghernan.github.io/gitdevr/>
+See a preview of the template at
+<https://dieghernan.github.io/gitdevr/>.
 
 ## Installation
 
-You can install the developing version of **gitdevr** with:
+You can install the development version of **gitdevr** with:
 
 ``` r
 
@@ -35,9 +36,8 @@ install.packages(
 
 ## Usage
 
-After the successful installation, if you already have your **pkgdown**
-setup ready, you only need to specify the `template` parameter as
-follow. Then, as before, you can build your site using
+After installation, if your **pkgdown** setup is ready, specify the
+`template` parameter as follows. Then, as before, build your site with
 [`pkgdown::build_site()`](https://pkgdown.r-lib.org/reference/build_site.html).
 
     .pkgdown.yaml
@@ -50,7 +50,7 @@ template:
 
 Important
 
-Keep in mind that you should NOT use `default_assets: false` when you
+Keep in mind that you should not use `default_assets: false` when you
 change the default template. **gitdevr** relies on some of the
 **pkgdown** assets and templates.
 
@@ -62,7 +62,6 @@ It is recommended to add the following line to your `DESCRIPTION`:
 Config/Needs/website: dieghernan/gitdevr
 ```
 
-By doing so, when using [r-lib
+When you use [r-lib
 actions](https://github.com/r-lib/actions/tree/v2-branch/setup-r-dependencies)
-for deploying your site, the github action would install the package for
-you automatically.
+to deploy your site, GitHub Actions installs the package automatically.
