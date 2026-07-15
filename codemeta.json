@@ -46,17 +46,38 @@
     {
       "@type": "SoftwareApplication",
       "identifier": "knitr",
-      "name": "knitr"
+      "name": "knitr",
+      "provider": {
+        "@id": "https://cran.r-project.org",
+        "@type": "Organization",
+        "name": "Comprehensive R Archive Network (CRAN)",
+        "url": "https://cran.r-project.org"
+      },
+      "sameAs": "https://CRAN.R-project.org/package=knitr"
     },
     {
       "@type": "SoftwareApplication",
       "identifier": "quarto",
-      "name": "quarto"
+      "name": "quarto",
+      "provider": {
+        "@id": "https://cran.r-project.org",
+        "@type": "Organization",
+        "name": "Comprehensive R Archive Network (CRAN)",
+        "url": "https://cran.r-project.org"
+      },
+      "sameAs": "https://CRAN.R-project.org/package=quarto"
     },
     {
       "@type": "SoftwareApplication",
       "identifier": "rmarkdown",
-      "name": "rmarkdown"
+      "name": "rmarkdown",
+      "provider": {
+        "@id": "https://cran.r-project.org",
+        "@type": "Organization",
+        "name": "Comprehensive R Archive Network (CRAN)",
+        "url": "https://cran.r-project.org"
+      },
+      "sameAs": "https://CRAN.R-project.org/package=rmarkdown"
     }
   ],
   "softwareRequirements": {
@@ -69,18 +90,32 @@
     "2": {
       "@type": "SoftwareApplication",
       "identifier": "brand.yml",
-      "name": "brand.yml"
+      "name": "brand.yml",
+      "provider": {
+        "@id": "https://cran.r-project.org",
+        "@type": "Organization",
+        "name": "Comprehensive R Archive Network (CRAN)",
+        "url": "https://cran.r-project.org"
+      },
+      "sameAs": "https://CRAN.R-project.org/package=brand.yml"
     },
     "3": {
       "@type": "SoftwareApplication",
       "identifier": "pkgdown",
       "name": "pkgdown",
-      "version": ">= 2.0.0"
+      "version": ">= 2.0.0",
+      "provider": {
+        "@id": "https://cran.r-project.org",
+        "@type": "Organization",
+        "name": "Comprehensive R Archive Network (CRAN)",
+        "url": "https://cran.r-project.org"
+      },
+      "sameAs": "https://CRAN.R-project.org/package=pkgdown"
     },
     "SystemRequirements": null
   },
   "keywords": ["pkgdown", "pkgdown-template", "r", "r-package"],
-  "fileSize": "384.453KB",
+  "fileSize": "379.833KB",
   "releaseNotes": "https://github.com/dieghernan/gitdevr/blob/main/NEWS.md",
   "readme": "https://github.com/dieghernan/gitdevr/blob/main/README.md",
   "contIntegration": "https://github.com/dieghernan/gitdevr/actions/workflows/check-simple.yaml",
