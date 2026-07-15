@@ -2,8 +2,8 @@
   "@context": "https://doi.org/10.5063/schema/codemeta-2.0",
   "@type": "SoftwareSourceCode",
   "identifier": "gitdevr",
-  "description": "A 'pkgdown' template for my packages. Template based on skin 'GitDev' of my Jekyll template 'chulapa' <https://dieghernan.github.io/chulapa/skins/gitdev>.",
-  "name": "gitdevr: My 'pkgdown' Template",
+  "description": "A 'pkgdown' template for my packages. This template is based on the 'GitDev' skin of my Jekyll template 'chulapa' <https://dieghernan.github.io/chulapa/skins/gitdev>.",
+  "name": "gitdevr: My 'pkgdown' template",
   "relatedLink": "https://dieghernan.github.io/gitdevr/",
   "codeRepository": "https://github.com/dieghernan/gitdevr",
   "issueTracker": "https://github.com/dieghernan/gitdevr/issues",
@@ -46,38 +46,17 @@
     {
       "@type": "SoftwareApplication",
       "identifier": "knitr",
-      "name": "knitr",
-      "provider": {
-        "@id": "https://cran.r-project.org",
-        "@type": "Organization",
-        "name": "Comprehensive R Archive Network (CRAN)",
-        "url": "https://cran.r-project.org"
-      },
-      "sameAs": "https://CRAN.R-project.org/package=knitr"
+      "name": "knitr"
     },
     {
       "@type": "SoftwareApplication",
       "identifier": "quarto",
-      "name": "quarto",
-      "provider": {
-        "@id": "https://cran.r-project.org",
-        "@type": "Organization",
-        "name": "Comprehensive R Archive Network (CRAN)",
-        "url": "https://cran.r-project.org"
-      },
-      "sameAs": "https://CRAN.R-project.org/package=quarto"
+      "name": "quarto"
     },
     {
       "@type": "SoftwareApplication",
       "identifier": "rmarkdown",
-      "name": "rmarkdown",
-      "provider": {
-        "@id": "https://cran.r-project.org",
-        "@type": "Organization",
-        "name": "Comprehensive R Archive Network (CRAN)",
-        "url": "https://cran.r-project.org"
-      },
-      "sameAs": "https://CRAN.R-project.org/package=rmarkdown"
+      "name": "rmarkdown"
     }
   ],
   "softwareRequirements": {
@@ -90,32 +69,18 @@
     "2": {
       "@type": "SoftwareApplication",
       "identifier": "brand.yml",
-      "name": "brand.yml",
-      "provider": {
-        "@id": "https://cran.r-project.org",
-        "@type": "Organization",
-        "name": "Comprehensive R Archive Network (CRAN)",
-        "url": "https://cran.r-project.org"
-      },
-      "sameAs": "https://CRAN.R-project.org/package=brand.yml"
+      "name": "brand.yml"
     },
     "3": {
       "@type": "SoftwareApplication",
       "identifier": "pkgdown",
       "name": "pkgdown",
-      "version": ">= 2.0.0",
-      "provider": {
-        "@id": "https://cran.r-project.org",
-        "@type": "Organization",
-        "name": "Comprehensive R Archive Network (CRAN)",
-        "url": "https://cran.r-project.org"
-      },
-      "sameAs": "https://CRAN.R-project.org/package=pkgdown"
+      "version": ">= 2.0.0"
     },
     "SystemRequirements": null
   },
   "keywords": ["pkgdown", "pkgdown-template", "r", "r-package"],
-  "fileSize": "383.845KB",
+  "fileSize": "384.453KB",
   "releaseNotes": "https://github.com/dieghernan/gitdevr/blob/main/NEWS.md",
   "readme": "https://github.com/dieghernan/gitdevr/blob/main/README.md",
   "contIntegration": "https://github.com/dieghernan/gitdevr/actions/workflows/check-simple.yaml",

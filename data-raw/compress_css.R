@@ -1,4 +1,4 @@
-# Compress with sass
+# Compress with sass.
 library(sass)
 
 lns <- readLines("inst/pkgdown/assets/BS5/gitdevr.css")

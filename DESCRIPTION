@@ -1,11 +1,11 @@
 Package: gitdevr
-Title: My 'pkgdown' Template
+Title: My 'pkgdown' template
 Version: 0.0.0.9000
 Authors@R:
     person("Diego", "Hernangómez", , "diego.hernangomezherrero@gmail.com", role = c("aut", "cre", "cph"),
            comment = c(ORCID = "0000-0001-8457-4658"))
-Description: A 'pkgdown' template for my packages. Template based on skin
-    'GitDev' of my Jekyll template 'chulapa'
+Description: A 'pkgdown' template for my packages. This template is based
+    on the 'GitDev' skin of my Jekyll template 'chulapa'
     <https://dieghernan.github.io/chulapa/skins/gitdev>.
 License: MIT + file LICENSE
 URL: https://dieghernan.github.io/gitdevr/,

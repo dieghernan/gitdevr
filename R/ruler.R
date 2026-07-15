@@ -1,8 +1,11 @@
-#' Measure the width of the console
+#' Print a console ruler
 #'
-#' @param width Width of rule
+#' @param width Width of the ruler.
+#' @returns `NULL`, invisibly.
+#' @seealso [base::cat()].
+#' @family console
 #' @export
-#' @seealso [base::cat()], [test()]
+#' @encoding UTF-8
 #'
 #' @examples
 #' ruler()

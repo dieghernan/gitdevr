@@ -42,22 +42,42 @@ navbar:
       href: https://ko-fi.com/dieghernan
       aria-label: Buy me a coffee
 
-articles:
-- title: Precomputed
-  navbar: Precomputed
-  contents:
-  - starts_with("precompute")
-- title: Menu
-  navbar: Menu bar
-  desc: Testing a menu bar in the navbar
-  contents:
-  - starts_with("menu")
-- title: Testing
+reference:
+- title: Console helpers
   desc: >
-    These articles are used to test various <a
-    href="https://CRAN.R-project.org/package=pkgdown"
-    class="external-link"><span class="pkg">pkgdown</span></a> features that can
-    not easily be tested automatically.
+    Small helpers for checking console output rendering in the template.
   contents:
-  - starts_with("test")
-  - starts_with("articles/test")
+  - has_concept("console")
+- title: internal
+  contents:
+  - gitdevr-package
+
+articles:
+- title: Precomputed articles
+  navbar: Precomputed
+  desc: >
+    Articles used to check precomputed R Markdown and Quarto output.
+  contents:
+  - precompute
+  - precompute-quarto
+- title: Menu examples
+  navbar: Menu bar
+  desc: >
+    Articles used to test dropdown menus in the article navbar.
+  contents:
+  - menu/ggplot2
+  - menu/highlight
+- title: Feature tests
+  desc: >
+    These articles are used to test **pkgdown** features that cannot easily be
+    tested automatically.
+  contents:
+  - test-quarto
+  - test/bullets
+  - test/code
+  - test/long-toc
+  - test/quarto-features
+  - test/reactable
+  - test/rendering
+  - test/short
+  - test/widgets

@@ -26,6 +26,7 @@
 ^gitdevr.*\.tar\.gz$
 ^gitdevr.*\.tgz$
 ^jarl\.toml$
+^jarl-results\.sarif$
 ^[.]?air[.]toml$
 ^\.vscode$
 /.quarto/
@@ -52,3 +53,4 @@
 ^\.positai$
 ^\.claude$
 ^\.gitattributes$
+^AGENTS\.md$

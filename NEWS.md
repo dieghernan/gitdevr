@@ -1,3 +1,3 @@
-# gitdevr (development version)
+# gitdevr 0.0.0.9000
 
-- In constant development.
+- The package is in active development.

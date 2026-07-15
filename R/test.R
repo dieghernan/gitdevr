@@ -1,5 +1,7 @@
-#' Test function
+#' Test console output rendering
 #'
+#' @param x A value.
+#' @returns `NULL`.
 #' @section Heading 1:
 #'
 #' Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -69,7 +71,8 @@
 #' in mollis nunc sed id. Porta non pulvinar neque laoreet suspendisse interdum
 #' consectetur. Risus at ultrices mi tempus imperdiet nulla malesuada
 #' pellentesque.
-
-#' @param x A value
-#' @return Nothing
+#'
+#' @family console
+#' @export
+#' @encoding UTF-8
 test <- function(x = 1) {}

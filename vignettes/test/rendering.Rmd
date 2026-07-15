@@ -1,8 +1,8 @@
 ---
-title: "Output Rendering"
-subtitle: "Subtitle is skipped from the TOC"
-author: "Author is skipped from the TOC"
-date: "Date is skipped from the TOC"
+title: "Output rendering"
+subtitle: "Subtitle is skipped from the table of contents"
+author: "Author is skipped from the table of contents"
+date: "Date is skipped from the table of contents"
 ---
 
 ```{r}
@@ -10,13 +10,13 @@ date: "Date is skipped from the TOC"
 knitr::opts_chunk$set(collapse = TRUE, comment = "#>")
 ```
 
-This vignette tests pkgdown output rendering for several use cases.
+This vignette tests **pkgdown** output rendering for several use cases.
 
 ## Footnotes
 
-Yay[^1]
+This paragraph checks footnote rendering.[^1]
 
-[^1]: Including **footnotes**! 😁
+[^1]: Including **footnotes**.
 
 ## Figures
 
@@ -124,7 +124,7 @@ R code in `r` block:
 mean(a + 1)
 ```
 
-Yaml
+YAML
 
 ``` yaml
 yaml: [a, 1]
@@ -132,7 +132,7 @@ yaml: [a, 1]
 
 ### Shouldn't be highlighted
 
-Non-R code in `\preformatted{}`
+Non-R code in `\preformatted{}`:
 
 ```         
 yaml: [a, b, c]
@@ -221,7 +221,7 @@ Some more text
 
 <figure>
 
-> A Boostrap 5 blockquote with footer.
+> A Bootstrap 5 blockquote with footer.
 
 ```{=html}
 <figcaption class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite>
@@ -237,7 +237,7 @@ Some more text
 
 ## This section is unnumbered {.unnumbered}
 
-There should however be no bug here!
+There should be no bug here.
 
 ## Tabsets
 
@@ -245,27 +245,27 @@ There should however be no bug here!
 
 #### Tab 1
 
-blablablabla
+Tab content.
 
 ``` r
 1 + 1
 ```
 
-Should be "cool" heading below
+The heading below should be "cool".
 
 ##### cool
 
-Stuff
+More tab content.
 
 #### Tab 2
 
-blop
+More tab content.
 
 ### Tabset without pills {.tabset}
 
 #### Tab 1
 
-something nice
+More tab content.
 
 ```{r}
 #| fig.alt: Another test plot
@@ -274,7 +274,7 @@ plot(1:42)
 
 #### Tab 2 {.active}
 
-This tab should be active
+This tab should be active.
 
 ### Fading tabset {.tabset .tabset-fade}
 
@@ -288,7 +288,7 @@ Bonjour!
 
 #### German
 
-Guten tag.
+Guten Tag.
 
 ## Deep headings
 
