@@ -6,40 +6,40 @@
 	--bs-body-bg-rgb: 36, 41, 47;
 	--bs-body-color: #fff;
 	--bs-body-color-rgb: 255, 255, 255;
-	--bs-gray-500: #b4beca;
+	--bs-gray-500: var(--brand-dk_gray);
 
-	--bs-blue: #2b8ffd;
-	--bs-blue-rgb: 43, 143, 253;
-	--bs-blue-color: #2b8ffd;
-	--bs-blue-color-rgb: 43, 143, 253;
+	--bs-blue: var(--brand-dk_blue);
+	--bs-blue-rgb: 121, 184, 255;
+	--bs-blue-color: var(--brand-dk_blue);
+	--bs-blue-color-rgb: 121, 184, 255;
 
 	--bs-primary: #383d43;
 	--bs-primary-rgb: 56.1, 60.6, 66.9;
 	--bs-primary-color: #383d43;
 	--bs-primary-color-rgb: 56.1, 60.6, 66.9;
 
-	--bs-secondary: #a8b3c1;
+	--bs-secondary: var(--brand-dk_gray);
 	--bs-secondary-rgb: 168, 179, 193;
-	--bs-secondary-color: #a8b3c1;
+	--bs-secondary-color: var(--brand-dk_gray);
 
-	--bs-success: #6fdd8c;
+	--bs-success: var(--brand-dk_green);
 	--bs-success-rgb: 111, 221, 140;
-	--bs-success-color: #6fdd8c;
+	--bs-success-color: var(--brand-dk_green);
 	--bs-success-color-rgb: 111, 221, 140;
 
-	--bs-info: #b8a7e6;
+	--bs-info: var(--brand-dk_purple);
 	--bs-info-rgb: 184, 167, 230;
-	--bs-info-color: #b8a7e6;
+	--bs-info-color: var(--brand-dk_purple);
 	--bs-info-color-rgb: 184, 167, 230;
 
-	--bs-warning: #e3ba52;
+	--bs-warning: var(--brand-dk_orange);
 	--bs-warning-rgb: 227, 186, 82;
-	--bs-warning-color: #e3ba52;
+	--bs-warning-color: var(--brand-dk_orange);
 	--bs-warning-color-rgb: 227, 186, 82;
 
-	--bs-danger: #ee8f95;
+	--bs-danger: var(--brand-dk_red);
 	--bs-danger-rgb: 238, 143, 149;
-	--bs-danger-color: #ee8f95;
+	--bs-danger-color: var(--brand-dk_red);
 	--bs-danger-color-rgb: 238, 143, 149;
 
 	--bs-light: #f8f9fa;
@@ -52,23 +52,23 @@
 	--bs-dark-color: #343a40;
 	--bs-dark-color-rgb: 52, 58, 64;
 
-	--bs-link: #79b8ff;
+	--bs-link: var(--brand-dk_blue);
 	--bs-link-rgb: 121, 184, 255;
-	--bs-link-color: #79b8ff;
+	--bs-link-color: var(--brand-dk_blue);
 	--bs-link-color-rgb: 121, 184, 255;
 
 	--bs-link-hover: #a8d1ff;
 	--bs-link-hover-rgb: 168, 209, 255;
 	--bs-link-hover-color: #a8d1ff;
 	--bs-link-hover-color-rgb: 168, 209, 255;
-	--bs-code-color: #ff8cc8;
+	--bs-code-color: var(--brand-dk_code);
 
 }
 
 .dropdown-menu {
 	--bs-dropdown-link-active-bg: var(--bs-dropdown-bg);
 	--bs-dropdown-link-color: var(--bs-navbar-color);
-	--bs-dropdown-link-hover-color: #a8b3c1;
+	--bs-dropdown-link-hover-color: var(--brand-dk_gray);
 	--bs-dropdown-link-hover-bg: var(--bs-dropdown-bg);
 	--bs-dropdown-header-color: var(--bs-dropdown-link-hover-color);
 }
@@ -110,13 +110,13 @@ caption {
 /* Hovers */
 #navbar .nav-link:hover,
 #navbar .nav-link:focus {
-	color: #a8b3c1 !important;
+	color: var(--brand-dk_gray) !important;
 	background-color: transparent;
 }
 
 #navbar .dropdown-menu .dropdown-item.active:hover,
 #navbar .dropdown-menu .dropdown-item.active:focus {
-	color: #a8b3c1;
+	color: var(--brand-dk_gray);
 }
 
 /* Actives */
@@ -161,7 +161,7 @@ mark,
 .nav-item .nav-link:hover,
 .nav-pills .nav-link.active:hover {
 	background-color: rgba(var(--bs-body-color-rgb), 0.08);
-	color: #a8b3c1;
+	color: var(--brand-dk_gray);
 }
 
 /* ---Footer--- */
