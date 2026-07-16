@@ -4,7 +4,12 @@ test_that("pkgdown brand defines dark contrast palette", {
   expect_named(
     palette[c(
       "dk-black",
+      "muted",
+      "footer-bg",
+      "footer-text",
+      "footer-link",
       "dk-gray",
+      "dk-border",
       "dk-blue",
       "dk-green",
       "dk-orange",
@@ -14,7 +19,12 @@ test_that("pkgdown brand defines dark contrast palette", {
     )],
     c(
       "dk-black",
+      "muted",
+      "footer-bg",
+      "footer-text",
+      "footer-link",
       "dk-gray",
+      "dk-border",
       "dk-blue",
       "dk-green",
       "dk-orange",
@@ -24,9 +34,83 @@ test_that("pkgdown brand defines dark contrast palette", {
     )
   )
 
+  expect_equal(palette[["muted"]], "#6a788a")
+  expect_equal(palette[["gray"]], "#68727b")
+  expect_equal(palette[["green"]], "#277f46")
+  expect_equal(palette[["orange"]], "#b45306")
+  expect_equal(palette[["code"]], "#cf2f7d")
+  expect_equal(palette[["footer-bg"]], "#0d1117")
+  expect_equal(palette[["footer-text"]], "#8b949e")
+  expect_equal(palette[["footer-link"]], "#58a6ff")
+  expect_equal(palette[["dk-border"]], "#6a788a")
   expect_equal(palette[["dk-gray"]], "#a8b3c1")
   expect_equal(palette[["dk-blue"]], "#79b8ff")
   expect_equal(palette[["dk-code"]], "#ff8cc8")
+})
+
+test_that("dark syntax highlighting keeps accessible contrast", {
+  palette <- read_pkgdown_brand()$color$palette
+  dark_pre_bg <- blend_hex(palette[["white"]], palette[["dark"]], 0.03)
+  syntax_colors <- c(
+    normal = palette[["white"]],
+    comment = palette[["dk-gray"]],
+    link = palette[["dk-blue"]],
+    keyword = palette[["dk-purple"]],
+    string = palette[["dk-green"]],
+    warning = palette[["dk-orange"]],
+    error = palette[["dk-red"]],
+    code = palette[["dk-code"]]
+  )
+
+  ratios <- vapply(
+    syntax_colors,
+    contrast_ratio,
+    numeric(1),
+    bg = dark_pre_bg
+  )
+
+  expect_gt(min(ratios), 4.5)
+})
+
+test_that("standalone dark brand keeps accessible contrast", {
+  brand <- read_template_brand_dark_yml()
+  palette <- brand$color$palette
+
+  expect_equal(brand$color$background, "dark")
+  expect_equal(brand$color$foreground, "white")
+  expect_equal(palette[["gray"]], "#a8b3c1")
+  expect_equal(palette[["blue"]], "#79b8ff")
+  expect_equal(palette[["code"]], "#ff8cc8")
+
+  dark_pre_bg <- blend_hex(palette[["white"]], palette[["dark"]], 0.03)
+  syntax_colors <- c(
+    normal = palette[["white"]],
+    comment = palette[["gray"]],
+    link = palette[["blue"]],
+    keyword = palette[["purple"]],
+    string = palette[["green"]],
+    warning = palette[["orange"]],
+    error = palette[["red"]],
+    code = palette[["code"]]
+  )
+
+  ratios <- vapply(
+    syntax_colors,
+    contrast_ratio,
+    numeric(1),
+    bg = dark_pre_bg
+  )
+
+  expect_gt(min(ratios), 4.5)
+})
+
+test_that("brand yml and pkgdown brand stay synchronized", {
+  brand <- read_template_brand_yml()
+  pkgdown_brand <- read_pkgdown_brand()
+
+  expect_equal(brand$color, pkgdown_brand$color)
+  expect_equal(brand$typography, pkgdown_brand$typography)
+  expect_equal(brand$defaults, pkgdown_brand$defaults)
 })
 
 test_that("pkgdown CSS consumes but does not define brand variables", {
