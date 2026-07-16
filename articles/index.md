@@ -4,15 +4,15 @@
 
 Articles used to check precomputed R Markdown and Quarto output.
 
-- [Precomputed R Markdown
-  vignette](https://dieghernan.github.io/gitdevr/articles/precompute.md):
-
-  Check how pkgdown handles a precomputed R Markdown vignette.
-
 - [Precomputed Quarto
   vignette](https://dieghernan.github.io/gitdevr/articles/precompute-quarto.md):
 
   Check how pkgdown handles a precomputed Quarto vignette.
+
+- [Precomputed R Markdown
+  vignette](https://dieghernan.github.io/gitdevr/articles/precompute.md):
+
+  Check how pkgdown handles a precomputed R Markdown vignette.
 
 ### Menu examples
 
@@ -32,12 +32,6 @@ Articles used to test dropdown menus in the article navbar.
 
 These articles are used to test **pkgdown** features that cannot easily
 be tested automatically.
-
-- [Quarto
-  vignettes](https://dieghernan.github.io/gitdevr/articles/test-quarto.md):
-
-  Learn how **pkgdown** works with Quarto vignettes, including currently
-  supported features and known limitations.
 
 - [Bullets](https://dieghernan.github.io/gitdevr/articles/test/bullets.md):
 
@@ -73,6 +67,12 @@ be tested automatically.
   page](https://dieghernan.github.io/gitdevr/articles/test/short.md):
 
   Check footer placement on short article pages.
+
+- [Quarto
+  vignettes](https://dieghernan.github.io/gitdevr/articles/test-quarto.md):
+
+  Learn how **pkgdown** works with Quarto vignettes, including currently
+  supported features and known limitations.
 
 - [HTML
   widgets](https://dieghernan.github.io/gitdevr/articles/test/widgets.md):
