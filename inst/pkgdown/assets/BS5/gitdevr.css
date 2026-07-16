@@ -470,7 +470,7 @@ pre code span.fl,
 /* Function - pygments.n */
 pre code span.fu,
 [data-bs-theme="dark"] pre code span.fu {
-	color: var(--bs-blue);
+	color: var(--bs-link-color);
 }
 
 /* Information - pygments.gp */
