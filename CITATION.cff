@@ -82,6 +82,37 @@ references:
   doi: 10.32614/CRAN.package.pkgdown
   version: '>= 2.0.0'
 - type: software
+  title: jsonlite
+  abstract: 'jsonlite: A Simple and Robust JSON Parser and Generator for R'
+  notes: Suggests
+  url: https://jeroen.r-universe.dev/jsonlite
+  repository: https://CRAN.R-project.org/package=jsonlite
+  authors:
+  - family-names: Ooms
+    given-names: Jeroen
+    email: jeroenooms@gmail.com
+    orcid: https://orcid.org/0000-0002-4035-0289
+  year: '2026'
+  doi: 10.32614/CRAN.package.jsonlite
+- type: software
+  title: jsonvalidate
+  abstract: 'jsonvalidate: Validate ''JSON'' Schema'
+  notes: Suggests
+  url: https://docs.ropensci.org/jsonvalidate/
+  repository: https://CRAN.R-project.org/package=jsonvalidate
+  authors:
+  - family-names: FitzJohn
+    given-names: Rich
+    email: rich.fitzjohn@gmail.com
+  - family-names: Ashton
+    given-names: Rob
+  - family-names: Buus
+    given-names: Mathias
+  - family-names: Poberezkin
+    given-names: Evgeny
+  year: '2026'
+  doi: 10.32614/CRAN.package.jsonvalidate
+- type: software
   title: knitr
   abstract: 'knitr: A General-Purpose Package for Dynamic Report Generation in R'
   notes: Suggests

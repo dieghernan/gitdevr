@@ -39,7 +39,7 @@ test_that("pkgdown brand defines dark contrast palette", {
   expect_equal(palette[["green"]], "#277f46")
   expect_equal(palette[["orange"]], "#b45306")
   expect_equal(palette[["code"]], "#cf2f7d")
-  expect_equal(palette[["footer-bg"]], "#0d1117")
+  expect_equal(palette[["footer-bg"]], "#22272e")
   expect_equal(palette[["footer-text"]], "#8b949e")
   expect_equal(palette[["footer-link"]], "#58a6ff")
   expect_equal(palette[["dk-border"]], "#6a788a")

@@ -22,7 +22,7 @@ read_template_brand_yml <- function() {
 read_template_brand_dark_yml <- function() {
   yaml::read_yaml(system.file(
     "brand_yml",
-    "_brand-dark.yaml",
+    "_brand-dark.yml",
     package = "gitdevr",
     mustWork = TRUE
   ))

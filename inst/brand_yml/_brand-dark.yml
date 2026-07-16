@@ -29,7 +29,7 @@ color:
     red: "#ee8f95"
     code: "#ff8cc8"
     border: "#6a788a"
-    footer-bg: "#0d1117"
+    footer-bg: "#24292f"
     footer-text: "#8b949e"
     footer-link: "#58a6ff"
   primary: "#383d43"

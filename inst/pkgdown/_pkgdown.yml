@@ -26,7 +26,7 @@ template:
           purple: "#8250df"
           red: "#cf222e"
           code: "#cf2f7d"
-          footer-bg: "#0d1117"
+          footer-bg: "#22272e"
           footer-text: "#8b949e"
           footer-link: "#58a6ff"
           dk-dark: "#343a40"
