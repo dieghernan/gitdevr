@@ -1,5 +1,7 @@
 ---
 title: Quarto features
+description: >
+  Check Quarto-specific article features such as citations and shortcodes.
 subtitle: Using this for shortcodes
 output: html
 knitr:

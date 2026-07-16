@@ -1,5 +1,7 @@
 ---
 title: "Reactable example"
+description: >
+  Check reactable widgets and table styling inside pkgdown articles.
 ---
 
 ```{r}

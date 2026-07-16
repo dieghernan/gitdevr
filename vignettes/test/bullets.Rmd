@@ -1,5 +1,7 @@
 ---
 title: "Bullets"
+description: >
+  Check list rendering, spacing and nested bullet styles.
 output: rmarkdown::html_vignette
 vignette: >
   %\VignetteIndexEntry{Bullets}

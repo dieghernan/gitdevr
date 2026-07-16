@@ -1,5 +1,7 @@
 ---
 title: "Long table of contents"
+description: >
+  Check navigation and layout behavior for long article tables of contents.
 ---
 
 ```{r}

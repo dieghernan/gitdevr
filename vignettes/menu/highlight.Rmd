@@ -1,5 +1,7 @@
 ---
 title: "Testing syntax highlighter"
+description: >
+  Check how pkgdown highlights R code blocks and inline syntax.
 ---
 
 ```{r}

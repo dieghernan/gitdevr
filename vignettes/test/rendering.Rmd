@@ -1,5 +1,7 @@
 ---
 title: "Output rendering"
+description: >
+  Check rendered output blocks, metadata display and article layout.
 subtitle: "Subtitle is skipped from the table of contents"
 author: "Author is skipped from the table of contents"
 date: "Date is skipped from the table of contents"

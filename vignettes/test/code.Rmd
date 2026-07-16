@@ -1,5 +1,7 @@
 ---
 title: "Code"
+description: >
+  Check code blocks, copy buttons and package code rendering.
 output: rmarkdown::html_vignette
 vignette: >
   %\VignetteIndexEntry{Code}
