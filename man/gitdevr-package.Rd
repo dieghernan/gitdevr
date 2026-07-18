@@ -9,7 +9,7 @@
 \description{
 \if{html}{\figure{logo.png}{options: style='float: right' alt='logo' width='120'}}
 
-A 'pkgdown' template for my packages. This template is based on the 'GitDev' skin of my Jekyll template 'chulapa' \url{https://dieghernan.github.io/chulapa/skins/gitdev}.
+A 'pkgdown' template for my packages. This template is based on the 'GitDev' skin of the 'chulapa' Jekyll theme \url{https://dieghernan.github.io/chulapa/skins/gitdev}.
 }
 \seealso{
 Useful links:

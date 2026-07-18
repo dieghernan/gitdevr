@@ -18,8 +18,8 @@ proof-of-concept.](https://www.repostatus.org/badges/latest/concept.svg)](https:
 
 **gitdevr** provides a custom [**pkgdown**](https://pkgdown.r-lib.org)
 template based on the [GitDev
-skin](https://dieghernan.github.io/chulapa/skins/gitdev) provided with the
-[chulapa](https://dieghernan.github.io/chulapa/) Jekyll theme.
+skin](https://dieghernan.github.io/chulapa/skins/gitdev) provided with
+the [chulapa](https://dieghernan.github.io/chulapa/) Jekyll theme.
 
 See a preview of the template at
 <https://dieghernan.github.io/gitdevr/>.
@@ -75,7 +75,7 @@ template:
 </div>
 <div class="callout-body-container callout-body">
 
-Keep in mind that you should not use `default_assets: false` when you use
+Keep in mind that you should not use `default_assets: false` when using
 this template. **gitdevr** relies on some of the **pkgdown** assets and
 templates.
 

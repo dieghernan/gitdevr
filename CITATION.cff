@@ -10,7 +10,7 @@ license: MIT
 title: 'gitdevr: My ''pkgdown'' template'
 version: 0.0.0.9000
 abstract: A 'pkgdown' template for my packages. This template is based on the 'GitDev'
-  skin of my Jekyll template 'chulapa' <https://dieghernan.github.io/chulapa/skins/gitdev>.
+  skin of the 'chulapa' Jekyll theme <https://dieghernan.github.io/chulapa/skins/gitdev>.
 authors:
 - family-names: Hernangómez
   given-names: Diego

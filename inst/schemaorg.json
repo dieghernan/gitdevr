@@ -12,7 +12,7 @@
     "familyName": "Hernangómez",
     "givenName": "Diego"
   },
-  "description": "A 'pkgdown' template for my packages. This template is based on the 'GitDev' skin of my Jekyll template 'chulapa' <https://dieghernan.github.io/chulapa/skins/gitdev>.",
+  "description": "A 'pkgdown' template for my packages. This template is based on the 'GitDev' skin of the 'chulapa' Jekyll theme <https://dieghernan.github.io/chulapa/skins/gitdev>.",
   "license": "https://spdx.org/licenses/MIT",
   "name": "gitdevr: My 'pkgdown' template",
   "programmingLanguage": {
