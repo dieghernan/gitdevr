@@ -5,7 +5,7 @@
 **gitdevr** provides a custom [**pkgdown**](https://pkgdown.r-lib.org)
 template based on the [GitDev
 skin](https://dieghernan.github.io/chulapa/skins/gitdev) provided with
-my Jekyll theme [chulapa](https://dieghernan.github.io/chulapa/).
+the [chulapa](https://dieghernan.github.io/chulapa/) Jekyll theme.
 
 See a preview of the template at
 <https://dieghernan.github.io/gitdevr/>.
@@ -40,7 +40,7 @@ After installation, if your **pkgdown** setup is ready, specify the
 `template` parameter as follows. Then, as before, build your site with
 [`pkgdown::build_site()`](https://pkgdown.r-lib.org/reference/build_site.html).
 
-    .pkgdown.yaml
+    _pkgdown.yml
 
 ``` yaml
 template:
@@ -51,8 +51,8 @@ template:
 Important
 
 Keep in mind that you should not use `default_assets: false` when you
-change the default template. **gitdevr** relies on some of the
-**pkgdown** assets and templates.
+use this template. **gitdevr** relies on some of the **pkgdown** assets
+and templates.
 
 It is recommended to add the following line to your `DESCRIPTION`:
 

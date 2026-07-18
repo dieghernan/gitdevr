@@ -21,8 +21,8 @@
 <link href="deps/font-awesome-6.5.2/css/all.min.css" rel="stylesheet">
 <link href="deps/font-awesome-6.5.2/css/v4-shims.min.css" rel="stylesheet">
 <script src="deps/headroom-0.11.0/headroom.min.js"></script><script src="deps/headroom-0.11.0/jQuery.headroom.min.js"></script><script src="deps/bootstrap-toc-1.0.1/bootstrap-toc.min.js"></script><script src="deps/clipboard.js-2.0.11/clipboard.min.js"></script><script src="deps/search-1.0.0/autocomplete.jquery.min.js"></script><script src="deps/search-1.0.0/fuse.min.js"></script><script src="deps/search-1.0.0/mark.min.js"></script><!-- pkgdown --><script src="pkgdown.js"></script><meta property="og:title" content="My pkgdown template">
-<meta name="description" content="A pkgdown template for my packages. This template is based on the GitDev skin of my Jekyll template chulapa &lt;https://dieghernan.github.io/chulapa/skins/gitdev&gt;.">
-<meta property="og:description" content="A pkgdown template for my packages. This template is based on the GitDev skin of my Jekyll template chulapa &lt;https://dieghernan.github.io/chulapa/skins/gitdev&gt;.">
+<meta name="description" content="A pkgdown template for my packages. This template is based on the GitDev skin of the chulapa Jekyll theme &lt;https://dieghernan.github.io/chulapa/skins/gitdev&gt;.">
+<meta property="og:description" content="A pkgdown template for my packages. This template is based on the GitDev skin of the chulapa Jekyll theme &lt;https://dieghernan.github.io/chulapa/skins/gitdev&gt;.">
 <meta property="og:image" content="https://dieghernan.github.io/gitdevr/logo.png">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:creator" content="@dhernangomez">
@@ -112,7 +112,7 @@
 <div class="section level2">
 <h2 id="overview">Overview<a class="anchor" aria-label="anchor" href="#overview"></a>
 </h2>
-<p><strong>gitdevr</strong> provides a custom <a href="https://pkgdown.r-lib.org" class="external-link"><strong>pkgdown</strong></a> template based on the <a href="https://dieghernan.github.io/chulapa/skins/gitdev" class="external-link">GitDev skin</a> provided with my Jekyll theme <a href="https://dieghernan.github.io/chulapa/" class="external-link">chulapa</a>.</p>
+<p><strong>gitdevr</strong> provides a custom <a href="https://pkgdown.r-lib.org" class="external-link"><strong>pkgdown</strong></a> template based on the <a href="https://dieghernan.github.io/chulapa/skins/gitdev" class="external-link">GitDev skin</a> provided with the <a href="https://dieghernan.github.io/chulapa/" class="external-link">chulapa</a> Jekyll theme.</p>
 <p>See a preview of the template at <a href="https://dieghernan.github.io/gitdevr/" class="uri">https://dieghernan.github.io/gitdevr/</a>.</p>
 </div>
 <div class="section level2">
@@ -138,7 +138,7 @@
 <p>After installation, if your <strong>pkgdown</strong> setup is ready, specify the <code>template</code> parameter as follows. Then, as before, build your site with <code><a href="https://pkgdown.r-lib.org/reference/build_site.html" class="external-link">pkgdown::build_site()</a></code>.</p>
 <div class="code-with-filename">
 <div class="code-with-filename-file">
-<pre><strong>.pkgdown.yaml</strong></pre>
+<pre><strong>_pkgdown.yml</strong></pre>
 <div class="sourceCode" id="cb3"><pre class="sourceCode yaml"><code class="sourceCode yaml"><span id="cb3-1"><a href="#cb3-1" tabindex="-1"></a><span class="fu">template</span><span class="kw">:</span></span>
 <span id="cb3-2"><a href="#cb3-2" tabindex="-1"></a><span class="at">  </span><span class="fu">bootstrap</span><span class="kw">:</span><span class="at"> </span><span class="dv">5</span></span>
 <span id="cb3-3"><a href="#cb3-3" tabindex="-1"></a><span class="at">  </span><span class="fu">package</span><span class="kw">:</span><span class="at"> gitdevr</span></span></code></pre></div>
@@ -154,7 +154,7 @@ Important
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Keep in mind that you should not use <code>default_assets: false</code> when you change the default template. <strong>gitdevr</strong> relies on some of the <strong>pkgdown</strong> assets and templates.</p>
+<p>Keep in mind that you should not use <code>default_assets: false</code> when you use this template. <strong>gitdevr</strong> relies on some of the <strong>pkgdown</strong> assets and templates.</p>
 </div>
 </div>
 <p>It is recommended to add the following line to your <code>DESCRIPTION</code>:</p>
@@ -208,7 +208,7 @@ Important
 <div class="dev-status">
 <h2 data-toc-skip>Dev status</h2>
 <ul class="list-unstyled">
-<li><a href="https://lifecycle.r-lib.org/articles/stages.html#experimental" class="external-link"><img src="https://img.shields.io/badge/lifecycle-experimental-orange.svg" alt="Lifecycle: experimental"></a></li>
+<li><a href="https://www.repostatus.org/#concept" class="external-link"><img src="https://www.repostatus.org/badges/latest/concept.svg" alt="Project Status: Concept – Minimal or no implementation has been done yet, or the repository is only intended to be a limited example, demo, or proof-of-concept."></a></li>
 <li><a href="https://github.com/dieghernan/gitdevr/actions/workflows/check-simple.yaml" class="external-link"><img src="https://github.com/dieghernan/gitdevr/actions/workflows/check-simple.yaml/badge.svg" alt=".github/workflows/check-simple.yaml"></a></li>
 </ul>
 </div>
