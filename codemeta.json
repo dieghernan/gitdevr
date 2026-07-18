@@ -46,87 +46,38 @@
     {
       "@type": "SoftwareApplication",
       "identifier": "jsonlite",
-      "name": "jsonlite",
-      "provider": {
-        "@id": "https://cran.r-project.org",
-        "@type": "Organization",
-        "name": "Comprehensive R Archive Network (CRAN)",
-        "url": "https://cran.r-project.org"
-      },
-      "sameAs": "https://CRAN.R-project.org/package=jsonlite"
+      "name": "jsonlite"
     },
     {
       "@type": "SoftwareApplication",
       "identifier": "jsonvalidate",
-      "name": "jsonvalidate",
-      "provider": {
-        "@id": "https://cran.r-project.org",
-        "@type": "Organization",
-        "name": "Comprehensive R Archive Network (CRAN)",
-        "url": "https://cran.r-project.org"
-      },
-      "sameAs": "https://CRAN.R-project.org/package=jsonvalidate"
+      "name": "jsonvalidate"
     },
     {
       "@type": "SoftwareApplication",
       "identifier": "knitr",
-      "name": "knitr",
-      "provider": {
-        "@id": "https://cran.r-project.org",
-        "@type": "Organization",
-        "name": "Comprehensive R Archive Network (CRAN)",
-        "url": "https://cran.r-project.org"
-      },
-      "sameAs": "https://CRAN.R-project.org/package=knitr"
+      "name": "knitr"
     },
     {
       "@type": "SoftwareApplication",
       "identifier": "quarto",
-      "name": "quarto",
-      "provider": {
-        "@id": "https://cran.r-project.org",
-        "@type": "Organization",
-        "name": "Comprehensive R Archive Network (CRAN)",
-        "url": "https://cran.r-project.org"
-      },
-      "sameAs": "https://CRAN.R-project.org/package=quarto"
+      "name": "quarto"
     },
     {
       "@type": "SoftwareApplication",
       "identifier": "rmarkdown",
-      "name": "rmarkdown",
-      "provider": {
-        "@id": "https://cran.r-project.org",
-        "@type": "Organization",
-        "name": "Comprehensive R Archive Network (CRAN)",
-        "url": "https://cran.r-project.org"
-      },
-      "sameAs": "https://CRAN.R-project.org/package=rmarkdown"
+      "name": "rmarkdown"
     },
     {
       "@type": "SoftwareApplication",
       "identifier": "testthat",
       "name": "testthat",
-      "version": ">= 3.0.0",
-      "provider": {
-        "@id": "https://cran.r-project.org",
-        "@type": "Organization",
-        "name": "Comprehensive R Archive Network (CRAN)",
-        "url": "https://cran.r-project.org"
-      },
-      "sameAs": "https://CRAN.R-project.org/package=testthat"
+      "version": ">= 3.0.0"
     },
     {
       "@type": "SoftwareApplication",
       "identifier": "yaml",
-      "name": "yaml",
-      "provider": {
-        "@id": "https://cran.r-project.org",
-        "@type": "Organization",
-        "name": "Comprehensive R Archive Network (CRAN)",
-        "url": "https://cran.r-project.org"
-      },
-      "sameAs": "https://CRAN.R-project.org/package=yaml"
+      "name": "yaml"
     }
   ],
   "softwareRequirements": {
@@ -139,32 +90,18 @@
     "2": {
       "@type": "SoftwareApplication",
       "identifier": "brand.yml",
-      "name": "brand.yml",
-      "provider": {
-        "@id": "https://cran.r-project.org",
-        "@type": "Organization",
-        "name": "Comprehensive R Archive Network (CRAN)",
-        "url": "https://cran.r-project.org"
-      },
-      "sameAs": "https://CRAN.R-project.org/package=brand.yml"
+      "name": "brand.yml"
     },
     "3": {
       "@type": "SoftwareApplication",
       "identifier": "pkgdown",
       "name": "pkgdown",
-      "version": ">= 2.0.0",
-      "provider": {
-        "@id": "https://cran.r-project.org",
-        "@type": "Organization",
-        "name": "Comprehensive R Archive Network (CRAN)",
-        "url": "https://cran.r-project.org"
-      },
-      "sameAs": "https://CRAN.R-project.org/package=pkgdown"
+      "version": ">= 2.0.0"
     },
     "SystemRequirements": null
   },
   "keywords": ["pkgdown", "pkgdown-template", "r", "r-package"],
-  "fileSize": "397.33KB",
+  "fileSize": "395.923KB",
   "releaseNotes": "https://github.com/dieghernan/gitdevr/blob/main/NEWS.md",
   "readme": "https://github.com/dieghernan/gitdevr/blob/main/README.md",
   "contIntegration": "https://github.com/dieghernan/gitdevr/actions/workflows/check-simple.yaml",
