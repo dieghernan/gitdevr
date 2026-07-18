@@ -6,8 +6,10 @@
 
 <!-- badges: start -->
 
-[![Lifecycle:
-experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
+[![Project Status: Concept – Minimal or no implementation has been done
+yet, or the repository is only intended to be a limited example, demo,
+or
+proof-of-concept.](https://www.repostatus.org/badges/latest/concept.svg)](https://www.repostatus.org/#concept)
 [![.github/workflows/check-simple.yaml](https://github.com/dieghernan/gitdevr/actions/workflows/check-simple.yaml/badge.svg)](https://github.com/dieghernan/gitdevr/actions/workflows/check-simple.yaml)
 
 <!-- badges: end -->
@@ -16,8 +18,8 @@ experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](h
 
 **gitdevr** provides a custom [**pkgdown**](https://pkgdown.r-lib.org)
 template based on the [GitDev
-skin](https://dieghernan.github.io/chulapa/skins/gitdev) provided with
-my Jekyll theme [chulapa](https://dieghernan.github.io/chulapa/).
+skin](https://dieghernan.github.io/chulapa/skins/gitdev) provided with the
+[chulapa](https://dieghernan.github.io/chulapa/) Jekyll theme.
 
 See a preview of the template at
 <https://dieghernan.github.io/gitdevr/>.
@@ -54,7 +56,7 @@ After installation, if your **pkgdown** setup is ready, specify the
 
 <div class="code-with-filename-file">
 
-<pre><strong>.pkgdown.yaml</strong></pre>
+<pre><strong>_pkgdown.yml</strong></pre>
 
 ``` yaml
 template:
@@ -73,9 +75,9 @@ template:
 </div>
 <div class="callout-body-container callout-body">
 
-Keep in mind that you should not use `default_assets: false` when you
-change the default template. **gitdevr** relies on some of the
-**pkgdown** assets and templates.
+Keep in mind that you should not use `default_assets: false` when you use
+this template. **gitdevr** relies on some of the **pkgdown** assets and
+templates.
 
 </div>
 </div>
