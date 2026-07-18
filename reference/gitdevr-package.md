@@ -1,7 +1,7 @@
 # gitdevr: My 'pkgdown' template
 
 A 'pkgdown' template for my packages. This template is based on the
-'GitDev' skin of my Jekyll template 'chulapa'
+'GitDev' skin of the 'chulapa' Jekyll theme
 <https://dieghernan.github.io/chulapa/skins/gitdev>.
 
 ## See also

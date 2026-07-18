@@ -50,9 +50,9 @@ template:
 
 Important
 
-Keep in mind that you should not use `default_assets: false` when you
-use this template. **gitdevr** relies on some of the **pkgdown** assets
-and templates.
+Keep in mind that you should not use `default_assets: false` when using
+this template. **gitdevr** relies on some of the **pkgdown** assets and
+templates.
 
 It is recommended to add the following line to your `DESCRIPTION`:
 
