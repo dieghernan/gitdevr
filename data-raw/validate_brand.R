@@ -23,17 +23,9 @@ validate_brand <- function(path, schema) {
   valid
 }
 
-brand_files <- c(
-  "inst/brand_yml/_brand.yml",
-  "inst/brand_yml/_brand-dark.yml"
-)
+brand_files <- c("inst/brand_yml/_brand.yml", "inst/brand_yml/_brand-dark.yml")
 
-valid <- vapply(
-  brand_files,
-  validate_brand,
-  logical(1),
-  schema = tmp_json_file
-)
+valid <- vapply(brand_files, validate_brand, logical(1), schema = tmp_json_file)
 
 if (!all(valid)) {
   stop("Invalid brand YAML file.", call. = FALSE)

@@ -34,7 +34,7 @@ extract_css_vars <- function(css, pattern) {
 }
 
 hex_to_rgb <- function(x) {
-  x <- gsub("#", "", x)
+  x <- gsub("#", "", x, fixed = TRUE)
   c(
     strtoi(substr(x, 1, 2), 16L),
     strtoi(substr(x, 3, 4), 16L),
@@ -53,11 +53,7 @@ blend_hex <- function(fg, bg, alpha) {
 contrast_ratio <- function(fg, bg) {
   luminance <- function(x) {
     rgb <- hex_to_rgb(x) / 255
-    rgb <- ifelse(
-      rgb <= 0.03928,
-      rgb / 12.92,
-      ((rgb + 0.055) / 1.055)^2.4
-    )
+    rgb <- ifelse(rgb <= 0.03928, rgb / 12.92, ((rgb + 0.055) / 1.055)^2.4)
     sum(rgb * c(0.2126, 0.7152, 0.0722))
   }
 

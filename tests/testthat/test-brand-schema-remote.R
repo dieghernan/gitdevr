@@ -25,10 +25,10 @@ test_that("brand YAML files validate against the remote brand schema", {
     json_brand <- yaml::read_yaml(brand_file) |>
       jsonlite::toJSON(pretty = TRUE, auto_unbox = TRUE)
 
-    expect_equal(
-      jsonvalidate::json_validate(json_brand, schema = schema, engine = "ajv"),
-      TRUE,
-      info = brand_file
-    )
+    expect_true(jsonvalidate::json_validate(
+      json_brand,
+      schema = schema,
+      engine = "ajv"
+    ))
   }
 })

@@ -62,12 +62,7 @@ test_that("dark syntax highlighting keeps accessible contrast", {
     code = palette[["dk-code"]]
   )
 
-  ratios <- vapply(
-    syntax_colors,
-    contrast_ratio,
-    numeric(1),
-    bg = dark_pre_bg
-  )
+  ratios <- vapply(syntax_colors, contrast_ratio, numeric(1), bg = dark_pre_bg)
 
   expect_gt(min(ratios), 4.5)
 })
@@ -94,12 +89,7 @@ test_that("standalone dark brand keeps accessible contrast", {
     code = palette[["code"]]
   )
 
-  ratios <- vapply(
-    syntax_colors,
-    contrast_ratio,
-    numeric(1),
-    bg = dark_pre_bg
-  )
+  ratios <- vapply(syntax_colors, contrast_ratio, numeric(1), bg = dark_pre_bg)
 
   expect_gt(min(ratios), 4.5)
 })
