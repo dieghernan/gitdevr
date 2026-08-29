@@ -1,5 +1,3 @@
-
-
 <!-- index.md is generated from index.qmd. Please edit that file -->
 
 # gitdevr <a href="https://dieghernan.github.io/gitdevr/"><img src="man/figures/logo.png" alt="gitdevr website" align="right" height="139"/></a>
@@ -17,23 +15,23 @@ proof-of-concept.](https://www.repostatus.org/badges/latest/concept.svg)](https:
 ## Overview
 
 **gitdevr** provides a custom [**pkgdown**](https://pkgdown.r-lib.org)
-template based on the [GitDev
+template based on the [**GitDev**
 skin](https://dieghernan.github.io/chulapa/skins/gitdev) provided with
-the [chulapa](https://dieghernan.github.io/chulapa/) Jekyll theme.
+the [**chulapa**](https://dieghernan.github.io/chulapa/) **Jekyll** theme.
 
 See a preview of the template at
 <https://dieghernan.github.io/gitdevr/>.
 
 ## Installation
 
-You can install the development version of **gitdevr** with:
+You can install the development version of **gitdevr** by running:
 
 ``` r
 pak::pak("dieghernan/gitdevr")
 ```
 
-Alternatively, you can install **gitdevr** using the
-[r-universe](https://dieghernan.r-universe.dev/gitdevr):
+Alternatively, you can install **gitdevr** from
+[**r-universe**](https://dieghernan.r-universe.dev/gitdevr):
 
 ``` r
 # Install gitdevr in R:
@@ -49,7 +47,7 @@ install.packages(
 ## Usage
 
 After installation, if your **pkgdown** setup is ready, specify the
-`template` parameter as follows. Then, as before, build your site with
+`template` parameter as follows, then build your site with
 `pkgdown::build_site()`.
 
 <div class="code-with-filename">
@@ -82,7 +80,7 @@ templates.
 </div>
 </div>
 
-It is recommended to add the following line to your `DESCRIPTION`:
+We recommend adding the following line to your `DESCRIPTION`:
 
 <div class="code-with-filename">
 
@@ -96,6 +94,6 @@ It is recommended to add the following line to your `DESCRIPTION`:
 
 </div>
 
-When you use [r-lib
-actions](https://github.com/r-lib/actions/tree/v2-branch/setup-r-dependencies)
-to deploy your site, GitHub Actions installs the package automatically.
+When you use [**r-lib
+actions**](https://github.com/r-lib/actions/tree/v2-branch/setup-r-dependencies)
+to deploy your site, **GitHub Actions** installs the package automatically.

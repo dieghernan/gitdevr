@@ -34,25 +34,25 @@ x <- readLines("test.txt")
 x
 ```
 
-![bacon](bacon.jpg)
+![Slices of bacon](bacon.jpg)
 
 ## Details tag
 
-<details>This should only be shown when required</details>
+<details>This should only be shown when required.</details>
 
 <details>
 
 <summary>Multiple paragraphs</summary>
 
-First paragraph
+First paragraph.
 
-Second paragraph
+Second paragraph.
 
 </details>
 
 <details>
 
-<summary>Some R code</summary>
+<summary>Some <strong>R</strong> code</summary>
 
 ```{r}
 1 + 2
@@ -70,7 +70,7 @@ Second paragraph
 
 $$f(x) = \dfrac{1}{\sqrt{2\pi\sigma^2}} e^{-\frac{(x-\mu^2)}{2\sigma^2}}$$
 
-Inline equations: $y=x^2$
+Inline equation: $y=x^2$.
 
 ## Search
 
@@ -100,7 +100,7 @@ This text too.
 ### Line width
 
 ```{r}
-pkgdown:::ruler()
+gitdevr::ruler()
 
 cat(rep("x ", 100), sep = "")
 cat(rep("xy", 100), sep = "")
@@ -108,25 +108,25 @@ cat(rep("xy", 100), sep = "")
 
 ### Should be highlighted
 
-Valid R code in `\preformatted{}`:
+Valid **R** code in `\preformatted{}`:
 
 ```         
 mean(a + 1)
 ```
 
-R code in `R` block:
+**R** code in an `R` block:
 
 ``` r
 mean(a + 1)
 ```
 
-R code in `r` block:
+**R** code in an `r` block:
 
 ``` r
 mean(a + 1)
 ```
 
-YAML
+YAML:
 
 ``` yaml
 yaml: [a, 1]
@@ -134,7 +134,7 @@ yaml: [a, 1]
 
 ### Shouldn't be highlighted
 
-Non-R code in `\preformatted{}`:
+Non-**R** code in `\preformatted{}`:
 
 ```         
 yaml: [a, b, c]
@@ -150,7 +150,7 @@ txt <- "Not wrapped; check the copy button behavior."
 
 <section>
 
-Wrapped in a `<section>` (e.g. `section > div > pre`)
+Wrapped in a `<section>` (for example, `section > div > pre`).
 
 ``` r
 txt <- "Wrapped in section"
@@ -165,7 +165,7 @@ txt <- "Wrapped in section"
 > txt <- "Wrapped in blockquote; margins are preserved."
 > ```
 >
-> Continue…
+> Continue.
 
 -   This list item includes enough text to test the width of the code block and
     check whether it matches the paragraph width.
@@ -208,14 +208,14 @@ message(cli::col_green("This is green"))
 warning(cli::style_bold("This is bold"))
 ```
 
-Some text
+Some text.
 
 ```{r}
 #| error: TRUE
-stop(cli::style_italic("This is italic"))
+stop(cli::style_italic("This is italic"), call. = FALSE)
 ```
 
-Some more text
+Some more text.
 
 ## Quoted text
 
@@ -223,7 +223,7 @@ Some more text
 
 <figure>
 
-> A Bootstrap 5 blockquote with footer.
+> A **Bootstrap** 5 blockquote with footer.
 
 ```{=html}
 <figcaption class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite>
@@ -270,6 +270,8 @@ More tab content.
 More tab content.
 
 ```{r}
+#| jarl-ignore-chunk:
+#|   - unreachable_code: The earlier error is caught in a separate chunk.
 #| fig.alt: Another test plot
 plot(1:42)
 ```

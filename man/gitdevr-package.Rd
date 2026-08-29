@@ -11,6 +11,14 @@
 
 A 'pkgdown' template for my packages. This template is based on the 'GitDev' skin of the 'chulapa' Jekyll theme \url{https://dieghernan.github.io/chulapa/skins/gitdev}.
 }
+\section{Console helpers}{
+
+\itemize{
+\item \code{\link[=ruler]{ruler()}} prints a ruler at the current console width.
+\item \code{\link[=test]{test()}} provides sample output for testing documentation rendering.
+}
+}
+
 \seealso{
 Useful links:
 \itemize{

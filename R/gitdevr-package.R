@@ -1,3 +1,6 @@
+#' @section Console helpers:
+#' - [ruler()] prints a ruler at the current console width.
+#' - [test()] provides sample output for testing documentation rendering.
 #' @keywords internal
 #' @encoding UTF-8
 "_PACKAGE"

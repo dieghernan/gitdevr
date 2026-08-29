@@ -1,7 +1,7 @@
 ---
 title: Quarto features
 description: >
-  Check Quarto-specific article features such as citations and shortcodes.
+  Check **Quarto**-specific article features such as citations and shortcodes.
 subtitle: Using this for shortcodes
 output: html
 knitr:
@@ -27,8 +27,8 @@ penguins |>                                      # <1>
   )                                              # <2>
 ```
 
-1.  Take `penguins`, then,
-2.  add new columns for the bill ratio and bill area.
+1.  Take `penguins`.
+2.  Add new columns for the bill ratio and bill area.
 
 ## Code filename
 
@@ -82,8 +82,8 @@ warning.
 <div class="callout-body-container callout-body">
 ```
 
-The callout heading is provided by the callout type, with the expected heading,
-such as Note, Warning, Important, Tip or Caution.
+The callout type provides the expected heading, such as Note, Warning,
+Important, Tip or Caution.
 
 ```{=html}
 </div>
@@ -184,21 +184,21 @@ diffviewer::visual_diff(path1, path2)
 
 ## Lists
 
--   item 2
+-   Item 2.
 
-    Continued (indent 4 spaces)
+    This continuation is indented by four spaces.
 
 Another example.
 
-1.  ordered list
+1.  Ordered list.
 
-2.  item 2
+2.  Item 2.
 
     ``` python
     print("Hello, World!")
     ```
 
-    A.  sub-sub-item 1
+    A.  Sub-sub-item 1.
 
 A task list.
 
@@ -207,9 +207,9 @@ A task list.
 
 A definition.
 
-term
+Term
 
-:   definition
+:   Definition.
 
 ## Footnotes
 
@@ -226,7 +226,7 @@ Here is a footnote reference,[^1] and another.[^2]
     { some.code }
     ```
 
-    The whole paragraph can be indented, or just the first line. In this way,
+    You can indent the whole paragraph or just the first line. In this way,
     multi-paragraph footnotes work like multi-paragraph list items.
 
 This paragraph won't be part of the note, because it isn't indented.
@@ -313,7 +313,7 @@ Cute puppies (@fig-pitbull and @fig-shar-pei) and a placeholder
 ::: {#fig-cern}
 {{< video https://www.youtube.com/embed/wo9vZccmqwc >}}
 
-The video "CERN: The Journey of Discovery".
+The video is titled "CERN: The Journey of Discovery."
 :::
 
 See @fig-cern.

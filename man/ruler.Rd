@@ -20,7 +20,7 @@ Print a console ruler
 ruler()
 }
 \seealso{
-\code{\link[base:cat]{base::cat()}}.
+\code{\link[base:cat]{base::cat()}} for the underlying console output function.
 
 Console helpers:
 \code{\link[=test]{test()}}

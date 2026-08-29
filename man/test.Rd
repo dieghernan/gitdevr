@@ -11,7 +11,7 @@ test(x = 1)
 \item{x}{A value.}
 }
 \value{
-\code{NULL}.
+\code{NULL}, invisibly.
 }
 \description{
 Test console output rendering
@@ -89,6 +89,9 @@ pellentesque.
 }
 }
 
+\examples{
+test()
+}
 \seealso{
 Console helpers:
 \code{\link[=ruler]{ruler()}}

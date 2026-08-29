@@ -1,4 +1,4 @@
-# Compress with sass.
+# Compress CSS with `sass`.
 library(sass)
 
 lns <- readLines("inst/pkgdown/assets/BS5/gitdevr.css")
@@ -12,4 +12,4 @@ sass(
   options = sass_options(output_style = "compressed")
 )
 
-message("OK, compressed")
+message("Compression complete.")

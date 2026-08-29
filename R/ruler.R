@@ -2,7 +2,7 @@
 #'
 #' @param width Width of the ruler.
 #' @returns `NULL`, invisibly.
-#' @seealso [base::cat()].
+#' @seealso [base::cat()] for the underlying console output function.
 #' @family console
 #' @export
 #' @encoding UTF-8

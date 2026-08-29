@@ -1,7 +1,7 @@
 #' Test console output rendering
 #'
 #' @param x A value.
-#' @returns `NULL`.
+#' @inherit ruler return
 #' @section Heading 1:
 #'
 #' Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -75,4 +75,7 @@
 #' @family console
 #' @export
 #' @encoding UTF-8
+#'
+#' @examples
+#' test()
 test <- function(x = 1) {}
