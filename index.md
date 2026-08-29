@@ -1,3 +1,5 @@
+
+
 <!-- index.md is generated from index.qmd. Please edit that file -->
 
 # gitdevr <a href="https://dieghernan.github.io/gitdevr/"><img src="man/figures/logo.png" alt="gitdevr website" align="right" height="139"/></a>
@@ -17,7 +19,8 @@ proof-of-concept.](https://www.repostatus.org/badges/latest/concept.svg)](https:
 **gitdevr** provides a custom [**pkgdown**](https://pkgdown.r-lib.org)
 template based on the [**GitDev**
 skin](https://dieghernan.github.io/chulapa/skins/gitdev) provided with
-the [**chulapa**](https://dieghernan.github.io/chulapa/) **Jekyll** theme.
+the [**chulapa**](https://dieghernan.github.io/chulapa/) **Jekyll**
+theme.
 
 See a preview of the template at
 <https://dieghernan.github.io/gitdevr/>.
@@ -96,4 +99,5 @@ We recommend adding the following line to your `DESCRIPTION`:
 
 When you use [**r-lib
 actions**](https://github.com/r-lib/actions/tree/v2-branch/setup-r-dependencies)
-to deploy your site, **GitHub Actions** installs the package automatically.
+to deploy your site, **GitHub Actions** installs the package
+automatically.
