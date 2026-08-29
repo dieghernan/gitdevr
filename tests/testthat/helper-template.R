@@ -1,5 +1,14 @@
+template_file <- function(...) {
+  system.file(..., package = "gitdevr", mustWork = TRUE)
+}
+
 pkgdown_file <- function(...) {
-  system.file("pkgdown", ..., package = "gitdevr", mustWork = TRUE)
+  template_file("pkgdown", ...)
+}
+
+brand_file <- function(dark = FALSE) {
+  filename <- if (dark) "_brand-dark.yml" else "_brand.yml"
+  template_file("brand_yml", filename)
 }
 
 read_pkgdown_css <- function() {
@@ -10,22 +19,8 @@ read_pkgdown_brand <- function() {
   yaml::read_yaml(pkgdown_file("_pkgdown.yml"))$template$bslib$brand
 }
 
-read_template_brand_yml <- function() {
-  yaml::read_yaml(system.file(
-    "brand_yml",
-    "_brand.yml",
-    package = "gitdevr",
-    mustWork = TRUE
-  ))
-}
-
-read_template_brand_dark_yml <- function() {
-  yaml::read_yaml(system.file(
-    "brand_yml",
-    "_brand-dark.yml",
-    package = "gitdevr",
-    mustWork = TRUE
-  ))
+read_template_brand_yml <- function(dark = FALSE) {
+  yaml::read_yaml(brand_file(dark))
 }
 
 extract_css_vars <- function(css, pattern) {

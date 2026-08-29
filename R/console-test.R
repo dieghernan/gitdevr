@@ -78,4 +78,6 @@
 #'
 #' @examples
 #' test()
-test <- function(x = 1) {}
+test <- function(x = 1) {
+  invisible(NULL)
+}
