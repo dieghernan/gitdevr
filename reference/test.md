@@ -97,5 +97,4 @@ Console helpers:
 
 ``` r
 test()
-#> NULL
 ```
