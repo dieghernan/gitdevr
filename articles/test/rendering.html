@@ -54,8 +54,8 @@
   <ul class="dropdown-menu" aria-labelledby="dropdown-articles">
 <li><hr class="dropdown-divider"></li>
     <li><h6 class="dropdown-header" data-toc-skip>Precomputed</h6></li>
-    <li><a class="dropdown-item" href="../../articles/precompute-quarto.html">Precomputed Quarto vignette</a></li>
     <li><a class="dropdown-item" href="../../articles/precompute.html">Precomputed R Markdown vignette</a></li>
+    <li><a class="dropdown-item" href="../../articles/precompute-quarto.html">Precomputed Quarto vignette</a></li>
     <li><hr class="dropdown-divider"></li>
     <li><h6 class="dropdown-header" data-toc-skip>Menu bar</h6></li>
     <li><a class="dropdown-item" href="../../articles/menu/ggplot2.html">ggplot2 example</a></li>
@@ -144,20 +144,20 @@ several use cases.</p>
 <span><span class="va">x</span></span>
 <span><span class="co">#&gt; [1] "a" "b" "c" "d"</span></span></code></pre></div>
 <div class="float">
-<img src="bacon.jpg" alt="bacon"><div class="figcaption">bacon</div>
+<img src="bacon.jpg" alt="Slices of bacon"><div class="figcaption">Slices of bacon</div>
 </div>
 </div>
 <div class="section level2">
 <h2 id="details-tag">Details tag<a class="anchor" aria-label="anchor" href="#details-tag"></a>
 </h2>
 <details>
-This should only be shown when required
+This should only be shown when required.
 </details><details><summary>
 Multiple paragraphs
-</summary><p>First paragraph</p>
-<p>Second paragraph</p>
+</summary><p>First paragraph.</p>
+<p>Second paragraph.</p>
 </details><details><summary>
-Some R code
+Some <strong>R</strong> code
 </summary><div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fl">1</span> <span class="op">+</span> <span class="fl">2</span></span>
 <span><span class="co">#&gt; [1] 3</span></span></code></pre></div>
@@ -193,7 +193,7 @@ intensity</td>
 </h2>
 <p><span class="math display">f(x) = \dfrac{1}{\sqrt{2\pi\sigma^2}}
 e^{-\frac{(x-\mu^2)}{2\sigma^2}}</span></p>
-<p>Inline equations: <span class="math inline">y=x^2</span></p>
+<p>Inline equation: <span class="math inline">y=x^2</span>.</p>
 </div>
 <div class="section level2">
 <h2 id="search">Search<a class="anchor" aria-label="anchor" href="#search"></a>
@@ -224,7 +224,7 @@ e^{-\frac{(x-\mu^2)}{2\sigma^2}}</span></p>
 <h3 id="line-width">Line width<a class="anchor" aria-label="anchor" href="#line-width"></a>
 </h3>
 <div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu">pkgdown</span><span class="fu">:::</span><span class="fu">ruler</span><span class="op">(</span><span class="op">)</span></span>
+<code class="sourceCode R"><span><span class="fu">gitdevr</span><span class="fu">::</span><span class="fu"><a href="../../reference/ruler.html">ruler</a></span><span class="op">(</span><span class="op">)</span></span>
 <span><span class="co">#&gt; ----+----1----+----2----+----3----+----4----+----5----+----6----+----7----+----8</span></span>
 <span><span class="co">#&gt; 12345678901234567890123456789012345678901234567890123456789012345678901234567890</span></span>
 <span></span>
@@ -236,21 +236,21 @@ e^{-\frac{(x-\mu^2)}{2\sigma^2}}</span></p>
 <div class="section level3">
 <h3 id="should-be-highlighted">Should be highlighted<a class="anchor" aria-label="anchor" href="#should-be-highlighted"></a>
 </h3>
-<p>Valid R code in <code>\preformatted{}</code>:</p>
+<p>Valid <strong>R</strong> code in <code>\preformatted{}</code>:</p>
 <pre><code><span><span class="fu"><a href="https://rdrr.io/r/base/mean.html" class="external-link">mean</a></span><span class="op">(</span><span class="va">a</span> <span class="op">+</span> <span class="fl">1</span><span class="op">)</span></span></code></pre>
-<p>R code in <code>R</code> block:</p>
+<p><strong>R</strong> code in an <code>R</code> block:</p>
 <div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/mean.html" class="external-link">mean</a></span><span class="op">(</span><span class="va">a</span> <span class="op">+</span> <span class="fl">1</span><span class="op">)</span></span></code></pre></div>
-<p>R code in <code>r</code> block:</p>
+<p><strong>R</strong> code in an <code>r</code> block:</p>
 <div class="sourceCode" id="cb7"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/mean.html" class="external-link">mean</a></span><span class="op">(</span><span class="va">a</span> <span class="op">+</span> <span class="fl">1</span><span class="op">)</span></span></code></pre></div>
-<p>YAML</p>
+<p>YAML:</p>
 <div class="sourceCode" id="cb8"><pre class="sourceCode yaml"><code class="sourceCode yaml"><span id="cb8-1"><a href="#cb8-1" tabindex="-1"></a><span class="fu">yaml</span><span class="kw">:</span><span class="at"> </span><span class="kw">[</span><span class="at">a</span><span class="kw">,</span><span class="at"> </span><span class="dv">1</span><span class="kw">]</span></span></code></pre></div>
 </div>
 <div class="section level3">
 <h3 id="shouldnt-be-highlighted">Shouldn’t be highlighted<a class="anchor" aria-label="anchor" href="#shouldnt-be-highlighted"></a>
 </h3>
-<p>Non-R code in <code>\preformatted{}</code>:</p>
+<p>Non-<strong>R</strong> code in <code>\preformatted{}</code>:</p>
 <pre><code>yaml: [a, b, c]</code></pre>
 </div>
 <div class="section level3">
@@ -260,8 +260,8 @@ e^{-\frac{(x-\mu^2)}{2\sigma^2}}</span></p>
 <p>Testing margins and copy buttons on small screens.</p>
 <div class="sourceCode" id="cb10"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">txt</span> <span class="op">&lt;-</span> <span class="st">"Not wrapped; check the copy button behavior."</span></span></code></pre></div>
-<section><p>Wrapped in a <code>&lt;section&gt;</code>
-(e.g. <code>section &gt; div &gt; pre</code>)</p>
+<section><p>Wrapped in a <code>&lt;section&gt;</code> (for example,
+<code>section &gt; div &gt; pre</code>).</p>
 <div class="sourceCode" id="cb11"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">txt</span> <span class="op">&lt;-</span> <span class="st">"Wrapped in section"</span></span></code></pre></div>
 </section><blockquote>
@@ -269,7 +269,7 @@ e^{-\frac{(x-\mu^2)}{2\sigma^2}}</span></p>
 block and verify whether it aligns with the paragraph width.</p>
 <div class="sourceCode" id="cb12"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">txt</span> <span class="op">&lt;-</span> <span class="st">"Wrapped in blockquote; margins are preserved."</span></span></code></pre></div>
-<p>Continue…</p>
+<p>Continue.</p>
 </blockquote>
 <ul>
 <li>
@@ -313,12 +313,12 @@ element.
 <span></span>
 <span><span class="kw"><a href="https://rdrr.io/r/base/warning.html" class="external-link">warning</a></span><span class="op">(</span><span class="fu">cli</span><span class="fu">::</span><span class="fu"><a href="https://cli.r-lib.org/reference/ansi-styles.html" class="external-link">style_bold</a></span><span class="op">(</span><span class="st">"This is bold"</span><span class="op">)</span><span class="op">)</span></span>
 <span><span class="co">#&gt; Warning: <span style="font-weight: bold;">This is bold</span></span></span></code></pre></div>
-<p>Some text</p>
+<p>Some text.</p>
 <div class="sourceCode" id="cb17"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/stop.html" class="external-link">stop</a></span><span class="op">(</span><span class="fu">cli</span><span class="fu">::</span><span class="fu"><a href="https://cli.r-lib.org/reference/ansi-styles.html" class="external-link">style_italic</a></span><span class="op">(</span><span class="st">"This is italic"</span><span class="op">)</span><span class="op">)</span></span>
+<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/stop.html" class="external-link">stop</a></span><span class="op">(</span><span class="fu">cli</span><span class="fu">::</span><span class="fu"><a href="https://cli.r-lib.org/reference/ansi-styles.html" class="external-link">style_italic</a></span><span class="op">(</span><span class="st">"This is italic"</span><span class="op">)</span>, call. <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span></span>
 <span><span class="co">#&gt; <span style="color: #BBBB00; font-weight: bold;">Error</span><span style="font-weight: bold;">:</span></span></span>
 <span><span class="co">#&gt; <span style="color: #BBBB00;">!</span> <span style="font-style: italic;">This is italic</span></span></span></code></pre></div>
-<p>Some more text</p>
+<p>Some more text.</p>
 </div>
 </div>
 <div class="section level2">
@@ -328,7 +328,7 @@ element.
 <p>Single-line quote about something miscellaneous.</p>
 </blockquote>
 <figure><blockquote>
-<p>A Bootstrap 5 blockquote with footer.</p>
+<p>A <strong>Bootstrap</strong> 5 blockquote with footer.</p>
 </blockquote>
 <figcaption class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite>
 </figcaption></figure><div class="line-block">Flush<br>

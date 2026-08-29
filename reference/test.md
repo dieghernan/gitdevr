@@ -16,7 +16,7 @@ test(x = 1)
 
 ## Value
 
-`NULL`.
+`NULL`, invisibly.
 
 ## Heading 1
 
@@ -92,3 +92,10 @@ imperdiet nulla malesuada pellentesque.
 
 Console helpers:
 [`ruler()`](https://dieghernan.github.io/gitdevr/reference/ruler.md)
+
+## Examples
+
+``` r
+test()
+#> NULL
+```

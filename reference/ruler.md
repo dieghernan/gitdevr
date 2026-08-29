@@ -20,7 +20,8 @@ ruler(width = getOption("width"))
 
 ## See also
 
-[`base::cat()`](https://rdrr.io/r/base/cat.html).
+[`base::cat()`](https://rdrr.io/r/base/cat.html) for the underlying
+console output function.
 
 Console helpers:
 [`test()`](https://dieghernan.github.io/gitdevr/reference/test.md)

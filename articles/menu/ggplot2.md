@@ -1,6 +1,6 @@
 # ggplot2 example
 
-Example of a **ggplot2** image.
+This is an example of a **ggplot2** image.
 
 ``` r
 

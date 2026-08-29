@@ -24,21 +24,21 @@ x
 #> [1] "a" "b" "c" "d"
 ```
 
-![bacon](bacon.jpg)
+![Slices of bacon](bacon.jpg)
 
-bacon
+Slices of bacon
 
 ## Details tag
 
-This should only be shown when required
+This should only be shown when required.
 
 Multiple paragraphs
 
-First paragraph
+First paragraph.
 
-Second paragraph
+Second paragraph.
 
-Some R code
+Some **R** code
 
 ``` r
 
@@ -56,7 +56,7 @@ Some R code
 
 f(x) = \dfrac{1}{\sqrt{2\pi\sigma^2}} e^{-\frac{(x-\mu^2)}{2\sigma^2}}
 
-Inline equations: y=x^2
+Inline equation: y=x^2.
 
 ## Search
 
@@ -88,7 +88,7 @@ Dark
 
 ``` r
 
-pkgdown:::ruler()
+gitdevr::ruler()
 #> ----+----1----+----2----+----3----+----4----+----5----+----6----+----7----+----8
 #> 12345678901234567890123456789012345678901234567890123456789012345678901234567890
 
@@ -100,25 +100,25 @@ cat(rep("xy", 100), sep = "")
 
 ### Should be highlighted
 
-Valid R code in `\preformatted{}`:
+Valid **R** code in `\preformatted{}`:
 
     mean(a + 1)
 
-R code in `R` block:
+**R** code in an `R` block:
 
 ``` r
 
 mean(a + 1)
 ```
 
-R code in `r` block:
+**R** code in an `r` block:
 
 ``` r
 
 mean(a + 1)
 ```
 
-YAML
+YAML:
 
 ``` yaml
 yaml: [a, 1]
@@ -126,7 +126,7 @@ yaml: [a, 1]
 
 ### Shouldn’t be highlighted
 
-Non-R code in `\preformatted{}`:
+Non-**R** code in `\preformatted{}`:
 
     yaml: [a, b, c]
 
@@ -139,7 +139,7 @@ Testing margins and copy buttons on small screens.
 txt <- "Not wrapped; check the copy button behavior."
 ```
 
-Wrapped in a `<section>` (e.g. `section > div > pre`)
+Wrapped in a `<section>` (for example, `section > div > pre`).
 
 ``` r
 
@@ -154,7 +154,7 @@ txt <- "Wrapped in section"
 > txt <- "Wrapped in blockquote; margins are preserved."
 > ```
 >
-> Continue…
+> Continue.
 
 - This list item includes enough text to test the width of the code
   block and check whether it matches the paragraph width.
@@ -202,22 +202,22 @@ warning(cli::style_bold("This is bold"))
 #> Warning: This is bold
 ```
 
-Some text
+Some text.
 
 ``` r
 
-stop(cli::style_italic("This is italic"))
+stop(cli::style_italic("This is italic"), call. = FALSE)
 #> Error:
 #> ! This is italic
 ```
 
-Some more text
+Some more text.
 
 ## Quoted text
 
 > Single-line quote about something miscellaneous.
 
-> A Bootstrap 5 blockquote with footer.
+> A **Bootstrap** 5 blockquote with footer.
 
 Someone famous in Source Title
 
