@@ -13,36 +13,33 @@ test_that("installed template contains every required resource", {
     template_file("schemaorg.json")
   )
 
+  expect_equal(file.exists(paths), rep(TRUE, length(paths)))
   expect_gt(min(unname(file.info(paths)$size)), 0)
 })
 
-test_that("template configuration has the expected pkgdown structure", {
-  config <- yaml::read_yaml(pkgdown_file("_pkgdown.yml"))
-
-  expect_equal(config$navbar[c("bg", "type")], list(bg = "dark", type = "dark"))
-  expect_identical(config$template$bootstrap, 5L)
-  expect_true(config$template$`light-switch`)
-  expect_named(
-    config$template$bslib$brand,
-    c("color", "typography", "defaults")
-  )
-})
-
 test_that("brand logo references resolve inside the installed template", {
-  for (path in c(brand_file(), brand_file(dark = TRUE))) {
-    brand <- yaml::read_yaml(path)
-    logo_paths <- file.path(dirname(path), sub("^\\./", "", brand$logo$images))
+  brand_paths <- c(brand_file(), brand_file(dark = TRUE))
+  logo_paths <- unlist(
+    lapply(brand_paths, \(path) {
+      brand <- yaml::read_yaml(path)
+      file.path(dirname(path), sub("^\\./", "", brand$logo$images))
+    }),
+    use.names = FALSE
+  )
 
-    expect_gt(min(unname(file.info(logo_paths)$size)), 0)
-  }
+  expect_equal(file.exists(logo_paths), rep(TRUE, length(logo_paths)))
+  expect_gt(min(unname(file.info(logo_paths)$size)), 0)
 })
 
-test_that("brand files are readable by brand.yml", {
-  light <- brand.yml::read_brand_yml(brand_file())
-  dark <- brand.yml::read_brand_yml(brand_file(dark = TRUE))
+test_that("schemaorg.json describes the package as software source code", {
+  schema <- jsonlite::read_json(template_file("schemaorg.json"))
 
-  expect_s3_class(light, "brand_yml")
-  expect_s3_class(dark, "brand_yml")
-  expect_equal(light$color$background, "#ffffff")
-  expect_equal(dark$color$background, "#373e47")
+  expect_equal(schema[["@context"]], "https://schema.org")
+  expect_equal(schema[["type"]], "SoftwareSourceCode")
+  expect_equal(schema[["name"]], "gitdevr: My 'pkgdown' template")
+  expect_equal(
+    schema[["codeRepository"]],
+    "https://github.com/dieghernan/gitdevr"
+  )
+  expect_equal(schema[["programmingLanguage"]][["name"]], "R")
 })

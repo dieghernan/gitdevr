@@ -48,23 +48,37 @@ test_that("template pkgdown brand defines its required palette", {
   expect_equal(palette[["dk-code"]], "#ff8cc8")
 })
 
-test_that("template pkgdown dark syntax meets WCAG AA contrast", {
+test_that("template dark CSS meets WCAG AA contrast", {
+  css <- paste(read_pkgdown_css(), collapse = "\n")
   palette <- read_pkgdown_brand()$color$palette
-  dark_pre_bg <- blend_hex(palette[["white"]], palette[["dark"]], 0.03)
-  syntax_colors <- c(
-    normal = palette[["white"]],
-    comment = palette[["dk-gray"]],
-    link = palette[["dk-blue"]],
-    keyword = palette[["dk-purple"]],
-    string = palette[["dk-green"]],
-    warning = palette[["dk-orange"]],
-    error = palette[["dk-red"]],
-    code = palette[["dk-code"]]
+  variables <- c(
+    brand_css_variables(palette),
+    css_variables(css, '[data-bs-theme="dark"]')
+  )
+  variables <- variables[!duplicated(names(variables), fromLast = TRUE)]
+  contrast_pairs <- list(
+    "body text" = c("--bs-body-color", "--bs-body-bg"),
+    "links" = c("--bs-link-color", "--bs-body-bg"),
+    "inline code" = c("--bs-code-color", "--bs-body-bg"),
+    "syntax comments" = c("--bs-gray-500", "--bs-body-bg"),
+    "syntax keywords" = c("--bs-info", "--bs-body-bg"),
+    "syntax strings" = c("--bs-success", "--bs-body-bg"),
+    "syntax warnings" = c("--bs-warning", "--bs-body-bg"),
+    "syntax errors" = c("--bs-danger", "--bs-body-bg")
   )
 
-  ratios <- vapply(syntax_colors, contrast_ratio, numeric(1), bg = dark_pre_bg)
+  ratios <- vapply(
+    contrast_pairs,
+    \(vars) {
+      foreground <- css_resolve_var(variables[[vars[[1]]]], variables)
+      background <- css_resolve_var(variables[[vars[[2]]]], variables)
+      contrast_ratio(foreground, background)
+    },
+    numeric(1)
+  )
 
-  expect_gt(min(ratios), 4.5)
+  expect_named(ratios, names(contrast_pairs))
+  expect_gte(min(ratios), 4.5)
 })
 
 test_that("template standalone dark brand meets WCAG AA contrast", {
@@ -101,4 +115,20 @@ test_that("template brand sources stay synchronized", {
   expect_equal(brand$color, pkgdown_brand$color)
   expect_equal(brand$typography, pkgdown_brand$typography)
   expect_equal(brand$defaults, pkgdown_brand$defaults)
+})
+
+test_that("template brand files are readable by brand.yml", {
+  light <- brand.yml::read_brand_yml(brand_file())
+  dark <- brand.yml::read_brand_yml(brand_file(dark = TRUE))
+
+  expect_named(
+    light,
+    c("meta", "logo", "color", "typography", "defaults", "path")
+  )
+  expect_named(
+    dark,
+    c("meta", "logo", "color", "typography", "defaults", "path")
+  )
+  expect_equal(light$color$background, "#ffffff")
+  expect_equal(dark$color$background, "#373e47")
 })

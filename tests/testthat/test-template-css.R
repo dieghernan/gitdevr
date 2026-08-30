@@ -22,3 +22,46 @@ test_that("template CSS only consumes generated brand variables", {
 
   expect_setequal(setdiff(used_vars, generated_vars), character())
 })
+
+test_that("template minified CSS matches its source", {
+  skip_if_not_installed("sass")
+
+  source_path <- pkgdown_file("assets", "BS5", "gitdevr.css")
+  minified_path <- pkgdown_file("assets", "BS5", "gitdevr.min.css")
+  expected <- sass::sass(
+    readLines(source_path, warn = FALSE),
+    cache = NULL,
+    options = sass::sass_options(output_style = "compressed")
+  )
+  expected <- sub("\n$", "", as.character(expected))
+  actual <- paste(readLines(minified_path, warn = FALSE), collapse = "\n")
+
+  expect_equal(actual, expected)
+})
+
+test_that("template stylesheets cover light and dark components", {
+  paths <- pkgdown_file(
+    "assets",
+    "BS5",
+    c("gitdevr.css", "gitdevr.min.css")
+  )
+  stylesheets <- lapply(
+    paths,
+    \(path) paste(readLines(path, warn = FALSE), collapse = "\n")
+  )
+  selectors <- c(
+    '[data-bs-theme="dark"]',
+    ".navbar",
+    "footer",
+    "pre",
+    ".callout"
+  )
+  contains_selectors <- vapply(
+    stylesheets,
+    \(css) all(vapply(selectors, grepl, logical(1), x = css, fixed = TRUE)),
+    logical(1)
+  )
+
+  expect_equal(contains_selectors, c(TRUE, TRUE))
+  expect_lt(file.size(paths[[2]]), file.size(paths[[1]]))
+})

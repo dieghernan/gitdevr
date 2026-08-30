@@ -10,17 +10,24 @@ test_that("template brand files validate against the published schema", {
     jsonlite::write_json(schema, auto_unbox = TRUE)
 
   brand_files <- c(brand_file(), brand_file(dark = TRUE))
+  valid <- vapply(
+    brand_files,
+    \(path) {
+      brand_json <- path |>
+        yaml::read_yaml() |>
+        jsonlite::toJSON(pretty = TRUE, auto_unbox = TRUE)
+      jsonvalidate::json_validate(
+        brand_json,
+        schema = schema,
+        engine = "ajv"
+      )
+    },
+    logical(1)
+  )
+  names(valid) <- basename(brand_files)
 
-  for (path in brand_files) {
-    brand_json <- path |>
-      yaml::read_yaml() |>
-      jsonlite::toJSON(pretty = TRUE, auto_unbox = TRUE)
-    valid <- jsonvalidate::json_validate(
-      brand_json,
-      schema = schema,
-      engine = "ajv"
-    )
-
-    expect_true(valid, info = basename(path))
-  }
+  expect_equal(
+    valid,
+    stats::setNames(rep(TRUE, length(brand_files)), basename(brand_files))
+  )
 })
