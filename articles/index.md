@@ -4,15 +4,15 @@
 
 Articles used to check precomputed **R Markdown** and **Quarto** output.
 
-- [Precomputed R Markdown
-  vignette](https://dieghernan.github.io/gitdevr/articles/precompute.md):
-
-  Check how **pkgdown** handles a precomputed **R Markdown** vignette.
-
 - [Precomputed Quarto
   vignette](https://dieghernan.github.io/gitdevr/articles/precompute-quarto.md):
 
   Check how **pkgdown** handles a precomputed **Quarto** vignette.
+
+- [Precomputed R Markdown
+  vignette](https://dieghernan.github.io/gitdevr/articles/precompute.md):
+
+  Check how **pkgdown** handles a precomputed **R Markdown** vignette.
 
 ### Menu examples
 

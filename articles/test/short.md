@@ -1,3 +1,3 @@
 # A short page
 
-The footer should hug the bottom of the viewport.
+The footer should sit at the bottom of the viewport.

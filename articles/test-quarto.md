@@ -1,19 +1,20 @@
 # Quarto vignettes
 
 **pkgdown** uses **Quarto** only to generate HTML and then supplies its
-own CSS and JS. This means that when **Quarto** introduces new features,
-**pkgdown** may lag in supporting them. If you try something that does
-not work and is not mentioned explicitly below, please [file an
-issue](https://github.com/r-lib/pkgdown/issues) so we can look into it.
+own CSS and JavaScript. This means that when **Quarto** introduces new
+features, **pkgdown** may lag in supporting them. If you try something
+that does not work and is not mentioned explicitly below, please [file
+an issue](https://github.com/r-lib/pkgdown/issues) so the **pkgdown**
+maintainers can look into it.
 
 ## Operation
 
 **pkgdown** turns your articles directory into a **Quarto** project by
-temporarily adding a `_quarto.yml` to your articles. You can also add
-your own if you want to control options for all **Quarto** articles. If
-you do so and have a mix of `.qmd` and `.Rmd` files, you need to include
-the following YAML so that **R Markdown** can continue to handle the
-`.Rmd` files:
+temporarily adding a `_quarto.yml` file to that directory. You can also
+add your own file to control options for all **Quarto** articles. If you
+do so and have a mix of `.qmd` and `.Rmd` files, you need to include the
+following YAML so that **R Markdown** can continue to handle the `.Rmd`
+files:
 
 ``` yaml
 project:
@@ -71,18 +72,20 @@ that they work.
 plot(1:3)
 ```
 
-![A plot of the numbers 1, 2, and
-3](test-quarto_files/figure-html/unnamed-chunk-1-1.png)
+![Scatter plot of values 1 through 3 against their indices, labeled
+Index on the horizontal axis and 1:3 on the vertical axis. The three
+points lie on a rising diagonal, with each value equal to its
+index.](test-quarto_files/figure-html/unnamed-chunk-1-1.png)
 
 ### Figures
 
 ![](pitbull.jpg)
 
-\(a\) A sketch of a pitbull puppy
+\(a\) A sketch of a pit bull puppy
 
 ![](shar-pei.jpg)
 
-\(b\) A sketch of a sharpei puppy
+\(b\) A sketch of a Shar-Pei puppy
 
 Figure 1: Cute puppies
 
@@ -93,7 +96,7 @@ Figure 1: Cute puppies
 \mathrm r \mathrm S \frac{\partial \mathrm C}{\partial \mathrm S}\\ =
 \mathrm r \mathrm C \tag{1}
 
-### Cross references
+### Cross-references
 
 See [Figure 1](#fig-puppies) for two cute puppies.
 
@@ -109,7 +112,7 @@ Tabsets
 
 Citations
 
-Task/to do lists
+Task lists
 
 Figures
 

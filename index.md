@@ -37,8 +37,8 @@ install.packages(
 
 ## Usage
 
-After installation, if your **pkgdown** setup is ready, specify the
-`template` parameter as follows, then build your site with
+After installing **gitdevr**, add the following `template` settings to
+your `_pkgdown.yml` file. Then build your site with
 [`pkgdown::build_site()`](https://pkgdown.r-lib.org/reference/build_site.html).
 
     _pkgdown.yml
@@ -51,9 +51,8 @@ template:
 
 Important
 
-Keep in mind that you should not use `default_assets: false` when using
-this template. **gitdevr** relies on some of the **pkgdown** assets and
-templates.
+Do not use `default_assets: false` with this template. **gitdevr**
+relies on **pkgdown** assets and templates.
 
 We recommend adding the following line to your `DESCRIPTION`:
 

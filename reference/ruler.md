@@ -12,18 +12,20 @@ ruler(width = getOption("width"))
 
 - width:
 
-  Width of the ruler.
+  Width of the ruler in characters.
 
 ## Value
 
-`NULL`, invisibly.
+[`NULL`](https://rdrr.io/r/base/NULL.html), invisibly.
 
 ## See also
 
 [`base::cat()`](https://rdrr.io/r/base/cat.html) for the underlying
-console output function.
+console output function and
+[gitdevr-package](https://dieghernan.github.io/gitdevr/reference/gitdevr-package.md)
+for an overview of the template.
 
-Console helpers:
+Console and documentation helpers:
 [`test()`](https://dieghernan.github.io/gitdevr/reference/test.md)
 
 ## Examples

@@ -37,8 +37,8 @@ install.packages(
 
 ## Usage
 
-After installation, if your **pkgdown** setup is ready, specify the
-`template` parameter as follows, then build your site with
+After installing **gitdevr**, add the following `template` settings to
+your `_pkgdown.yml` file. Then build your site with
 [`pkgdown::build_site()`](https://pkgdown.r-lib.org/reference/build_site.html).
 
     _pkgdown.yml
@@ -51,9 +51,8 @@ template:
 
 Important
 
-Keep in mind that you should not use `default_assets: false` when using
-this template. **gitdevr** relies on some of the **pkgdown** assets and
-templates.
+Do not use `default_assets: false` with this template. **gitdevr**
+relies on **pkgdown** assets and templates.
 
 We recommend adding the following line to your `DESCRIPTION`:
 
@@ -70,14 +69,14 @@ automatically.
 
 # Package index
 
-## Console helpers
+## Console and documentation helpers
 
-Small helpers for checking console output rendering in the template.
+Helpers for inspecting console output and reference page rendering.
 
 - [`ruler()`](https://dieghernan.github.io/gitdevr/reference/ruler.md) :
   Print a console ruler
 - [`test()`](https://dieghernan.github.io/gitdevr/reference/test.md) :
-  Test console output rendering
+  Test documentation rendering
 
 ## About the package
 
@@ -93,15 +92,15 @@ Package overview and metadata.
 
 Articles used to check precomputed **R Markdown** and **Quarto** output.
 
-- [Precomputed R Markdown
-  vignette](https://dieghernan.github.io/gitdevr/articles/precompute.md):
-
-  Check how **pkgdown** handles a precomputed **R Markdown** vignette.
-
 - [Precomputed Quarto
   vignette](https://dieghernan.github.io/gitdevr/articles/precompute-quarto.md):
 
   Check how **pkgdown** handles a precomputed **Quarto** vignette.
+
+- [Precomputed R Markdown
+  vignette](https://dieghernan.github.io/gitdevr/articles/precompute.md):
+
+  Check how **pkgdown** handles a precomputed **R Markdown** vignette.
 
 ### Menu examples
 

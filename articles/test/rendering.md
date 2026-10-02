@@ -13,7 +13,10 @@ This paragraph checks footnote rendering.[^1]
 plot(1:10)
 ```
 
-![Test plot](rendering_files/figure-html/unnamed-chunk-2-1.png)
+![Scatter plot of values 1 through 10 against their indices, labeled
+Index on the horizontal axis and 1:10 on the vertical axis. All 10
+points lie on a rising diagonal, with each value equal to its
+index.](rendering_files/figure-html/unnamed-chunk-2-1.png)
 
 ## External files
 
@@ -28,9 +31,9 @@ x
 
 Slices of bacon
 
-## Details tag
+## Details element
 
-This should only be shown when required.
+This text is shown when the details element is expanded.
 
 Multiple paragraphs
 
@@ -168,7 +171,7 @@ txt <- "Wrapped in section"
 
   1.  Nested list.
 
-  2.  Second level item with enough text to test the width of the code
+  2.  Second-level item with enough text to test the width of the code
       block and confirm alignment with the paragraph.
 
       ``` r
@@ -185,7 +188,7 @@ txt <- "Wrapped in section"
 txt <- "Wrapped in details"
 ```
 
-### Crayon
+### Styled console output
 
 ``` r
 
@@ -228,7 +231,7 @@ Flush
 
 ## This section is unnumbered
 
-There should be no bug here.
+This section should appear without a number.
 
 ## Tabsets
 
@@ -264,7 +267,10 @@ More tab content.
 plot(1:42)
 ```
 
-![Another test plot](rendering_files/figure-html/unnamed-chunk-8-1.png)
+![Scatter plot of values 1 through 42 against their indices, labeled
+Index on the horizontal axis and 1:42 on the vertical axis. All 42
+points lie on a rising diagonal, with each value equal to its
+index.](rendering_files/figure-html/unnamed-chunk-8-1.png)
 
 This tab should be active.
 

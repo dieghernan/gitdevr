@@ -1,13 +1,13 @@
 # Package index
 
-## Console helpers
+## Console and documentation helpers
 
-Small helpers for checking console output rendering in the template.
+Helpers for inspecting console output and reference page rendering.
 
 - [`ruler()`](https://dieghernan.github.io/gitdevr/reference/ruler.md) :
   Print a console ruler
 - [`test()`](https://dieghernan.github.io/gitdevr/reference/test.md) :
-  Test console output rendering
+  Test documentation rendering
 
 ## About the package
 

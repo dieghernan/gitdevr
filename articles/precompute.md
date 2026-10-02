@@ -10,7 +10,11 @@ ggplot(faithfuld, aes(waiting, eruptions)) +
   geom_raster(aes(fill = density))
 ```
 
-![Waiting time and eruption duration density.](plot-1.png)
+![Heatmap of Old Faithful eruptions. The horizontal axis shows waiting
+time in minutes and the vertical axis shows eruption duration in
+minutes. Lighter shades indicate higher density, with two clusters near
+55 minutes of waiting and 2-minute eruptions, and 80 minutes of waiting
+and 4.5-minute eruptions.](plot-1.png)
 
 Waiting time and eruption duration density.
 

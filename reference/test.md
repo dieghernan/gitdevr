@@ -1,6 +1,6 @@
-# Test console output rendering
+# Test documentation rendering
 
-Test console output rendering
+Test documentation rendering
 
 ## Usage
 
@@ -12,11 +12,11 @@ test(x = 1)
 
 - x:
 
-  A value.
+  An unused value.
 
 ## Value
 
-`NULL`, invisibly.
+[`NULL`](https://rdrr.io/r/base/NULL.html), invisibly.
 
 ## Heading 1
 
@@ -90,7 +90,12 @@ imperdiet nulla malesuada pellentesque.
 
 ## See also
 
-Console helpers:
+[`pkgdown::build_reference()`](https://pkgdown.r-lib.org/reference/build_reference.html)
+to render the reference pages and
+[gitdevr-package](https://dieghernan.github.io/gitdevr/reference/gitdevr-package.md)
+for an overview of the template.
+
+Console and documentation helpers:
 [`ruler()`](https://dieghernan.github.io/gitdevr/reference/ruler.md)
 
 ## Examples
