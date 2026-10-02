@@ -1,8 +1,9 @@
 #' Print a console ruler
 #'
-#' @param width Width of the ruler.
-#' @returns `NULL`, invisibly.
-#' @seealso [base::cat()] for the underlying console output function.
+#' @param width Width of the ruler in characters.
+#' @returns [`NULL`][base::NULL], invisibly.
+#' @seealso [base::cat()] for the underlying console output function and
+#'   [gitdevr-package] for an overview of the template.
 #' @family console
 #' @export
 #' @encoding UTF-8

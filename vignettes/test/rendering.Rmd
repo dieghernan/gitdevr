@@ -23,7 +23,10 @@ This paragraph checks footnote rendering.[^1]
 ## Figures
 
 ```{r}
-#| fig.alt: Test plot
+#| fig.alt: >
+#|   Scatter plot of values 1 through 10 against their indices, labeled
+#|   Index on the horizontal axis and 1:10 on the vertical axis. All
+#|   10 points lie on a rising diagonal, with each value equal to its index.
 plot(1:10)
 ```
 
@@ -36,9 +39,9 @@ x
 
 ![Slices of bacon](bacon.jpg)
 
-## Details tag
+## Details element
 
-<details>This should only be shown when required.</details>
+<details>This text is shown when the details element is expanded.</details>
 
 <details>
 
@@ -178,7 +181,7 @@ txt <- "Wrapped in section"
 
     1.  Nested list.
 
-    2.  Second level item with enough text to test the width of the code block
+    2.  Second-level item with enough text to test the width of the code block
         and confirm alignment with the paragraph.
 
         ``` r
@@ -197,7 +200,7 @@ txt <- "Wrapped in details"
 
 </details>
 
-### Crayon
+### Styled console output
 
 ```{r}
 cat(cli::col_red("This is red"), "\n")
@@ -239,7 +242,7 @@ Some more text.
 
 ## This section is unnumbered {.unnumbered}
 
-There should be no bug here.
+This section should appear without a number.
 
 ## Tabsets
 
@@ -272,7 +275,10 @@ More tab content.
 ```{r}
 #| jarl-ignore-chunk:
 #|   - unreachable_code: The earlier error is caught in a separate chunk.
-#| fig.alt: Another test plot
+#| fig.alt: >
+#|   Scatter plot of values 1 through 42 against their indices, labeled
+#|   Index on the horizontal axis and 1:42 on the vertical axis. All
+#|   42 points lie on a rising diagonal, with each value equal to its index.
 plot(1:42)
 ```
 

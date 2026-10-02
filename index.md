@@ -2,15 +2,15 @@
 
 <!-- index.md is generated from index.qmd. Please edit that file -->
 
-# gitdevr <a href="https://dieghernan.github.io/gitdevr/"><img src="man/figures/logo.png" alt="gitdevr website" align="right" height="139"/></a>
+# gitdevr <a href="https://dieghernan.github.io/gitdevr/"><img src="man/figures/logo.png" alt="gitdevr home page" align="right" height="139"/></a>
 
 <!-- badges: start -->
 
 [![Project Status: Concept – Minimal or no implementation has been done
-yet, or the repository is only intended to be a limited example, demo,
-or
+yet, or the repository is only intended to be a limited example, demo or
 proof-of-concept.](https://www.repostatus.org/badges/latest/concept.svg)](https://www.repostatus.org/#concept)
-[![.github/workflows/check-simple.yaml](https://github.com/dieghernan/gitdevr/actions/workflows/check-simple.yaml/badge.svg)](https://github.com/dieghernan/gitdevr/actions/workflows/check-simple.yaml)
+[![R package check
+status](https://github.com/dieghernan/gitdevr/actions/workflows/check-simple.yaml/badge.svg)](https://github.com/dieghernan/gitdevr/actions/workflows/check-simple.yaml)
 
 <!-- badges: end -->
 
@@ -49,8 +49,8 @@ install.packages(
 
 ## Usage
 
-After installation, if your **pkgdown** setup is ready, specify the
-`template` parameter as follows, then build your site with
+After installing **gitdevr**, add the following `template` settings to
+your `_pkgdown.yml` file. Then build your site with
 `pkgdown::build_site()`.
 
 <div class="code-with-filename">
@@ -76,9 +76,8 @@ template:
 </div>
 <div class="callout-body-container callout-body">
 
-Keep in mind that you should not use `default_assets: false` when using
-this template. **gitdevr** relies on some of the **pkgdown** assets and
-templates.
+Do not use `default_assets: false` with this template. **gitdevr**
+relies on **pkgdown** assets and templates.
 
 </div>
 </div>

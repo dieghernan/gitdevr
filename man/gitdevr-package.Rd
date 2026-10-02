@@ -11,22 +11,14 @@
 
 A 'pkgdown' template for my packages. This template is based on the 'GitDev' skin of the 'chulapa' Jekyll theme \url{https://dieghernan.github.io/chulapa/skins/gitdev}.
 }
-\section{Console helpers}{
+\section{Console and documentation helpers}{
 
-\itemize{
-\item \code{\link[=ruler]{ruler()}} prints a ruler at the current console width.
-\item \code{\link[=test]{test()}} provides sample output for testing documentation rendering.
-}
+\code{\link[=ruler]{ruler()}} prints a ruler at the current console width. \code{\link[=test]{test()}} provides
+sample documentation for testing rendering.
 }
 
 \seealso{
-Useful links:
-\itemize{
-  \item \url{https://dieghernan.github.io/gitdevr/}
-  \item \url{https://github.com/dieghernan/gitdevr}
-  \item Report bugs at \url{https://github.com/dieghernan/gitdevr/issues}
-}
-
+\code{\link[pkgdown:build_site]{pkgdown::build_site()}} to build a website with the template.
 }
 \author{
 \strong{Maintainer}: Diego Hernangómez \email{diego.hernangomezherrero@gmail.com} (\href{https://orcid.org/0000-0001-8457-4658}{ORCID}) [copyright holder]

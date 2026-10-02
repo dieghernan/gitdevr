@@ -1,1 +1,1 @@
-list(rd_family_title = list(console = "Console helpers"))
+list(rd_family_title = list(console = "Console and documentation helpers"))

@@ -3,18 +3,18 @@
 \encoding{UTF-8}
 \name{test}
 \alias{test}
-\title{Test console output rendering}
+\title{Test documentation rendering}
 \usage{
 test(x = 1)
 }
 \arguments{
-\item{x}{A value.}
+\item{x}{An unused value.}
 }
 \value{
-\code{NULL}, invisibly.
+\code{\link[base:NULL]{NULL}}, invisibly.
 }
 \description{
-Test console output rendering
+Test documentation rendering
 }
 \section{Heading 1}{
 
@@ -93,7 +93,10 @@ pellentesque.
 test()
 }
 \seealso{
-Console helpers:
+\code{\link[pkgdown:build_reference]{pkgdown::build_reference()}} to render the reference pages and
+\link{gitdevr-package} for an overview of the template.
+
+Console and documentation helpers:
 \code{\link[=ruler]{ruler()}}
 }
 \concept{console}

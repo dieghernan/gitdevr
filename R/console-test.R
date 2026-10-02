@@ -1,6 +1,6 @@
-#' Test console output rendering
+#' Test documentation rendering
 #'
-#' @param x A value.
+#' @param x An unused value.
 #' @inherit ruler return
 #' @section Heading 1:
 #'
@@ -72,6 +72,8 @@
 #' consectetur. Risus at ultrices mi tempus imperdiet nulla malesuada
 #' pellentesque.
 #'
+#' @seealso [pkgdown::build_reference()] to render the reference pages and
+#'   [gitdevr-package] for an overview of the template.
 #' @family console
 #' @export
 #' @encoding UTF-8

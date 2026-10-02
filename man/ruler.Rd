@@ -8,10 +8,10 @@
 ruler(width = getOption("width"))
 }
 \arguments{
-\item{width}{Width of the ruler.}
+\item{width}{Width of the ruler in characters.}
 }
 \value{
-\code{NULL}, invisibly.
+\code{\link[base:NULL]{NULL}}, invisibly.
 }
 \description{
 Print a console ruler
@@ -20,9 +20,10 @@ Print a console ruler
 ruler()
 }
 \seealso{
-\code{\link[base:cat]{base::cat()}} for the underlying console output function.
+\code{\link[base:cat]{base::cat()}} for the underlying console output function and
+\link{gitdevr-package} for an overview of the template.
 
-Console helpers:
+Console and documentation helpers:
 \code{\link[=test]{test()}}
 }
 \concept{console}

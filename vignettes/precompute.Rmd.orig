@@ -27,7 +27,13 @@ This is an example of a precomputed **R Markdown** vignette.
 
 ```{r}
 #| label: plot
-#| fig-cap: Waiting time and eruption duration density.
+#| fig.cap: Waiting time and eruption duration density.
+#| fig.alt: >
+#|   Heatmap of Old Faithful eruptions. The horizontal axis shows waiting
+#|   time in minutes and the vertical axis shows eruption duration in
+#|   minutes. Lighter shades indicate higher density, with two clusters
+#|   near 55 minutes of waiting and 2-minute eruptions, and 80 minutes of
+#|   waiting and 4.5-minute eruptions.
 library("ggplot2")
 
 ggplot(faithfuld, aes(waiting, eruptions)) +

@@ -4,4 +4,4 @@ description: >
   Check footer placement on short article pages.
 ---
 
-The footer should hug the bottom of the viewport.
+The footer should sit at the bottom of the viewport.

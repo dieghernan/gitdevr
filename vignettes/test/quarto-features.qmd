@@ -65,8 +65,7 @@ Callout types include `note`, `tip`, `warning`, `caution` and `important`.
 <div class="callout-body-container callout-body">
 ```
 
-Callouts provide a simple way to attract attention, for example, to this
-warning.
+Callouts draw attention to important information, as in this warning.
 
 ```{=html}
 </div>
@@ -94,7 +93,7 @@ Important, Tip or Caution.
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container"><i class="callout-icon"></i></div>
-<div class="callout-title-container flex-fill">Tip With Title</div>
+<div class="callout-title-container flex-fill">Tip with title</div>
 </div>
 <div class="callout-body-container callout-body">
 ```
@@ -143,7 +142,7 @@ A simple callout.
 <div class="callout callout-style-default callout-note no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container"><i class="callout-icon no-icon"></i></div>
-<div class="callout-title-container flex-fill"><span class="screen-reader-only">Note</span>No Icon</div>
+<div class="callout-title-container flex-fill"><span class="screen-reader-only">Note</span>No icon</div>
 </div>
 <div class="callout-body-container callout-body">
 ```
@@ -213,11 +212,11 @@ Term
 
 ## Footnotes
 
-Here is a footnote reference,[^1] and another.[^2]
+Here is a footnote reference[^1] and another.[^2]
 
 [^1]: Here is the footnote.
 
-[^2]: Here's one with multiple blocks.
+[^2]: Here is one with multiple blocks.
 
     Subsequent paragraphs are indented to show that they belong to the previous
     footnote.
@@ -229,12 +228,11 @@ Here is a footnote reference,[^1] and another.[^2]
     You can indent the whole paragraph or just the first line. In this way,
     multi-paragraph footnotes work like multi-paragraph list items.
 
-This paragraph won't be part of the note, because it isn't indented.
+This paragraph is not part of the footnote because it is not indented.
 
-Here is an inline note.[^3]
+Here is another footnote reference.[^3]
 
-[^3]: Inline notes are easier to write, since you do not have to pick an
-    identifier and move down to type the note.
+[^3]: This footnote uses an identifier and places its text below the reference.
 
 ## Equations
 
@@ -246,7 +244,7 @@ $$E = mc^{2}$$
 
 ## Other blocks
 
-| Line Block
+| Line block
 |   Spaces and newlines
 |   are preserved
 
@@ -256,13 +254,13 @@ $$E = mc^{2}$$
 
 [This text is highlighted]{.mark}
 
-Endash: --
+En dash: --
 
-Emdash: ---
+Em dash: ---
 
 ## Shortcodes
 
-The subtitle of this document is as follows: {{< meta subtitle >}}
+The subtitle of this document is: {{< meta subtitle >}}
 
 {{< placeholder 400 200 >}}
 
@@ -276,6 +274,10 @@ Here we define a plot.
 ```{r}
 #| echo: false
 #| label: a-cell
+#| fig-alt: >
+#|   Scatter plot of values 1 through 3 against their indices, labeled
+#|   Index on the horizontal axis and c(1, 2, 3) on the vertical axis. The
+#|   three points lie on a rising diagonal, with each value equal to its index.
 
 plot(c(1, 2, 3))
 ```
@@ -294,9 +296,9 @@ The output of that inline code cell is {{< contents a-span >}}.
 ## Figures
 
 :::: {#fig-puppies layout="[[50,50], [100]]"}
-![A sketch of a pitbull puppy](pitbull.jpg){#fig-pitbull}
+![A sketch of a pit bull puppy](pitbull.jpg){#fig-pitbull}
 
-![A sketch of a sharpei puppy](shar-pei.jpg){#fig-shar-pei}
+![A sketch of a Shar-Pei puppy](shar-pei.jpg){#fig-shar-pei}
 
 ::: {#fig-placeholder}
 {{< placeholder 1000 200>}}
