@@ -60,11 +60,11 @@ test_that("template dark CSS meets WCAG AA contrast", {
     "body text" = c("--bs-body-color", "--bs-body-bg"),
     "links" = c("--bs-link-color", "--bs-body-bg"),
     "inline code" = c("--bs-code-color", "--bs-body-bg"),
-    "syntax comments" = c("--bs-gray-500", "--bs-body-bg"),
-    "syntax keywords" = c("--bs-info", "--bs-body-bg"),
-    "syntax strings" = c("--bs-success", "--bs-body-bg"),
-    "syntax warnings" = c("--bs-warning", "--bs-body-bg"),
-    "syntax errors" = c("--bs-danger", "--bs-body-bg")
+    "muted text" = c("--bs-gray-500", "--bs-body-bg"),
+    "info text" = c("--bs-info", "--bs-body-bg"),
+    "success text" = c("--bs-success", "--bs-body-bg"),
+    "warning text" = c("--bs-warning", "--bs-body-bg"),
+    "danger text" = c("--bs-danger", "--bs-body-bg")
   )
 
   ratios <- vapply(
