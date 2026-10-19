@@ -66,7 +66,7 @@ test_that("template stylesheets cover light and dark components", {
   expect_lt(file.size(paths[[2]]), file.size(paths[[1]]))
 })
 
-test_that("code block palettes match the Chulapa highlighters", {
+test_that("code palettes preserve accessible GitHub and One Dark colors", {
   css <- paste(read_pkgdown_css(), collapse = "\n")
   highlight <- substring(
     css,
@@ -93,7 +93,7 @@ test_that("code block palettes match the Chulapa highlighters", {
     c(
       "#f6f8fa",
       "#24292f",
-      "#6e7781",
+      "#6a737d",
       "#cf222e",
       "#0550ae",
       "#0a3069",
@@ -106,7 +106,7 @@ test_that("code block palettes match the Chulapa highlighters", {
     c(
       "#282c34",
       "#abb2bf",
-      "#7f848e",
+      "#8e939d",
       "#c678dd",
       "#d19a66",
       "#98c379",
@@ -114,4 +114,50 @@ test_that("code block palettes match the Chulapa highlighters", {
       "#56b6c2"
     )
   )
+})
+
+test_that("highlighted text meets AA contrast on its code background", {
+  css <- paste(read_pkgdown_css(), collapse = "\n")
+  highlight <- substring(
+    css,
+    regexpr("/* --- Syntax highlighting:", css, fixed = TRUE)
+  )
+  for (selector in c("pre", '[data-bs-theme="dark"] pre')) {
+    colors <- css_variables(highlight, selector)
+    roles <- setdiff(
+      names(colors),
+      c("--gitdevr-hl-bg", "--gitdevr-hl-error-bg")
+    )
+    ratios <- vapply(
+      roles,
+      \(role) {
+        background <- colors[["--gitdevr-hl-bg"]]
+        if (
+          role == "--gitdevr-hl-error" &&
+            colors[["--gitdevr-hl-error-bg"]] != "transparent"
+        ) {
+          background <- colors[["--gitdevr-hl-error-bg"]]
+        }
+        contrast_ratio(colors[[role]], background)
+      },
+      numeric(1)
+    )
+    expect_gte(min(ratios), 4.5)
+  }
+})
+
+test_that("Bootstrap RGB companions match their brand colors", {
+  css <- paste(read_pkgdown_css(), collapse = "\n")
+  variables <- css_variables(css, '[data-bs-theme="dark"]')
+  palette <- read_pkgdown_brand()$color$palette
+  names(palette) <- gsub("-", "_", names(palette), fixed = TRUE)
+  rgb_names <- grep("-rgb$", names(variables), value = TRUE)
+
+  expect_gt(length(rgb_names), 0)
+  for (name in rgb_names) {
+    color <- variables[[sub("-rgb$", "", name)]]
+    brand_name <- sub("^var\\(--brand-([a-z0-9_]+)\\)$", "\\1", color)
+    channels <- paste(hex_to_rgb(palette[[brand_name]]), collapse = ", ")
+    expect_equal(variables[[name]], channels, info = name)
+  }
 })
