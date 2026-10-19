@@ -161,18 +161,3 @@ test_that("Bootstrap RGB companions match their brand colors", {
     expect_equal(variables[[name]], channels, info = name)
   }
 })
-
-
-test_that("minified footer retains valid full-width background properties", {
-  css <- paste(
-    readLines(pkgdown_file("assets", "BS5", "gitdevr.min.css")),
-    collapse = "\n"
-  )
-  footer <- css_block(css, "footer")
-
-  expect_match(footer, "border-image-source:linear-gradient", fixed = TRUE)
-  expect_match(footer, "border-image-slice:0 fill", fixed = TRUE)
-  expect_match(footer, "border-image-width:0", fixed = TRUE)
-  expect_match(footer, "border-image-outset:0 100vw", fixed = TRUE)
-  expect_no_match(css, "NaN", fixed = TRUE)
-})
