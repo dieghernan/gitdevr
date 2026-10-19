@@ -9,7 +9,7 @@
 ## Citation
 
 Source:
-[`DESCRIPTION`](https://github.com/dieghernan/gitdevr/blob/main/DESCRIPTION)
+[`DESCRIPTION`](https://github.com/dieghernan/gitdevr/blob/fix/css-accessibility-layout/DESCRIPTION)
 
 Hernangómez D (2026). *gitdevr: My 'pkgdown' template*. R package
 version 0.0.0.9000, <https://dieghernan.github.io/gitdevr/>.
