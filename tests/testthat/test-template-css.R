@@ -65,3 +65,53 @@ test_that("template stylesheets cover light and dark components", {
   expect_equal(contains_selectors, c(TRUE, TRUE))
   expect_lt(file.size(paths[[2]]), file.size(paths[[1]]))
 })
+
+test_that("code block palettes match the Chulapa highlighters", {
+  css <- paste(read_pkgdown_css(), collapse = "\n")
+  highlight <- substring(
+    css,
+    regexpr("/* --- Syntax highlighting:", css, fixed = TRUE)
+  )
+  light <- css_variables(highlight, "pre")
+  dark <- css_variables(highlight, '[data-bs-theme="dark"] pre')
+  roles <- paste0(
+    "--gitdevr-hl-",
+    c(
+      "bg",
+      "fg",
+      "comment",
+      "keyword",
+      "number",
+      "string",
+      "function",
+      "operator"
+    )
+  )
+
+  expect_equal(
+    unname(light[roles]),
+    c(
+      "#f6f8fa",
+      "#24292f",
+      "#6e7781",
+      "#cf222e",
+      "#0550ae",
+      "#0a3069",
+      "#8250df",
+      "#0550ae"
+    )
+  )
+  expect_equal(
+    unname(dark[roles]),
+    c(
+      "#282c34",
+      "#abb2bf",
+      "#7f848e",
+      "#c678dd",
+      "#d19a66",
+      "#98c379",
+      "#61afef",
+      "#56b6c2"
+    )
+  )
+})

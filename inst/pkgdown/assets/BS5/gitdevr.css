@@ -375,153 +375,191 @@ code {
 	font-family: "Inter Tight", Roboto;
 }
 
-/* --- Highlighter based in gitdevr --- */
+/* --- Syntax highlighting: Chulapa github (light) and one.dark (dark). --- */
+/* Palettes: https://github.com/dieghernan/chulapa/tree/main/_sass/highlight
+ * Adapted from Rouge tokens to Pandoc/downlit classes used by pkgdown. */
 pre {
+	--gitdevr-hl-bg: #f6f8fa;
+	--gitdevr-hl-fg: #24292f;
+	--gitdevr-hl-comment: #6e7781;
+	--gitdevr-hl-keyword: #cf222e;
+	--gitdevr-hl-number: #0550ae;
+	--gitdevr-hl-constant: #0550ae;
+	--gitdevr-hl-builtin: #953800;
+	--gitdevr-hl-type: #cf222e;
+	--gitdevr-hl-string: #0a3069;
+	--gitdevr-hl-function: #8250df;
+	--gitdevr-hl-operator: #0550ae;
+	--gitdevr-hl-variable: #0550ae;
+	--gitdevr-hl-attribute: #116329;
+	--gitdevr-hl-error: #82071e;
+	--gitdevr-hl-error-bg: #ffebe9;
 	border: none;
+	color: var(--gitdevr-hl-fg);
+	background-color: var(--gitdevr-hl-bg);
 }
 
-/* Alert - pygments.gr */
-pre code span.al,
-[data-bs-theme="dark"] pre code span.al {
-	color: var(--bs-danger);
+[data-bs-theme="dark"] pre {
+	--gitdevr-hl-bg: #282c34;
+	--gitdevr-hl-fg: #abb2bf;
+	--gitdevr-hl-comment: #7f848e;
+	--gitdevr-hl-keyword: #c678dd;
+	--gitdevr-hl-number: #d19a66;
+	--gitdevr-hl-constant: #e5c07b;
+	--gitdevr-hl-builtin: #e5c07b;
+	--gitdevr-hl-type: #e5c07b;
+	--gitdevr-hl-string: #98c379;
+	--gitdevr-hl-function: #61afef;
+	--gitdevr-hl-operator: #56b6c2;
+	--gitdevr-hl-variable: #e06c75;
+	--gitdevr-hl-attribute: #e06c75;
+	--gitdevr-hl-error: #abb2bf;
+	--gitdevr-hl-error-bg: transparent;
+	color: var(--gitdevr-hl-fg);
+	background-color: var(--gitdevr-hl-bg);
 }
 
-/* Annotation - pygments.c1 */
-pre code span.an,
-[data-bs-theme="dark"] pre code span.an {
-	color: var(--bs-gray-500);
-	font-style: italic;
+pre code,
+[data-bs-theme="dark"] pre code {
+	color: var(--gitdevr-hl-fg);
+	background-color: transparent;
 }
 
-/* Attribute - e.g value (non numeric) in YAML */
-pre code span.at,
-[data-bs-theme="dark"] pre code span.at {
-	color: var(--bs-info);
+pre code :is(span, a).an,
+pre code :is(span, a).co,
+pre code :is(span, a).cv,
+pre code :is(span, a).do,
+pre code :is(span, a).in,
+pre code :is(span, a).re,
+[data-bs-theme="dark"] pre code :is(span, a).an,
+[data-bs-theme="dark"] pre code :is(span, a).co,
+[data-bs-theme="dark"] pre code :is(span, a).cv,
+[data-bs-theme="dark"] pre code :is(span, a).do,
+[data-bs-theme="dark"] pre code :is(span, a).in,
+[data-bs-theme="dark"] pre code :is(span, a).re {
+	color: var(--gitdevr-hl-comment);
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: none;
 }
 
-/* ControlFlow - like Operator -> pygments.o */
-pre code span.cf,
-[data-bs-theme="dark"] pre code span.cf {
-	color: var(--bs-info);
+pre code :is(span, a).cf,
+pre code :is(span, a).kw,
+pre code :is(span, a).pp,
+[data-bs-theme="dark"] pre code :is(span, a).cf,
+[data-bs-theme="dark"] pre code :is(span, a).kw,
+[data-bs-theme="dark"] pre code :is(span, a).pp {
+	color: var(--gitdevr-hl-keyword);
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: none;
 }
 
-/* Char - pygments.s2 */
-pre code span.ch,
-[data-bs-theme="dark"] pre code span.ch {
-	color: var(--bs-warning);
+pre code :is(span, a).bn,
+pre code :is(span, a).dv,
+pre code :is(span, a).fl,
+[data-bs-theme="dark"] pre code :is(span, a).bn,
+[data-bs-theme="dark"] pre code :is(span, a).dv,
+[data-bs-theme="dark"] pre code :is(span, a).fl {
+	color: var(--gitdevr-hl-number);
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: none;
 }
 
-/* Constant - pygments.nb */
-pre code span.cn,
-[data-bs-theme="dark"] pre code span.cn {
-	color: var(--bs-warning);
+pre code :is(span, a).cn,
+[data-bs-theme="dark"] pre code :is(span, a).cn {
+	color: var(--gitdevr-hl-constant);
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: none;
 }
 
-/* Comment - pygments.c1 */
-pre code span.co,
-[data-bs-theme="dark"] pre code span.co {
-	color: var(--bs-gray-500);
-	font-style: italic;
+pre code :is(span, a).bu,
+[data-bs-theme="dark"] pre code :is(span, a).bu {
+	color: var(--gitdevr-hl-builtin);
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: none;
 }
 
-/* CommentVar - pygments.c1 */
-pre code span.cv,
-[data-bs-theme="dark"] pre code span.cv {
-	color: var(--bs-gray-500);
-	font-style: italic;
+pre code :is(span, a).dt,
+[data-bs-theme="dark"] pre code :is(span, a).dt {
+	color: var(--gitdevr-hl-type);
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: none;
 }
 
-/* Documentation - pygments.c1 */
-pre code span.do,
-[data-bs-theme="dark"] pre code span.do {
-	color: var(--bs-gray-500);
-	font-style: italic;
+pre code :is(span, a).ch,
+pre code :is(span, a).im,
+pre code :is(span, a).ot,
+pre code :is(span, a).sc,
+pre code :is(span, a).ss,
+pre code :is(span, a).st,
+pre code :is(span, a).vs,
+[data-bs-theme="dark"] pre code :is(span, a).ch,
+[data-bs-theme="dark"] pre code :is(span, a).im,
+[data-bs-theme="dark"] pre code :is(span, a).ot,
+[data-bs-theme="dark"] pre code :is(span, a).sc,
+[data-bs-theme="dark"] pre code :is(span, a).ss,
+[data-bs-theme="dark"] pre code :is(span, a).st,
+[data-bs-theme="dark"] pre code :is(span, a).vs {
+	color: var(--gitdevr-hl-string);
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: none;
 }
 
-/* DecVal - pygments.m */
-pre code span.dv,
-[data-bs-theme="dark"] pre code span.dv {
-	color: var(--bs-info);
+pre code :is(span, a).ex,
+pre code :is(span, a).fu,
+[data-bs-theme="dark"] pre code :is(span, a).ex,
+[data-bs-theme="dark"] pre code :is(span, a).fu {
+	color: var(--gitdevr-hl-function);
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: none;
 }
 
-/* Error - pygments.gr */
-pre code span.er,
-[data-bs-theme="dark"] pre code span.er {
-	color: var(--bs-danger);
+pre code :is(span, a).op,
+[data-bs-theme="dark"] pre code :is(span, a).op {
+	color: var(--gitdevr-hl-operator);
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: none;
 }
 
-/* Float - pygments.m */
-pre code span.fl,
-[data-bs-theme="dark"] pre code span.fl {
-	color: var(--bs-info);
+pre code :is(span, a).va,
+[data-bs-theme="dark"] pre code :is(span, a).va {
+	color: var(--gitdevr-hl-variable);
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: none;
 }
 
-/* Function - pygments.n */
-pre code span.fu,
-[data-bs-theme="dark"] pre code span.fu {
-	color: var(--bs-link-color);
+pre code :is(span, a).at,
+[data-bs-theme="dark"] pre code :is(span, a).at {
+	color: var(--gitdevr-hl-attribute);
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: none;
 }
 
-/* Information - pygments.gp */
-pre code span.in,
-[data-bs-theme="dark"] pre code span.in {
-	color: var(--bs-gray-500);
-	font-style: italic;
+pre code :is(span, a).al,
+pre code :is(span, a).er,
+pre code :is(span, a).wa,
+[data-bs-theme="dark"] pre code :is(span, a).al,
+[data-bs-theme="dark"] pre code :is(span, a).er,
+[data-bs-theme="dark"] pre code :is(span, a).wa {
+	color: var(--gitdevr-hl-error);
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: none;
+	background-color: var(--gitdevr-hl-error-bg);
 }
 
-/* Keyword - pygments.k */
-pre code span.kw,
-[data-bs-theme="dark"] pre code span.kw {
-	color: var(--bs-info);
+[data-bs-theme="dark"] pre code :is(span, a).fu {
 	font-weight: bold;
-}
-
-/* Operator - pygments.o */
-pre code span.op,
-[data-bs-theme="dark"] pre code span.op {
-	color: var(--bs-info);
-}
-
-/* Other - pygments.sx */
-pre code span.ot,
-[data-bs-theme="dark"] pre code span.ot {
-	color: var(--bs-success);
-}
-
-/* SpecialChar - pygments.s2 */
-pre code span.sc,
-[data-bs-theme="dark"] pre code span.sc {
-	color: var(--bs-success);
-}
-
-/* SpecialString - pygments.s2 */
-pre code span.ss,
-[data-bs-theme="dark"] pre code span.ss {
-	color: var(--bs-success);
-}
-
-/* String - pygments.s2 */
-pre code span.st,
-[data-bs-theme="dark"] pre code span.st {
-	color: var(--bs-success);
-}
-
-/* Variable - pygments.n */
-pre code span.va,
-[data-bs-theme="dark"] pre code span.va {
-	color: var(--bs-body-color);
-}
-
-/* VerbatimString - pygments.s2 */
-pre code span.vs,
-[data-bs-theme="dark"] pre code span.vs {
-	color: var(--bs-danger);
-}
-
-/* Warning - pygments.gr */
-pre code span.wa,
-[data-bs-theme="dark"] pre code span.wa {
-	color: var(--bs-danger);
 }
 
 /* Dark reactable */
