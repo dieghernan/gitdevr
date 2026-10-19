@@ -161,3 +161,37 @@ test_that("Bootstrap RGB companions match their brand colors", {
     expect_equal(variables[[name]], channels, info = name)
   }
 })
+
+test_that("callout masks retain six color-independent shapes after minifying", {
+  paths <- pkgdown_file(
+    "assets",
+    "BS5",
+    c("gitdevr.css", "gitdevr.min.css")
+  )
+  for (path in paths) {
+    css <- paste(readLines(path, warn = FALSE), collapse = "\n")
+    masks <- regmatches(
+      css,
+      gregexpr("--gitdevr-callout-mask:\\s*url\\('[^']+'\\)", css)
+    )[[1]]
+
+    expect_length(masks, 6)
+    expect_no_match(paste(masks, collapse = "\n"), "style=|\\bfill=")
+    expect_match(css, "background-color:\\s*currentColor")
+    expect_match(css, "-webkit-mask-image:\\s*var\\(--gitdevr-callout-mask\\)")
+    expect_match(
+      css,
+      "[;[:space:]]mask-image:\\s*var\\(--gitdevr-callout-mask\\)"
+    )
+    for (shape in c(
+      "info-circle",
+      "lightbulb",
+      "exclamation-triangle",
+      "cone-striped",
+      "exclamation-circle",
+      "chevron-down"
+    )) {
+      expect_match(paste(masks, collapse = "\n"), paste0("bi-", shape))
+    }
+  }
+})
