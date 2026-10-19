@@ -7,8 +7,7 @@
   accessible contrast.
 - Navigation hover and focus states have improved contrast, and linked
   code tokens retain their underline.
-- Footer backgrounds span the page without widening its layout, and
-  mobile code blocks scroll within their containers.
+- Mobile code blocks scroll within their containers.
 - Page transitions and callout icon animations respect reduced motion
   preferences.
 - The package is in active development.

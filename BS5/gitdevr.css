@@ -174,13 +174,13 @@ mark,
 /* ---Footer--- */
 footer {
 	--gitdevr-footer-bg: var(--brand-footer_bg);
-	padding-bottom: 1rem;
+	width: 100vw;
+	position: relative;
+	left: 50%;
+	right: 50%;
+	margin-left: -50vw;
+	margin-right: -50vw;
 	margin-bottom: 0;
-	/* Extend only the painted background, keeping the container width. */
-	border-image: linear-gradient(
-		var(--gitdevr-footer-bg),
-		var(--gitdevr-footer-bg)
-	) fill 0 / 0 / 0 100vw;
 	font-family: "Inter Tight", Roboto;
 	font-weight: 700;
 	background-color: var(--gitdevr-footer-bg) !important;
@@ -206,11 +206,59 @@ footer a:focus {
 	);
 }
 
-footer .pkgdown-footer-left,
 footer .pkgdown-footer-right {
-	flex: 1 1 0;
-	min-width: 0;
-	overflow-wrap: anywhere;
+	margin-right: auto;
+	padding-right: 1.25rem;
+}
+
+footer .pkgdown-footer-left {
+	margin-left: auto;
+	padding-left: 1.25rem;
+}
+
+@media screen and (max-width: 576px) {
+	footer .pkgdown-footer-right,
+	footer .pkgdown-footer-left {
+		margin-right: 0.75rem;
+		margin-left: 0.75rem;
+		padding-left: 12px;
+		padding-right: 12px;
+	}
+}
+
+@media (max-width: 768px) and (min-width: 576px) {
+	footer .pkgdown-footer-right,
+	footer .pkgdown-footer-left {
+		max-width: 270px;
+	}
+}
+
+@media (max-width: 992px) and (min-width: 768px) {
+	footer .pkgdown-footer-right,
+	footer .pkgdown-footer-left {
+		max-width: 360px;
+	}
+}
+
+@media (max-width: 1200px) and (min-width: 992px) {
+	footer .pkgdown-footer-right,
+	footer .pkgdown-footer-left {
+		max-width: 480px;
+	}
+}
+
+@media (max-width: 1400px) and (min-width: 1200px) {
+	footer .pkgdown-footer-right,
+	footer .pkgdown-footer-left {
+		max-width: 570px;
+	}
+}
+
+@media (min-width: 1400px) {
+	footer .pkgdown-footer-right,
+	footer .pkgdown-footer-left {
+		max-width: 660px;
+	}
 }
 
 /* ---Misc--- */
