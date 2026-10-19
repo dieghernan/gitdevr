@@ -66,7 +66,7 @@ test_that("template stylesheets cover light and dark components", {
   expect_lt(file.size(paths[[2]]), file.size(paths[[1]]))
 })
 
-test_that("code block palettes preserve accessible GitHub and One Dark colors", {
+test_that("code palettes preserve accessible GitHub and One Dark colors", {
   css <- paste(read_pkgdown_css(), collapse = "\n")
   highlight <- substring(
     css,
@@ -160,4 +160,19 @@ test_that("Bootstrap RGB companions match their brand colors", {
     channels <- paste(hex_to_rgb(palette[[brand_name]]), collapse = ", ")
     expect_equal(variables[[name]], channels, info = name)
   }
+})
+
+
+test_that("minified footer retains valid full-width background properties", {
+  css <- paste(
+    readLines(pkgdown_file("assets", "BS5", "gitdevr.min.css")),
+    collapse = "\n"
+  )
+  footer <- css_block(css, "footer")
+
+  expect_match(footer, "border-image-source:linear-gradient", fixed = TRUE)
+  expect_match(footer, "border-image-slice:0 fill", fixed = TRUE)
+  expect_match(footer, "border-image-width:0", fixed = TRUE)
+  expect_match(footer, "border-image-outset:0 100vw", fixed = TRUE)
+  expect_no_match(css, "NaN", fixed = TRUE)
 })

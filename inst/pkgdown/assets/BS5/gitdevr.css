@@ -177,10 +177,13 @@ footer {
 	padding-bottom: 1rem;
 	margin-bottom: 0;
 	/* Extend only the painted background, keeping the container width. */
-	border-image: linear-gradient(
+	border-image-source: linear-gradient(
 		var(--gitdevr-footer-bg),
 		var(--gitdevr-footer-bg)
-	) fill 0 / 0 / 0 100vw;
+	);
+	border-image-slice: 0 fill;
+	border-image-width: 0;
+	border-image-outset: 0 100vw;
 	font-family: "Inter Tight", Roboto;
 	font-weight: 700;
 	background-color: var(--gitdevr-footer-bg) !important;
