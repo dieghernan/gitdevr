@@ -18,6 +18,7 @@ logo:
 color:
   palette:
     dark: "#24292f"
+    body: "#24292f"
     black: "#373e47"
     white: "#ffffff"
     gray: "#a8b3c1"
@@ -32,7 +33,7 @@ color:
     footer-bg: "#24292f"
     footer-text: "#8b949e"
     footer-link: "#58a6ff"
-  primary: "#383d43"
+  primary: black
   secondary: gray
   success: green
   warning: orange
@@ -41,7 +42,7 @@ color:
   dark: black
   light: light
   foreground: white
-  background: dark
+  background: body
 
 typography:
   fonts:
@@ -100,7 +101,7 @@ defaults:
         7h22M4 15h22M4 23h22'/></svg>")
       navbar-dark-brand-hover-color: "#ffffff"
       navbar-dark-toggler-border-color: "#24292f"
-      navbar-dark-hover-color: "$brand-gray"
+      navbar-dark-hover-color: "$brand-footer-text"
       navbar-dark-active-color: "#d3d4d5"
       input-placeholder-color: "$brand-footer-text"
       link-decoration: none
@@ -110,7 +111,7 @@ defaults:
       dropdown-border-color: "#6c757d80"
       dropdown-divider-bg: "#6c757d80"
       dropdown-link-color: "var(--bs-navbar-color)"
-      dropdown-link-hover-color: "$brand-gray"
+      dropdown-link-hover-color: "$brand-footer-text"
       dropdown-link-hover-bg: "$dropdown-bg"
       dropdown-link-active-bg: "$dropdown-bg"
       dropdown-header-color: "$dropdown-link-hover-color"
@@ -118,7 +119,7 @@ defaults:
       dropdown-dark-border-color: "#6c757d80"
       dropdown-dark-divider-bg: "#6c757d80"
       dropdown-dark-link-color: "var(--bs-navbar-color)"
-      dropdown-dark-link-hover-color: "$brand-gray"
+      dropdown-dark-link-hover-color: "$brand-footer-text"
       dropdown-dark-link-hover-bg: "$dropdown-dark-bg"
       dropdown-dark-link-active-bg: "$dropdown-dark-bg"
       dropdown-dark-header-color: "$dropdown-dark-link-hover-color"
