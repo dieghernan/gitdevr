@@ -150,7 +150,7 @@ blockquote,
 }
 
 .navbar .text-muted {
-	color: var(--bs-gray) !important;
+	color: var(--brand-footer_text) !important;
 }
 
 /* Dev version badge in navbar: fixed vivid red outside brand tokens. */
@@ -161,13 +161,13 @@ blockquote,
 /* Hovers */
 #navbar .nav-link:hover,
 #navbar .nav-link:focus {
-	color: var(--brand-dk_gray) !important;
+	color: var(--brand-footer_text) !important;
 	background-color: transparent;
 }
 
 #navbar .dropdown-menu .dropdown-item.active:hover,
 #navbar .dropdown-menu .dropdown-item.active:focus {
-	color: var(--brand-dk_gray);
+	color: var(--brand-footer_text);
 }
 
 /* Actives */
