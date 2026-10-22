@@ -273,8 +273,6 @@ More tab content.
 More tab content.
 
 ```{r}
-#| jarl-ignore-chunk:
-#|   - unreachable_code: The earlier error is caught in a separate chunk.
 #| fig.alt: >
 #|   Scatter plot of values 1 through 42 against their indices, labeled
 #|   Index on the horizontal axis and 1:42 on the vertical axis. All
