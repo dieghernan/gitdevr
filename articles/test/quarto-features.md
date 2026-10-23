@@ -199,9 +199,9 @@ Figure 1: Cute puppies ([Figure 1 (a)](#fig-pitbull) and [Figure 1
 
 ## Video
 
-# An error occurred.
+# Se produjo un error.
 
-Unable to execute JavaScript.
+No se puede ejecutar JavaScript.
 
 Figure 2: The video is titled “CERN: The Journey of Discovery.”
 
