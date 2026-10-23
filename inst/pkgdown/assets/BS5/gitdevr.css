@@ -155,7 +155,7 @@ blockquote,
 
 /* Dev version badge in navbar: fixed vivid red outside brand tokens. */
 .navbar .text-danger {
-	color: #ff4d4f !important;
+	color: #ff6b7b !important;
 }
 
 /* Hovers */
@@ -215,7 +215,9 @@ mark,
 	--bs-nav-link-hover-color: var(--bs-link-hover-color);
 }
 
-.nav-item .nav-link:hover,
+.nav-tabs .nav-link:hover,
+.nav-pills .nav-link:hover,
+.nav-tabs .nav-link:focus-visible,
 .nav-pills .nav-link:focus-visible {
 	background-color: rgba(var(--bs-body-color-rgb), 0.08);
 	color: var(--bs-link-hover-color);
@@ -236,6 +238,17 @@ mark,
 	box-shadow: 4px 4px 8px RGBA(var(--bs-body-color-rgb), 0.3);
 	border: var(--bs-border-width) solid var(--bs-border-color);
 	border-radius: var(--bs-border-radius);
+}
+
+/* Keep the title, version, and menu toggle on one row on narrow phones. */
+@media (max-width: 375px) {
+	.navbar-brand {
+		font-size: 1.125rem;
+	}
+
+	.navbar .nav-text {
+		font-size: 0.65rem;
+	}
 }
 
 /* --- 4. Code blocks and syntax highlighting --- */
@@ -283,6 +296,35 @@ main .callout-body-container {
 main pre {
 	max-width: 100%;
 	overflow-x: auto;
+}
+
+@media (max-width: 575.98px) {
+	/* See https://github.com/r-lib/pkgdown/pull/2970 */
+
+  /* Need to override pkgdown */
+  .btn-copy-ex {
+    right: 5px;
+  }
+
+  div > pre {
+    border-radius: 0;
+  }
+
+  :not(li, blockquote) > div > pre {
+    margin-left: calc(var(--bs-gutter-x) * -0.5);
+    margin-right: calc(var(--bs-gutter-x) * -0.5);
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  :not(li, blockquote) > div > .btn-copy-ex {
+    right: calc(var(--bs-gutter-x) * -0.5 + 5px);
+  }
+
+  .code-with-filename {
+    margin-right: calc(var(--bs-gutter-x) * 0.5);
+    margin-left: calc(var(--bs-gutter-x) * 0.5);
+  }
 }
 
 /* --- Syntax highlighting: Chulapa github (light) and one.dark (dark). --- */
@@ -1057,6 +1099,21 @@ footer .pkgdown-footer-left {
 	footer .pkgdown-footer-right,
 	footer .pkgdown-footer-left {
 		max-width: 660px;
+	}
+}
+
+/* Account for pkgdown's mobile sidebar margins. */
+@media (max-width: 767.98px) {
+	.row > aside {
+		width: calc(100% - 1rem);
+	}
+
+	footer {
+		width: auto;
+		left: auto;
+		right: auto;
+		margin-left: calc(var(--bs-gutter-x) * -0.5);
+		margin-right: calc(var(--bs-gutter-x) * -0.5);
 	}
 }
 

@@ -1,5 +1,6 @@
 # gitdevr 0.0.0.9000
 
+- Mobile navigation, sidebars, footers and copy buttons now follow the shared responsive layout. Tab and pill hover styles no longer affect other navigation components, and development badges use the shared red color.
 - Footer and navigation colors now follow the Chulapa GitDev skins, and the standalone dark brand resolves its background and primary colors consistently with gitdev-dark.
 - Quarto callout icons retain their shapes and now follow the site theme and brand colors through CSS masks.
 - Code blocks now use the GitHub palette in light mode and One Dark in dark mode, with small adjustments to comments and One Dark names for accessible contrast.
