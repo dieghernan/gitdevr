@@ -156,6 +156,11 @@ tested automatically.
 
   Check HTML widget rendering and layout inside **pkgdown** articles.
 
+- [Leaflet
+  example](https://dieghernan.github.io/gitdevr/articles/test/leaflet.md):
+
+  Check **leaflet** widgets styling inside **pkgdown** articles.
+
 ### Quarto tests
 
 Articles used to inspect **Quarto** features and integration.
