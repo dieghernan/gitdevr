@@ -85,6 +85,7 @@ articles:
   - test/rendering
   - test/short
   - test/widgets
+  - test/leaflet
 
 - title: Quarto tests
   desc: Articles used to inspect **Quarto** features and integration.

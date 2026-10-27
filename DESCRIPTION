@@ -29,7 +29,7 @@ Suggests:
 VignetteBuilder:
     quarto
 Config/Needs/website: ggplot2, reactable, usethis, servr, diffviewer,
-    rticles, cli, htmltools
+    rticles, cli, htmltools, leaflet
 Config/roxygen2/markdown: TRUE
 Config/roxygen2/version: 8.1.1
 Config/testthat/edition: 3
