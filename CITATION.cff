@@ -44,8 +44,7 @@ references:
   doi: 10.32614/R.manuals
   version: '>= 4.1.0'
 - type: software
-  title: brand.yml
-  abstract: 'brand.yml: Unified Branding with a Simple YAML File'
+  title: 'brand.yml: Unified Branding with a Simple YAML File'
   notes: Imports
   url: https://posit-dev.github.io/brand-yml/pkg/r/
   repository: https://CRAN.R-project.org/package=brand.yml
@@ -54,11 +53,10 @@ references:
     given-names: Garrick
     email: garrick@posit.co
     orcid: https://orcid.org/0000-0002-7111-0077
-  year: '2026'
+  year: '2025'
   doi: 10.32614/CRAN.package.brand.yml
 - type: software
-  title: pkgdown
-  abstract: 'pkgdown: Make Static HTML Documentation for a Package'
+  title: 'pkgdown: Make Static HTML Documentation for a Package'
   notes: Imports
   url: https://pkgdown.r-lib.org/
   repository: https://CRAN.R-project.org/package=pkgdown
@@ -82,8 +80,7 @@ references:
   doi: 10.32614/CRAN.package.pkgdown
   version: '>= 2.0.0'
 - type: software
-  title: jsonlite
-  abstract: 'jsonlite: A Simple and Robust JSON Parser and Generator for R'
+  title: 'jsonlite: A Simple and Robust JSON Parser and Generator for R'
   notes: Suggests
   url: https://jeroen.r-universe.dev/jsonlite
   repository: https://CRAN.R-project.org/package=jsonlite
@@ -92,11 +89,10 @@ references:
     given-names: Jeroen
     email: jeroenooms@gmail.com
     orcid: https://orcid.org/0000-0002-4035-0289
-  year: '2026'
+  year: '2025'
   doi: 10.32614/CRAN.package.jsonlite
 - type: software
-  title: jsonvalidate
-  abstract: 'jsonvalidate: Validate ''JSON'' Schema'
+  title: 'jsonvalidate: Validate ''JSON'' Schema'
   notes: Suggests
   url: https://docs.ropensci.org/jsonvalidate/
   repository: https://CRAN.R-project.org/package=jsonvalidate
@@ -110,11 +106,10 @@ references:
     given-names: Mathias
   - family-names: Poberezkin
     given-names: Evgeny
-  year: '2026'
+  year: '2025'
   doi: 10.32614/CRAN.package.jsonvalidate
 - type: software
-  title: knitr
-  abstract: 'knitr: A General-Purpose Package for Dynamic Report Generation in R'
+  title: 'knitr: A General-Purpose Package for Dynamic Report Generation in R'
   notes: Suggests
   url: https://yihui.org/knitr/
   repository: https://CRAN.R-project.org/package=knitr
@@ -126,8 +121,7 @@ references:
   year: '2026'
   doi: 10.32614/CRAN.package.knitr
 - type: software
-  title: quarto
-  abstract: 'quarto: R Interface to ''Quarto'' Markdown Publishing System'
+  title: 'quarto: R Interface to ''Quarto'' Markdown Publishing System'
   notes: Suggests
   url: https://quarto-dev.github.io/quarto-r/
   repository: https://CRAN.R-project.org/package=quarto
@@ -143,8 +137,7 @@ references:
   year: '2026'
   doi: 10.32614/CRAN.package.quarto
 - type: software
-  title: rmarkdown
-  abstract: 'rmarkdown: Dynamic Documents for R'
+  title: 'rmarkdown: Dynamic Documents for R'
   notes: Suggests
   url: https://pkgs.rstudio.com/rmarkdown/
   repository: https://CRAN.R-project.org/package=rmarkdown
@@ -187,8 +180,7 @@ references:
   year: '2026'
   doi: 10.32614/CRAN.package.rmarkdown
 - type: software
-  title: sass
-  abstract: 'sass: Syntactically Awesome Style Sheets (''Sass'')'
+  title: 'sass: Syntactically Awesome Style Sheets (''Sass'')'
   notes: Suggests
   url: https://rstudio.github.io/sass/
   repository: https://CRAN.R-project.org/package=sass
@@ -211,11 +203,10 @@ references:
     given-names: Carson
     email: carson@rstudio.com
     orcid: https://orcid.org/0000-0002-4958-2844
-  year: '2026'
+  year: '2025'
   doi: 10.32614/CRAN.package.sass
 - type: software
-  title: testthat
-  abstract: 'testthat: Unit Testing for R'
+  title: 'testthat: Unit Testing for R'
   notes: Suggests
   url: https://testthat.r-lib.org
   repository: https://CRAN.R-project.org/package=testthat
@@ -227,8 +218,7 @@ references:
   doi: 10.32614/CRAN.package.testthat
   version: '>= 3.0.0'
 - type: software
-  title: withr
-  abstract: 'withr: Run Code ''With'' Temporarily Modified Global State'
+  title: 'withr: Run Code ''With'' Temporarily Modified Global State'
   notes: Suggests
   url: https://withr.r-lib.org
   repository: https://CRAN.R-project.org/package=withr
@@ -252,8 +242,7 @@ references:
   year: '2026'
   doi: 10.32614/CRAN.package.withr
 - type: software
-  title: yaml
-  abstract: 'yaml: Methods to Convert R Data to YAML and Back'
+  title: 'yaml: Methods to Convert R Data to YAML and Back'
   notes: Suggests
   url: https://yaml.r-lib.org
   repository: https://CRAN.R-project.org/package=yaml
@@ -262,6 +251,6 @@ references:
     given-names: Jeremy
   - family-names: Simonov
     given-names: Kirill
-  year: '2026'
+  year: '2025'
   doi: 10.32614/CRAN.package.yaml
 
